@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RuneDetailView: View {
     let rune: Rune
+    let translationLanguage: TranslationLanguage
     
     var body: some View {
         ScrollView {
@@ -17,7 +18,13 @@ struct RuneDetailView: View {
                 Divider()
                 Group {
                     Text(rune.Name).font(.system(size: 30))
-                    Text(rune.Meaning.English.joined(separator: ", ").capitalized)
+                    
+                    switch translationLanguage {
+                    case .english:
+                        Text(rune.Meaning.English.joined(separator: ", ").capitalized)
+                    case .russian:
+                        Text(rune.Meaning.Russian.joined(separator: ", ").capitalized)
+                    }
                 }
                 Divider()
                 Text("Sound: \(rune.Sound)")
@@ -28,7 +35,7 @@ struct RuneDetailView: View {
                         Text("Rune Poems").font(.title)
                         
                         ForEach(rune.RunePoems!) { poem in
-                            RunePoemsView(runePoem: poem)
+                            RunePoemsView(runePoem: poem, translationLanguage: translationLanguage)
                             Divider()
                         }
                         
@@ -43,6 +50,6 @@ struct RuneDetailView_Previews: PreviewProvider {
     static var previews: some View {
         let sampleRune = Rune(Symbol: "ᚠ", Name: "Fehu", Meaning: Meaning(English: ["cattle", "property", "wealth"], Russian: ["скот", "имущество", "богатство"]), Sound: "F", RunePoems: [])
         
-        RuneDetailView(rune: sampleRune)
+        RuneDetailView(rune: sampleRune, translationLanguage: .english)
     }
 }

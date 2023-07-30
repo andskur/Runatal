@@ -7,8 +7,13 @@
 
 import Foundation
 
-// Class to control the word search functionality
+enum TranslationLanguage: String, CaseIterable {
+    case english
+    case russian
+}
+
 class RunesController: ObservableObject {
+    @Published var translation: TranslationLanguage = .russian
     @Published var loadedRunes: [Rune] = []
     
     init() {
