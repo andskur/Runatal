@@ -1,0 +1,218 @@
+[
+    {
+        "Symbol": "ᚠ",
+        "Name": "Fehu",
+        "Meaning": {
+            "English": ["cattle", "property", "wealth"],
+            "Russian": ["скот", "имущество", "богатство"]
+        },
+        "Sound": "F"
+    },
+    {
+        "Symbol": "ᚢ",
+        "Name": "Uruz",
+        "Meaning": {
+            "English": ["aurochs", "ox"],
+            "Russian": ["тур", "бык"]
+        },
+        "Sound": "U"
+    },
+    {
+        "Symbol": "ᚦ",
+        "Name": "Thurisaz",
+        "Meaning": {
+            "English": ["thurs", "giant", "thorn", "jotun", "troll"],
+            "Russian": ["турс", "великан", "йотун", "шип", "тролль"]
+        },
+        "Sound": "Þ"
+    },
+    {
+        "Symbol": "ᚨ",
+        "Name": "Ansuz",
+        "Meaning": {
+            "English": ["Æsir", "gods"],
+            "Russian": ["Асы", "боги"]
+        },
+        "Sound": "A"
+    },
+    {
+        "Symbol": "ᚱ",
+        "Name": "Raidho",
+        "Meaning": {
+            "English": ["riding", "travel", "way"],
+            "Russian": ["дорога", "путь", "путешествие", "езда"]
+        },
+        "Sound": "R"
+    },
+    {
+        "Symbol": "ᚲ",
+        "Name": "Kenaz",
+        "Meaning": {
+            "English": ["boil", "sickness", "carbuncle", "torch"],
+            "Russian": ["язва", "болезнь", "то что жжет"]
+        },
+        "Sound": "K"
+    },
+    {
+        "Symbol": "ᚷ",
+        "Name": "Gebo",
+        "Meaning": {
+            "English": ["gift"],
+            "Russian": ["подарок"]
+        },
+        "Sound": "G"
+    },
+    {
+        "Symbol": "ᚹ",
+        "Name": "Wunjo",
+        "Meaning": {
+            "English": ["joy", "bliss", "delight"],
+            "Russian": ["радость", "процветание"]
+        },
+        "Sound": "W"
+    },
+    {
+        "Symbol": "ᚺ",
+        "Name": "Hagalaz",
+        "Meaning": {
+            "English": ["hail"],
+            "Russian": ["град"]
+        },
+        "Sound": "H"
+    },
+    {
+        "Symbol": "ᚾ",
+        "Name": "Nauþiz",
+        "Meaning": {
+            "English": ["need", "distress"],
+            "Russian": ["нужда", "потребность"]
+        },
+        "Sound": "N"
+    },
+    {
+        "Symbol": "ᛁ",
+        "Name": "Isa",
+        "Meaning": {
+            "English": ["ice"],
+            "Russian": ["лёд"]
+        },
+        "Sound": "I"
+    },
+    {
+        "Symbol": "ᛃ",
+        "Name": "Jera",
+        "Meaning": {
+            "English": ["year", "good year" ],
+            "Russian": ["год", "хороший (урожайный) год"]
+        },
+        "Sound": "J"
+    },
+    {
+        "Symbol": "ᛇ",
+        "Name": "Eihwaz",
+        "Meaning": {
+            "English": ["tree", "yew"],
+            "Russian": ["тис", "древо"]
+        },
+        "Sound": "Æ"
+    },
+    {
+        "Symbol": "ᛈ",
+        "Name": "Perþro",
+        "Meaning": {
+            "English": ["stone", "rock", "hide"],
+            "Russian": ["камень", "прятать/укрывать"]
+        },
+        "Sound": "P"
+    },
+    {
+        "Symbol": "ᛉ",
+        "Name": "Algiz",
+        "Meaning": {
+            "English": ["protect", "elk"],
+            "Russian": ["защита", "лось"]
+        },
+        "Sound": "Z / R"
+    },
+    {
+        "Symbol": "ᛋ",
+        "Name": "Sowilo",
+        "Meaning": {
+            "English": ["sun"],
+            "Russian": ["солнце"]
+        },
+        "Sound": "S"
+    },
+    {
+        "Symbol": "ᛏ",
+        "Name": "Tiwaz",
+        "Meaning": {
+            "English": ["Tyr"],
+            "Russian": ["Тир"]
+        },
+        "Sound": "T"
+    },
+    {
+        "Symbol": "ᛒ",
+        "Name": "Berkano",
+        "Meaning": {
+            "English": ["Birch", "twigs of birch"],
+            "Russian": ["береза", "ветвь березы"]
+        },
+        "Sound": "B"
+    },
+    {
+        "Symbol": "ᛖ",
+        "Name": "Ehwaz",
+        "Meaning": {
+            "English": ["horse"],
+            "Russian": ["конь"]
+        },
+        "Sound": "E"
+    },
+    {
+        "Symbol": "ᛗ",
+        "Name": "Mannaz",
+        "Meaning": {
+            "English": ["man"],
+            "Russian": ["человек"]
+        },
+        "Sound": "M"
+    },
+    {
+        "Symbol": "ᛚ",
+        "Name": "Laguz",
+        "Meaning": {
+            "English": ["water"],
+            "Russian": ["вода"]
+        },
+        "Sound": "L"
+    },
+    {
+        "Symbol": "ᛜ",
+        "Name": "Ingwaz",
+        "Meaning": {
+            "English": ["Freyr"],
+            "Russian": ["Фрейр"]
+        },
+        "Sound": "Ŋ / Ng"
+    },
+    {
+        "Symbol": "ᛟ",
+        "Name": "Othala",
+        "Meaning": {
+            "English": ["земля", "наследование"],
+            "Russian": ["наследная земля", "вотчина"]
+        },
+        "Sound": "O"
+    },
+    {
+        "Symbol": "ᛞ",
+        "Name": "Dagaz",
+        "Meaning": {
+            "English": ["day"],
+            "Russian": ["день"]
+        },
+        "Sound": "D"
+    },
+]

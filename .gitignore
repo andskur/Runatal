@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Xcode
+build/
+DerivedData/
+*.xcworkspace/
+
+# Swift Package Manager
+/*.swiftpm/
+/Packages/
+/.build/
+
+# Generated files
+/Sources/*/Generated/
+
+# Other
+/.env
+/.vscode
+
+/Products/
