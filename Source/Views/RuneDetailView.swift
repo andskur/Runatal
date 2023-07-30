@@ -14,7 +14,7 @@ struct RuneDetailView: View {
     var body: some View {
         ScrollView {
             VStack() {
-                Text(rune.Symbol).font(.system(size: 80)).fontWeight(.bold)
+                Text(rune.Symbol).font(.system(size: 90)).fontWeight(.bold)
                 Divider()
                 Group {
                     Text(rune.Name).font(.system(size: 30))

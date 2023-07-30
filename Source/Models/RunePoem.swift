@@ -9,12 +9,13 @@ import Foundation
 
 struct RunePoem: Identifiable, Hashable, Decodable {
     private enum CodingKeys : String, CodingKey {
-        case Name, Text, Translation
+        case Name, Origin, Text, Translation
     }
     
     var id = UUID()
     
     let Name: String
+    let Origin: String?
     let Text: String
     let Translation: RunePoemTranslations
 }
