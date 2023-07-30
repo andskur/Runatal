@@ -18,15 +18,17 @@
                 }
             },
             {
-                "Name": "Norwegian",
-                "Text": "Fé vældr frænda róge; føðesk ulfr í skóge.",
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Fé vældr frænda róge; fóðesk ulfr í skóge.",
                 "Translation": {
                     "English": "Wealth is cause of strife among kin; the wolf is born in the forest.",
-                    "Russian": "Богатство причиняет раздор в роду; волк подрастает в лесах."
+                    "Russian": "Богатство вызывает раздор родичей; волк кормится в лесу."
                 }
             },
             {
-                "Name": "Icelandic",
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
                 "Text": "Fé er frænda róg ok flæðar viti ok grafseiðs gata aurum fylkir.",
                 "Translation": {
                     "English": "Wealth - source of discord among kinsmen and fire of the sea and path of the serpent.",
@@ -52,6 +54,15 @@
                     "English": "The aurochs is proud and has great horns; it is a very savage beast and fights with its horns; a great ranger of the moors, it is a creature of mettle.",
                     "Russian": "Тур яр и великорог, свирепейший зверь, сражается рогами прославленный скиталец пустошей. Это отважное существо."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Úr er af illu jarne; opt løypr ræinn á hjarne.",
+                "Translation": {
+                    "English": "Dross comes from iron of bad quality; a reindeer runs often onto frozen snow.",
+                    "Russian": "Шлак — от плохого железа; часто северный олень бежит по насту."
+                }
             }
         ]
     },
@@ -71,6 +82,15 @@
                 "Translation": {
                     "English": "The thorn is exceedingly sharp, an evil thing for any knight to touch, uncommonly severe on all who sit among them.",
                     "Russian": "Шип (терн?) — жестоко остр, тану каждому схватившемуся — он зло, безмерно суров к человеку любому, что на нём отдыхает."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Þurs vældr kvinna kvillu; kátr værðr fár af illu.",
+                "Translation": {
+                    "English": "A giant is a source of torment for women; few rejoice of adversities.",
+                    "Russian": "Шлак — от плохого железа; часто северный олень бежит по насту."
                 }
             }
         ]
@@ -92,6 +112,15 @@
                     "English": "The mouth is the source of all language, a pillar of wisdom and a comfort to wise men, a blessing and a joy to every knight.",
                     "Russian": "Бог (Ас) — источник (князь) всей речи, опора мудрости и утешение мудрецам, и каждому эрлу — благо и надежда."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Óss er flæstra færða för; en skalpr er sværða.",
+                "Translation": {
+                    "English": "Through an estuary pass most journeys; but the sheath belongs to swords.",
+                    "Russian": "Устье реки — большинства путешествий путь; как ножны мечу."
+                }
             }
         ]
     },
@@ -112,6 +141,15 @@
                     "English": "Riding seems easy to every warrior while he is indoors and very courageous to him who traverses the high-roads on the back of a stout horse.",
                     "Russian": "Верховая езда в чертоге воину каждому сладка, и тяжка для того, кто сидя на коне могучем, в многомильном пути."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Ræið kvæða rossom væsta; Reginn sló sværðet bæzta.",
+                "Translation": {
+                    "English": "It is said that the ride is the worst thing for horses; Reginn forged the best of swords.",
+                    "Russian": "Верховая езда, говорят, лошадей измучивает; Регинн e сковал меч наилучший."
+                }
             }
         ]
     },
@@ -131,6 +169,15 @@
                 "Translation": {
                     "English": "The torch is known to every living man by its pale, bright flame; it always burns where princes sit within.",
                     "Russian": "Факел всем живым существам известен огнем яркий и ясный — горит чаще всего там, где этелинги отдыхают дома."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Kaun er barna bölvan; böl gørver mánn fölvan.",
+                "Translation": {
+                    "English": "An ulcer dooms children; bale makes men go pale.",
+                    "Russian": "Язва — детская погибель; беда делает людей бледными."
                 }
             }
         ]
@@ -192,6 +239,15 @@
                     "English": "Hail is the whitest of grain; it is whirled from the vault of heaven and is tossed about by gusts of wind and then it melts into water.",
                     "Russian": "Град — белейшее зерно, выпадает оно с небесной выси, мечут его бури с ливнями, обращается оно в воду затем."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Hagall er kaldastr korna; Kristr skóp hæimenn forna.",
+                "Translation": {
+                    "English": "Hail is the coldest of grains; Christ shaped the ancient world.",
+                    "Russian": "Град — холоднейшее зерно; Христос создал мир издревле."
+                }
             }
         ]
     },
@@ -211,6 +267,15 @@
                 "Translation": {
                     "English": "Trouble is oppressive to the heart; yet often it proves a source of help and salvation to the children of men, to everyone who heeds it betimes.",
                     "Russian": "Нужда тесна на груди, но становится она часто сынам человеческим и в помощь, и в спасение — если она услышана заранее."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Nauðr gerer næppa koste; nøktan kælr í froste.",
+                "Translation": {
+                    "English": "Need leaves few alternatives; a naked man freezes in the cold.",
+                    "Russian": "Нужда создает гнетущее положение; нагому холодно в мороз."
                 }
             }
         ]
@@ -232,6 +297,15 @@
                     "English": "Ice is very cold and immeasurably slippery; it glistens as clear as glass and most like to gems; it is a floor wrought by the frost, fair to look upon.",
                     "Russian": "Лёд очень холоден, безмерно скользок, сияет ясным стеклом, подобно драгоценностям, настил, морозом созданный, прекрасен и видом."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Ís köllum brú bræiða; blindan þarf at læiða.",
+                "Translation": {
+                    "English": "Ice is called the wide bridge; the blind need a guide.",
+                    "Russian": "Лед зовется широким мостом; слепой нуждается в ведении за руку."
+                }
             }
         ]
     },
@@ -251,6 +325,15 @@
                 "Translation": {
                     "English": "Summer is a joy to men, when God, the holy King of Heaven, suffers the earth to bring forth shining fruits for rich and poor alike.",
                     "Russian": "Год — людям надежда, если Бог позволит, святой небесный конунг, земле дать славные плоды и благородным, и бедным."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Ár er gumna góðe; get ek at örr var Fróðe.",
+                "Translation": {
+                    "English": "Abundance makes the wellness of men; I believe Fróði was generous.",
+                    "Russian": "Урожайный год — людей благо; полагаю я, что щедрым был Фроди."
                 }
             }
         ]
@@ -312,6 +395,15 @@
                     "English": "The Eolh-sedge is mostly to be found in a marsh; it grows in the water and makes a ghastly wound, covering with blood every warrior who touches it.",
                     "Russian": "Лось — осока живет чаще всего на болоте, растет в воде, ранит жестоко кровью красит (жжет, освещает) человека каждого который ее, так или иначе, схватить дерзнет."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Ýr er vetrgrønstr víða; vant er, er brennr, at svíða.",
+                "Translation": {
+                    "English": "ew is the greenest tree during winter; you expect it to crackle when it burns.",
+                    "Russian": "Тис — самое зимой зелёное дерево; обычно пламенеет, сгорая."
+                }
             }
         ]
     },
@@ -331,6 +423,15 @@
                 "Translation": {
                     "English": "The sun is ever a joy in the hopes of seafarers when they journey away over the fishes' bath, until the courser of the deep bears them to land.",
                     "Russian": "Солнце морякам всегда в радость, когда они идут над купальней рыб, пока морского скакуна к земле не приведут."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Sól er landa ljóme; lúti ek helgum dóme.",
+                "Translation": {
+                    "English": "The sun is the light of the earth; I kneel before the divine decree.",
+                    "Russian": "Солнце — земли сиянье; я склоняюсь перед священным приговором."
                 }
             }
         ]
@@ -352,6 +453,15 @@
                     "English": "Tiw is a guiding star; well does it keep faith with princes; it is ever on its course over the mists of night and never fails.",
                     "Russian": "Тир — некое знамение. Хранит ряд хорошо с этелингами. Вечно в пути над ночной мглой, никогда не обманет."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Týr er æinendr ása; opt værðr smiðr at blása.",
+                "Translation": {
+                    "English": "Týr is a one-handed áss; the smith must blow often.",
+                    "Russian": "Тюр — однорукий ас; часто приходится кузнецу поддувать."
+                }
             }
         ]
     },
@@ -371,6 +481,15 @@
                 "Translation": {
                     "English": "The poplar bears no fruit; yet without seed it brings forth suckers, for it is generated from its leaves. Splendid are its branches and gloriously adorned its lofty crown which reaches to the skies.",
                     "Russian": "Береза лишена цветов (плодов), но рождает даже так побеги бесплодные, ветвями красива, высока кроной, украшенной дивно, нагруженной листьями, к небу близкой."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Bjarkan er lavgrønstr líma; Loki bar flærðar tíma.",
+                "Translation": {
+                    "English": "Birch has the greenest leaves in the frond; Loki was fortunate in his deceit.",
+                    "Russian": "Берёза — ветвь с самыми зелёными листьями; Локи приносит лжи удачу."
                 }
             }
         ]
@@ -412,6 +531,15 @@
                     "English": "The joyous man is dear to his kinsmen; yet every man is doomed to fail his fellow, since the Lord by his decree will commit the vile carrion to the earth.",
                     "Russian": "Человек — счастлив, родне своей люб, но должен каждый прочих покинуть потому, что волей Господа, его повелением, эта жалкая плоть земле будет предана."
                 }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Maðr er moldar auki; mikil er græip á hauki.",
+                "Translation": {
+                    "English": "Man is born of the soil; strong is the hawk's grip.",
+                    "Russian": "Человек — праха приплод; велик коготь у ястреба."
+                }
             }
         ]
     },
@@ -431,6 +559,15 @@
                 "Translation": {
                     "English": "The ocean seems interminable to men, if they venture on the rolling bark and the waves of the sea terrify them and the courser of the deep heed not its bridle.",
                     "Russian": "Море — людям бесконечным мыслиться если они должны пуститься на ладье неустойчивой и волны морские их сильно страшат и морской жеребец узде неподвластен."
+                }
+            },
+            {
+                "Name": "RUNAKVÆDI",
+                "Origin": "Norwegian",
+                "Text": "Lögr er, er fællr ór fjalle foss; en gull ero nosser.",
+                "Translation": {
+                    "English": "A waterfall is water falling off a mountain; but ornaments are golden.",
+                    "Russian": "Влага — то, что падает из горного водопада; как золото есть сокровище."
                 }
             }
         ]

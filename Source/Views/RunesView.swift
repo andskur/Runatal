@@ -72,7 +72,14 @@ struct ContentView: View {
         .onAppear {
             #if os(macOS)
             selectedRune = controller.loadedRunes[0]
+            #else
+            let isiPhone =  UIDevice.current.userInterfaceIdiom.rawValue == 0 ? true : false
+            
+            if !isiPhone {
+                selectedRune = controller.loadedRunes[0]
+            }
             #endif
+
         }
         #if os(macOS)
         .toolbar {
