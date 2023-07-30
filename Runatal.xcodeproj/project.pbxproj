@@ -14,6 +14,8 @@
 		A13E01152A76CF3A009F495E /* RunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01142A76CF3A009F495E /* RunesController.swift */; };
 		A13E01172A76CF41009F495E /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01162A76CF40009F495E /* Rune.swift */; };
 		A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01182A76DDA0009F495E /* RuneDetailView.swift */; };
+		A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
+		A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011C2A76E947009F495E /* RunePoemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		A13E01142A76CF3A009F495E /* RunesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesController.swift; sourceTree = "<group>"; };
 		A13E01162A76CF40009F495E /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		A13E01182A76DDA0009F495E /* RuneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneDetailView.swift; sourceTree = "<group>"; };
+		A13E011A2A76E73F009F495E /* RunePoem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoem.swift; sourceTree = "<group>"; };
+		A13E011C2A76E947009F495E /* RunePoemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,7 @@
 			children = (
 				A13E00E22A76BED6009F495E /* RunesView.swift */,
 				A13E01182A76DDA0009F495E /* RuneDetailView.swift */,
+				A13E011C2A76E947009F495E /* RunePoemView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -90,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				A13E01162A76CF40009F495E /* Rune.swift */,
+				A13E011A2A76E73F009F495E /* RunePoem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,8 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */,
 				A13E01152A76CF3A009F495E /* RunesController.swift in Sources */,
 				A13E00E32A76BED6009F495E /* RunesView.swift in Sources */,
+				A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */,
 				A13E00E12A76BED6009F495E /* RunatalApp.swift in Sources */,
 				A13E01172A76CF41009F495E /* Rune.swift in Sources */,
 				A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */,

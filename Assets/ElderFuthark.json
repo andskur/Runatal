@@ -6,7 +6,33 @@
             "English": ["cattle", "property", "wealth"],
             "Russian": ["скот", "имущество", "богатство"]
         },
-        "Sound": "F"
+        "Sound": "F",
+        "RunePoems": [
+            {
+                "Name": "Anglo-Saxon",
+                "Text": "Feoh biþ frófor · fira gehwilcum; sceal þéah mann gehwilc · miclan hit dælan gif hé wille for dryhtne · dómes hléotan.",
+                "Translation": {
+                    "English": "Wealth is a comfort to every man, although every man must share it out greatly if he would obtain a portion of the Lord’s glory.",
+                    "Russian": "Богатство — утешение всем людям, но должен человек каждый — щедро им делиться, если он хочет перед Господом славу обрести."
+                }
+            },
+            {
+                "Name": "Norwegian",
+                "Text": "Fé vældr frænda róge; føðesk ulfr í skóge.",
+                "Translation": {
+                    "English": "Wealth is cause of strife among kin; the wolf is born in the forest.",
+                    "Russian": "Богатство причиняет раздор в роду; волк подрастает в лесах."
+                }
+            },
+            {
+                "Name": "Icelandic",
+                "Text": "Fé er frænda róg ok flæðar viti ok grafseiðs gata aurum fylkir.",
+                "Translation": {
+                    "English": "Wealth - source of discord among kinsmen and fire of the sea and path of the serpent.",
+                    "Russian": "Богатство — это раздор в роду, пожар во время потопа и путь змеи."
+                }
+            }
+        ]
     },
     {
         "Symbol": "ᚢ",

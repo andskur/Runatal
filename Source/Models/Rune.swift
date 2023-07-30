@@ -8,9 +8,8 @@
 import Foundation
 
 struct Rune: Identifiable, Hashable, Decodable {
-    
     private enum CodingKeys : String, CodingKey {
-        case Symbol, Name, Meaning, Sound
+        case Symbol, Name, Meaning, Sound, RunePoems
     }
     
     var id = UUID()
@@ -18,6 +17,8 @@ struct Rune: Identifiable, Hashable, Decodable {
     let Name: String
     let Meaning: Meaning
     let Sound: String
+    
+    let RunePoems: [RunePoem]?
 }
 
 
