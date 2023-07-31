@@ -17,6 +17,7 @@
 		A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
 		A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011C2A76E947009F495E /* RunePoemView.swift */; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
+		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesControllerTests.swift; sourceTree = "<group>"; };
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A1EF26842A77B03D00BA9F69 /* Runatal.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Runatal.xctestplan; sourceTree = "<group>"; };
+		A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 		A13E00D42A76BED6009F495E = {
 			isa = PBXGroup;
 			children = (
+				A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */,
 				A1EF26832A77AF8500BA9F69 /* LICENSE */,
 				A1EF26732A77ADBF00BA9F69 /* Tests */,
 				A13E010D2A76CCE3009F495E /* Assets */,
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */,
 				A13E01112A76CD1D009F495E /* ElderFuthark.json in Resources */,
 				A13E00E52A76BED7009F495E /* Assets.xcassets in Resources */,
 			);
