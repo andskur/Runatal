@@ -29,10 +29,23 @@
             {
                 "Name": "ÞRÍDEILUR RÚNALJÓÐ",
                 "Origin": "Icelandic",
-                "Text": "Fé er frænda róg ok flæðar viti ok grafseiðs gata aurum fylkir.",
+                "Text": "Fé er frænda róg ok flæðar viti ok grafseiðs gata.",
                 "Translation": {
                     "English": "Wealth - source of discord among kinsmen and fire of the sea and path of the serpent.",
                     "Russian": "Богатство — это раздор в роду, пожар во время потопа и путь змеи."
+                },
+                "Notes": {
+                    "Primary": "Aurum fy[l]ker.",
+                    "Secondary": "Aurum gull, gull er fé, fé er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Gold leader of the war-band",
+                            "Russian": "Золото. Полководец."
+                        },
+                        "Secondary": {
+                            "Russian": "Aurum — золото, золото есть богатство (fé), fé есть руна (rúnastafr — «рунический знак»)."
+                        },
+                    }
                 }
             }
         ]

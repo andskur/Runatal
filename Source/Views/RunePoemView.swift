@@ -22,6 +22,19 @@ struct RunePoemsView: View {
                 Text("Original")
                 Divider()
                 Text(runePoem.Text)
+                
+                if let notes = runePoem.Notes {
+                    Divider()
+                    Section {
+                        Text("Notes:")
+                        Text(notes.Primary)
+                        
+                        if let secondary = notes.Secondary {
+                            Text(secondary)
+                        }
+                    
+                    }.italic()
+                }
             }
             
             VStack {
@@ -30,9 +43,42 @@ struct RunePoemsView: View {
                 
                 switch translationLanguage {
                 case .english:
-                    Text(runePoem.Translation.English)
+                    Text(runePoem.Translation.English!)
                 case .russian:
-                    Text(runePoem.Translation.Russian)
+                    Text(runePoem.Translation.Russian!)
+                }
+                
+                if let notes = runePoem.Notes {
+                    if let translation = notes.Translation {
+                        Divider()
+                        Section {
+                            Text("Notes:")
+                            
+                            switch translationLanguage {
+                            case .english:
+                                if let english = translation.Primary.English {
+                                    Text(english)
+                                }
+                            case .russian:
+                                if let russian = translation.Primary.Russian {
+                                    Text(russian)
+                                }
+                            }
+                            
+                            if let secondary = translation.Secondary {
+                                switch translationLanguage {
+                                case .english:
+                                    if let english = secondary.English {
+                                        Text(english)
+                                    }
+                                case .russian:
+                                    if let russian = secondary.Russian {
+                                        Text(russian)
+                                    }
+                                }
+                            }
+                        }.italic()
+                    }
                 }
             }
         }
@@ -41,7 +87,7 @@ struct RunePoemsView: View {
 
 struct RunePoemsView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleRunePoem = RunePoem(Name: "RÚNALÉOÐ", Origin: "Anglo-Saxon", Text: "Feoh biþ frófor · fira gehwilcum; sceal þéah mann gehwilc · miclan hit dælan gif hé wille for dryhtne · dómes hléotan.", Translation: RunePoemTranslations(English: "Wealth is a comfort to every man, although every man must share it out greatly if he would obtain a portion of the Lord’s glory.", Russian: "Богатство — утешение всем людям, но должен человек каждый — щедро им делиться, если он хочет перед Господом славу обрести."))
+        let sampleRunePoem = RunePoem(Name: "RÚNALÉOÐ", Origin: "Anglo-Saxon", Text: "Feoh biþ frófor · fira gehwilcum; sceal þéah mann gehwilc · miclan hit dælan gif hé wille for dryhtne · dómes hléotan.", Translation: RunePoemTranslations(English: "Wealth is a comfort to every man, although every man must share it out greatly if he would obtain a portion of the Lord’s glory.", Russian: "Богатство — утешение всем людям, но должен человек каждый — щедро им делиться, если он хочет перед Господом славу обрести."), Notes: nil)
         
         RunePoemsView(runePoem: sampleRunePoem, translationLanguage: .english)
             .environment(\.sizeCategory, .large)

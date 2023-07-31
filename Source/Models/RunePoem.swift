@@ -9,7 +9,7 @@ import Foundation
 
 struct RunePoem: Identifiable, Hashable, Decodable {
     private enum CodingKeys : String, CodingKey {
-        case Name, Origin, Text, Translation
+        case Name, Origin, Text, Translation, Notes
     }
     
     var id = UUID()
@@ -18,9 +18,21 @@ struct RunePoem: Identifiable, Hashable, Decodable {
     let Origin: String?
     let Text: String
     let Translation: RunePoemTranslations
+    let Notes: Notes?
 }
 
 struct RunePoemTranslations: Hashable, Decodable {
-    let English: String
-    let Russian: String
+    let English: String?
+    let Russian: String?
+}
+
+struct Notes: Hashable, Decodable {
+    let Primary: String
+    let Secondary: String?
+    let Translation: NoteTranslations?
+}
+
+struct NoteTranslations: Hashable, Decodable {
+    let Primary: RunePoemTranslations
+    let Secondary: RunePoemTranslations?
 }
