@@ -18,6 +18,8 @@
 		A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011C2A76E947009F495E /* RunePoemView.swift */; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
+		A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */; };
+		A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A1EF26842A77B03D00BA9F69 /* Runatal.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Runatal.xctestplan; sourceTree = "<group>"; };
 		A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = SOURCE_ROOT; };
+		A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneUnitTests.swift; sourceTree = "<group>"; };
+		A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,8 @@
 			children = (
 				A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */,
 				A1EF26842A77B03D00BA9F69 /* Runatal.xctestplan */,
+				A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */,
+				A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -268,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */,
 				A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */,
+				A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
