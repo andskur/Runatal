@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "621FAD2C-76A3-49DB-8CCB-9441FBA37046",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Runatal.xcodeproj",
+        "identifier" : "A1EF26772A77ADE600BA9F69",
+        "name" : "RunatalTests"
+      }
+    }
+  ],
+  "version" : 1
+}

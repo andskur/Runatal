@@ -1,0 +1,40 @@
+name: Run Tests
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:      
+
+jobs:
+  test:
+     runs-on: macos-13
+
+     steps:
+     - uses: actions/checkout@v2
+
+     - name: Set up Xcode
+       run: sudo xcode-select -switch /Applications/Xcode.app && /usr/bin/xcodebuild -version
+
+     - name: Build and Test
+       run: xcodebuild test -scheme Runatal -project Runatal.xcodeproj CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO
+
+  release:
+    needs:
+      - test
+    runs-on: ubuntu-22.04  
+    steps:
+      - name: Bump version and push tag
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v6.0
+        with:
+          github_token: ${{ secrets.RELEASES_ACTION_GITHUB_TOKEN }}
+
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.tag_version.outputs.new_tag }}
+          name: ${{ steps.tag_version.outputs.new_tag }}
+          body: ${{ steps.tag_version.outputs.changelog }}
+          token: ${{ secrets.RELEASES_ACTION_GITHUB_TOKEN }}
+    
