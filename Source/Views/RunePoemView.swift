@@ -41,11 +41,8 @@ struct RunePoemsView: View {
                 Text("Translate")
                 Divider()
                 
-                switch translationLanguage {
-                case .english:
-                    Text(runePoem.Translation.English!)
-                case .russian:
-                    Text(runePoem.Translation.Russian!)
+                if let runePoemTranslation = runePoem.Translation.generate(language: translationLanguage) {
+                    Text(runePoemTranslation)
                 }
                 
                 if let notes = runePoem.Notes {
@@ -54,27 +51,13 @@ struct RunePoemsView: View {
                         Section {
                             Text("Notes:")
                             
-                            switch translationLanguage {
-                            case .english:
-                                if let english = translation.Primary.English {
-                                    Text(english)
-                                }
-                            case .russian:
-                                if let russian = translation.Primary.Russian {
-                                    Text(russian)
-                                }
+                            if let notesTranslation = translation.Primary.generate(language: translationLanguage) {
+                                Text(notesTranslation)
                             }
                             
                             if let secondary = translation.Secondary {
-                                switch translationLanguage {
-                                case .english:
-                                    if let english = secondary.English {
-                                        Text(english)
-                                    }
-                                case .russian:
-                                    if let russian = secondary.Russian {
-                                        Text(russian)
-                                    }
+                                if let notesTranslation = secondary.generate(language: translationLanguage) {
+                                    Text(notesTranslation)
                                 }
                             }
                         }.italic()

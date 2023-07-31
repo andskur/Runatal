@@ -19,10 +19,24 @@ struct Rune: Identifiable, Hashable, Decodable {
     let Sound: String
     
     let RunePoems: [RunePoem]?
+    
 }
 
 
 struct Meaning: Hashable, Decodable {
     let English: [String]
     let Russian: [String]
+    
+    func generate(language: TranslationLanguage) -> String {
+        let meanings: [String]
+        
+        switch language {
+        case .english:
+            meanings = English
+        case .russian:
+            meanings = Russian
+        }
+        
+        return meanings.joined(separator: ", ")
+    }
 }

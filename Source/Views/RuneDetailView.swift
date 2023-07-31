@@ -18,13 +18,7 @@ struct RuneDetailView: View {
                 Divider()
                 Group {
                     Text(rune.Name).font(.system(size: 30))
-                    
-                    switch translationLanguage {
-                    case .english:
-                        Text(rune.Meaning.English.joined(separator: ", ").capitalized)
-                    case .russian:
-                        Text(rune.Meaning.Russian.joined(separator: ", ").capitalized)
-                    }
+                    Text(rune.Meaning.generate(language: translationLanguage).capitalized)
                 }
                 Divider()
                 Text("Sound: \(rune.Sound)")
