@@ -32,14 +32,14 @@
                 "Text": "Fé er frænda róg ok flæðar viti ok grafseiðs gata.",
                 "Translation": {
                     "English": "Wealth - source of discord among kinsmen and fire of the sea and path of the serpent.",
-                    "Russian": "Богатство — это раздор в роду, пожар во время потопа и путь змеи."
+                    "Russian": "Богатство — это раздоры родни и огонь наводненья, и путь рыбы могильной."
                 },
                 "Notes": {
                     "Primary": "Aurum fy[l]ker.",
                     "Secondary": "Aurum gull, gull er fé, fé er rúnastafr.",
                     "Translation": {
                         "Primary": {
-                            "English": "Gold leader of the war-band",
+                            "English": "Gold, leader of the war-band",
                             "Russian": "Золото. Полководец."
                         },
                         "Secondary": {
@@ -76,6 +76,28 @@
                     "English": "Dross comes from iron of bad quality; a reindeer runs often onto frozen snow.",
                     "Russian": "Шлак — от плохого железа; часто северный олень бежит по насту."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Úr er skýja grátr ok skára þverrir ok hirðis hatr.",
+                "Translation": {
+                    "English": "Shower - lamentation of the clouds and ruin of the hay-harvest and abomination of the shepherd.",
+                    "Russian": "Мóрось — плач облаков, и сокращенье прокоса и злоба пастушья."
+                },
+                "Notes": {
+                    "Primary": "Umbre c Visi.",
+                    "Secondary": "Ymber c skúr, skúr er úr, úr er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Shadow (shower?), leader.",
+                            "Russian": "Ливень. Вождь."
+                        },
+                        "Secondary": {
+                            "Russian": "Ymber — ливень, ливень — это изморось (мелкий дождь, úr), úr — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -104,6 +126,28 @@
                 "Translation": {
                     "English": "A giant is a source of torment for women; few rejoice of adversities.",
                     "Russian": "Шлак — от плохого железа; часто северный олень бежит по насту."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Þurs er kvenna kvöl ok kletta búi ok varðrúnar verr.",
+                "Translation": {
+                    "English": "Giant - torture of women and cliff-dweller and husband of a giantess.",
+                    "Russian": "Турс — пытка жен, и житель утёсов, и Ва́рдрун супруг."
+                },
+                "Notes": {
+                    "Primary": "Sat[ur]nus þengill.",
+                    "Secondary": "Fantasma er skrimsl, skrimsl er þu[rs], þ[urs] er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Saturn, ruler of the thing",
+                            "Russian": "Сатурн. Король."
+                        },
+                        "Secondary": {
+                            "Russian": "Fantasma (фантом) есть чудище, чудище — это турс (þurs), þurs — это руна."
+                        },
+                    }
                 }
             }
         ]
@@ -134,6 +178,28 @@
                     "English": "Through an estuary pass most journeys; but the sheath belongs to swords.",
                     "Russian": "Устье реки — большинства путешествий путь; как ножны мечу."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Óss er algingautr ok ásgarðs jöfurr ok valhallar vísi.",
+                "Translation": {
+                    "English": "God - aged Gautr and prince of Ásgarðr and lord of Vallhalla.",
+                    "Russian": "Ас — древний Гаут,h и Асгарда конунг, и Валгаллы вождь."
+                },
+                "Notes": {
+                    "Primary": "Jupi[ter] Oddviti.",
+                    "Secondary": "Flumen straumr, straumr er óss, óss er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Jupiter, point-leader.",
+                            "Russian": "Юпитер. Лидер."
+                        },
+                        "Secondary": {
+                            "Russian": "Flumen — поток, поток — это исток (óss), óss — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -149,7 +215,7 @@
             {
                 "Name": "RÚNALÉOÐ",
                 "Origin": "Anglo-Saxon",
-                "Text": "Rad byþ on recyde rinca gehwylcum sefte ond swiþhwæt, ðamðe sitteþ on ufan meare mægenheardum ofer milpaþas.",
+                "Text": "Reið er sitjandi sæla ok snúðig ferð ok jórs erfiði.",
                 "Translation": {
                     "English": "Riding seems easy to every warrior while he is indoors and very courageous to him who traverses the high-roads on the back of a stout horse.",
                     "Russian": "Верховая езда в чертоге воину каждому сладка, и тяжка для того, кто сидя на коне могучем, в многомильном пути."
@@ -162,6 +228,28 @@
                 "Translation": {
                     "English": "It is said that the ride is the worst thing for horses; Reginn forged the best of swords.",
                     "Russian": "Верховая езда, говорят, лошадей измучивает; Регинн e сковал меч наилучший."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Reið er sitjandi sæla ok snúðig ferð ok jórs erfiði.",
+                "Translation": {
+                    "English": "Riding joy of the horsemen and speedy journey and toil of the steed.",
+                    "Russian": "Езда верховая — сидящему счастье, и скорое странствие, и лошади труд."
+                },
+                "Notes": {
+                    "Primary": "Ite[r] Ræsir.",
+                    "Secondary": "Iter vegr, [ve]gr för, [för] [e]r reið, reið er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Journey, worthy man.",
+                            "Russian": "Путешествие. Хозяин."
+                        },
+                        "Secondary": {
+                            "Russian": "Iter — путь, путь — путешествие, поездка (reið), reið есть руна."
+                        },
+                    }
                 }
             }
         ]
@@ -191,6 +279,28 @@
                 "Translation": {
                     "English": "An ulcer dooms children; bale makes men go pale.",
                     "Russian": "Язва — детская погибель; беда делает людей бледными."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Kaun er barna böl ok bardagi ok holdfúa hús.",
+                "Translation": {
+                    "English": "Ulcer disease fatal to children and painful spot and abode of mortification.",
+                    "Russian": "Воспалённая рана — детское бедствие, и битвы [следы], и дом плоти гниющей."
+                },
+                "Notes": {
+                    "Primary": "Flag[ella] [k]onungr.",
+                    "Secondary": "Wul[nus] sár, sár er kaun, kaun er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Whip, king = descendant of good kin.",
+                            "Russian": "Кнуты. Конунг."
+                        },
+                        "Secondary": {
+                            "Russian": "Wulnus — рана, рана это язва (kaun), kaun — это руна."
+                        },
+                    }
                 }
             }
         ]
@@ -261,6 +371,28 @@
                     "English": "Hail is the coldest of grains; Christ shaped the ancient world.",
                     "Russian": "Град — холоднейшее зерно; Христос создал мир издревле."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Hagall er kaldakorn ok krapadrífa ok snáka sótt.",
+                "Translation": {
+                    "English": "Hail cold grain and shower of sleet and sickness of serpents.",
+                    "Russian": "Град — холодное зёрнышко, и льдинок поток, и змеиная бо́лесть."
+                },
+                "Notes": {
+                    "Primary": "G[ran]do Hildingr.",
+                    "Secondary": "[Niv]es er snjór, snjór er hagl, hagall er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Hail, battle leader.",
+                            "Russian": "Град. Воевода."
+                        },
+                        "Secondary": {
+                            "Russian": "Nives — это снег, снег — это град (hagl), hagall — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -289,6 +421,28 @@
                 "Translation": {
                     "English": "Need leaves few alternatives; a naked man freezes in the cold.",
                     "Russian": "Нужда создает гнетущее положение; нагому холодно в мороз."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Nauð er þýjar þrá ok þungr kostr ok vássamlig verk.",
+                "Translation": {
+                    "English": "Constraint grief of the bond-maid and state of oppression and toilsome work.",
+                    "Russian": "Нужда — тоска ра́бья, и выбор тяжёлый, и труд утомительный."
+                },
+                "Notes": {
+                    "Primary": "Opera Niflungr.",
+                    "Secondary": "Flagella er bardagi, bardagi er nauð, nauð er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Trouble, niflungr = descendant of the dead?",
+                            "Russian": "Забота. Нивлунг."
+                        },
+                        "Secondary": {
+                            "Russian": "Flagella (лат. кнуты) есть бедствие (бич), бедствие есть нужда (nauð), nauð есть руна."
+                        },
+                    }
                 }
             }
         ]
@@ -319,6 +473,28 @@
                     "English": "Ice is called the wide bridge; the blind need a guide.",
                     "Russian": "Лед зовется широким мостом; слепой нуждается в ведении за руку."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Íss er árbörkr ok unnar þak ok feigra manna fár.",
+                "Translation": {
+                    "English": "Ice bark of rivers and roof of the wave and destruction of the doomed.",
+                    "Russian": "Лёд — кора рек, и кровля волны, и беда обреченных."
+                },
+                "Notes": {
+                    "Primary": "Gl[a]cies jöfurr.",
+                    "Secondary": "[Fr]ig[us] er frost, frost er íss, íss er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Ice, one who wears the boar-helm.",
+                            "Russian": "Лёд. Вождь."
+                        },
+                        "Secondary": {
+                            "Russian": "Frigus есть мороз, мороз — это лёд (íss), íss — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -347,6 +523,28 @@
                 "Translation": {
                     "English": "Abundance makes the wellness of men; I believe Fróði was generous.",
                     "Russian": "Урожайный год — людей благо; полагаю я, что щедрым был Фроди."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Ár er gumna góði ok gott sumar ok algróinn akr.",
+                "Translation": {
+                    "English": "Plenty boon to men and good summer and thriving crops.",
+                    "Russian": "Год урожайный — благо людское, и доброе лето, и поле проросшее."
+                },
+                "Notes": {
+                    "Primary": "Annus Allvaldr.",
+                    "Secondary": "Estas er sumar, sumar er ár, ár er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Year, all-ruler.",
+                            "Russian": "Год. Вседержитель."
+                        },
+                        "Secondary": {
+                            "Russian": "Estas есть лето, лето это изобилие (ár), изобилие (ár) есть руна."
+                        },
+                    }
                 }
             }
         ]
@@ -417,6 +615,28 @@
                     "English": "ew is the greenest tree during winter; you expect it to crackle when it burns.",
                     "Russian": "Тис — самое зимой зелёное дерево; обычно пламенеет, сгорая."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Ýr er bendr bogi ok brotgjarnt járn ok fífu fárbauti.",
+                "Translation": {
+                    "English": "Yew bent bow and brittle iron and giant of the arrow.",
+                    "Russian": "Тис — изогнутый лук, и железо непрочное, и былинка n Фарбаути."
+                },
+                "Notes": {
+                    "Primary": "Arcus ynglingr.",
+                    "Secondary": "Arcus er bogi, bogi er ýr, ýr er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Bow, rainbow, descendant of Yngvi.",
+                            "Russian": "Лук. Инглинг."
+                        },
+                        "Secondary": {
+                            "Russian": "Arcus есть лук, лук — это тис (ýr), ýr — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -445,6 +665,28 @@
                 "Translation": {
                     "English": "The sun is the light of the earth; I kneel before the divine decree.",
                     "Russian": "Солнце — земли сиянье; я склоняюсь перед священным приговором."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Sól er skýja skjöldr ok skínandi röðull ok ísa aldrtregi.",
+                "Translation": {
+                    "English": "Sun shield of the clouds and shining ray and destroyer of ice.",
+                    "Russian": "Солнце — щит туч, и сияющий круг, и плач льда вековечный."
+                },
+                "Notes": {
+                    "Primary": "Rota Siklin[gr].",
+                    "Secondary": "Ignis er eldr, eldr er sól, sól er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Wheel, descendant of the victorious one.",
+                            "Russian": "Колесо. Король."
+                        },
+                        "Secondary": {
+                            "Russian": "Ignis есть огонь, огонь это солнце (sól), sól есть руна."
+                        },
+                    }
                 }
             }
         ]
@@ -475,6 +717,28 @@
                     "English": "Týr is a one-handed áss; the smith must blow often.",
                     "Russian": "Тюр — однорукий ас; часто приходится кузнецу поддувать."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Týr er einhendr áss ok úlfs leifar ok hofa hilmir.",
+                "Translation": {
+                    "English": "Týr god with one hand and leavings of the wolf and prince of temples.",
+                    "Russian": "Тюр — Ас однорукий, и волчий объедок, и капищ властитель."
+                },
+                "Notes": {
+                    "Primary": "Mars Tiggi.",
+                    "Secondary": "Jupiter er Þórr, Þórr er áss, áss er Týr, Týr er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Mars, director.",
+                            "Russian": "Марс. Знатный."
+                        },
+                        "Secondary": {
+                            "Russian": "Jupiter — это Тор, Тор есть ас, ас — это Тюр, Týr — это руна."
+                        },
+                    }
+                }
             }
         ]
     },
@@ -503,6 +767,28 @@
                 "Translation": {
                     "English": "Birch has the greenest leaves in the frond; Loki was fortunate in his deceit.",
                     "Russian": "Берёза — ветвь с самыми зелёными листьями; Локи приносит лжи удачу."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Bjarkan er laufgat lim ok lítit tré ok ungsamligr viðr.",
+                "Translation": {
+                    "English": "Birch leafy twig and little tree and fresh young shrub.",
+                    "Russian": "Берёза — ветвь в листьях, и малая поросль, и юное древо."
+                },
+                "Notes": {
+                    "Primary": "Abies Buðlungr.",
+                    "Secondary": "Flos er blóm, blóm er viðr, viðr er bjarkan, bjarkan er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Silver fir, protector.",
+                            "Russian": "Пихта. Будлинг."
+                        },
+                        "Secondary": {
+                            "Russian": "Flos есть цветок, цветок — это побег, побег — это берёза (bjarkan ), bjarkan — это руна."
+                        },
+                    }
                 }
             }
         ]
@@ -553,6 +839,24 @@
                     "English": "Man is born of the soil; strong is the hawk's grip.",
                     "Russian": "Человек — праха приплод; велик коготь у ястреба."
                 }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Maðr er manns gaman ok moldar auki ok skipa skreytir.",
+                "Translation": {
+                    "English": "Man delight of man and augmentation of the earth and adorner of ships.",
+                    "Russian": "Человек — радость людям, и земли прибавленье, и украшение судна."
+                },
+                "Notes": {
+                    "Primary": "Homo Mildingr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Human, generous one.",
+                            "Russian": "Человек. Князь."
+                        }
+                    }
+                }
             }
         ]
     },
@@ -581,6 +885,28 @@
                 "Translation": {
                     "English": "A waterfall is water falling off a mountain; but ornaments are golden.",
                     "Russian": "Влага — то, что падает из горного водопада; как золото есть сокровище."
+                }
+            },
+            {
+                "Name": "ÞRÍDEILUR RÚNALJÓÐ",
+                "Origin": "Icelandic",
+                "Text": "Lögr er vellanda vatn ok víðr ketill ok glömmunga grund.",
+                "Translation": {
+                    "English": "Water eddying stream and broad geysir and land of the fish.",
+                    "Russian": "Влага — воды бурлящие, и широкий котёл, и рыбы равнина."
+                },
+                "Notes": {
+                    "Primary": "lacus Lofð[ungr].",
+                    "Secondary": "Palus er [go]rmr, gormr er sjór, sjór er lögr, lögr er rúnastafr.",
+                    "Translation": {
+                        "Primary": {
+                            "English": "Lake, praise-worthy one.",
+                            "Russian": "Озеро. Славный, или Лофдунг."
+                        },
+                        "Secondary": {
+                            "Russian": "Palus есть ил, ил — это море, море — это влага (lögr), lögr есть руна."
+                        },
+                    }
                 }
             }
         ]
