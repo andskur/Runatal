@@ -11,6 +11,8 @@ struct RuneDetailView: View {
     let rune: Rune
     let translationLanguage: TranslationLanguage
     
+    @State private var selectedPoemIndex = 0
+    
     var body: some View {
         ScrollView {
             VStack() {
@@ -24,16 +26,17 @@ struct RuneDetailView: View {
                 Text("Sound: \(rune.Sound)")
                 Divider()
                 
-                if rune.RunePoems != nil {
-                    Section {
-                        Text("Rune Poems").font(.title)
-                        
-                        ForEach(rune.RunePoems!) { poem in
-                            RunePoemsView(runePoem: poem, translationLanguage: translationLanguage)
-                            Divider()
+                if let runePoems = rune.RunePoems, !runePoems.isEmpty {
+                    Text("Rune Poems").font(.title)
+                    
+                    Picker("", selection: $selectedPoemIndex) {
+                        ForEach(runePoems.indices, id: \.self) { index in
+                            Text(runePoems[index].Origin).tag(index)
                         }
-                        
-                    }.padding()
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    
+                    RunePoemsView(runePoem: runePoems[selectedPoemIndex], translationLanguage: translationLanguage)
                 }
             }
         }

@@ -12,59 +12,59 @@ struct RunePoemsView: View {
     let translationLanguage: TranslationLanguage
     
     var body: some View {
-        Text(runePoem.Name).font(.title2)
-        if runePoem.Origin != nil {
-            Text(runePoem.Origin!)
-        }
-        
-        HStack(alignment: .top) {
-            VStack {
-                Text("Original")
-                Divider()
-                Text(runePoem.Text)
-                
-                if let notes = runePoem.Notes {
-                    Divider()
-                    Section {
-                        Text("Notes:")
-                        Text(notes.Primary)
-                        
-                        if let secondary = notes.Secondary {
-                            Text(secondary)
-                        }
-                    
-                    }.italic()
-                }
-            }
+        VStack {
+            Text(runePoem.Name).font(.title2)
             
-            VStack {
-                Text("Translate")
-                Divider()
-                
-                if let runePoemTranslation = runePoem.Translation.generate(language: translationLanguage) {
-                    Text(runePoemTranslation)
-                }
-                
-                if let notes = runePoem.Notes {
-                    if let translation = notes.Translation {
+            HStack(alignment: .top) {
+                VStack {
+                    Text("Original")
+                    Divider()
+                    Text(runePoem.Text)
+                    
+                    if let notes = runePoem.Notes {
                         Divider()
                         Section {
                             Text("Notes:")
+                            Text(notes.Primary)
                             
-                            if let notesTranslation = translation.Primary.generate(language: translationLanguage) {
-                                Text(notesTranslation)
+                            if let secondary = notes.Secondary {
+                                Text(secondary)
                             }
                             
-                            if let secondary = translation.Secondary {
-                                if let notesTranslation = secondary.generate(language: translationLanguage) {
+                        }.italic()
+                    }
+                }
+                
+                VStack {
+                    Text("Translate")
+                    Divider()
+                    
+                    if let runePoemTranslation = runePoem.Translation.generate(language: translationLanguage) {
+                        Text(runePoemTranslation)
+                    }
+                    
+                    if let notes = runePoem.Notes {
+                        if let translation = notes.Translation {
+                            Divider()
+                            Section {
+                                Text("Notes:")
+                                
+                                if let notesTranslation = translation.Primary.generate(language: translationLanguage) {
                                     Text(notesTranslation)
                                 }
-                            }
-                        }.italic()
+                                
+                                if let secondary = translation.Secondary {
+                                    if let notesTranslation = secondary.generate(language: translationLanguage) {
+                                        Text(notesTranslation)
+                                    }
+                                }
+                            }.italic()
+                        }
                     }
                 }
             }
         }
+        .padding()
     }
 }
 

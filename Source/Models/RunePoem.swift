@@ -15,7 +15,7 @@ struct RunePoem: Identifiable, Hashable, Decodable {
     var id = UUID()
     
     let Name: String
-    let Origin: String?
+    let Origin: String
     let Text: String
     let Translation: RunePoemTranslations
     let Notes: Notes?
