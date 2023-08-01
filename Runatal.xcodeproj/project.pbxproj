@@ -20,6 +20,13 @@
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 		A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */; };
 		A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */; };
+		A1EF26942A794E1800BA9F69 /* RunatalWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */; };
+		A1EF26962A794E1800BA9F69 /* RunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26952A794E1800BA9F69 /* RunesListView.swift */; };
+		A1EF26982A794E1900BA9F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26972A794E1900BA9F69 /* Assets.xcassets */; };
+		A1EF26BB2A794E9200BA9F69 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01162A76CF40009F495E /* Rune.swift */; };
+		A1EF26BC2A794E9600BA9F69 /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
+		A1EF26BD2A794E9A00BA9F69 /* RunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01142A76CF3A009F495E /* RunesController.swift */; };
+		A1EF26BE2A7950D600BA9F69 /* ElderFuthark.json in Resources */ = {isa = PBXBuildFile; fileRef = A13E01102A76CD1D009F495E /* ElderFuthark.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = SOURCE_ROOT; };
 		A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneUnitTests.swift; sourceTree = "<group>"; };
 		A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemUnitTests.swift; sourceTree = "<group>"; };
+		A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunatalWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
+		A1EF26952A794E1800BA9F69 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
+		A1EF26972A794E1900BA9F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1EF26A42A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppTests.swift; sourceTree = "<group>"; };
+		A1EF26AE2A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		A1EF26B02A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +82,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1EF268E2A794E1800BA9F69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +100,9 @@
 				A1EF26732A77ADBF00BA9F69 /* Tests */,
 				A13E010D2A76CCE3009F495E /* Assets */,
 				A13E010B2A76BF7C009F495E /* Source */,
+				A1EF26922A794E1800BA9F69 /* RunatalWatchOs Watch App */,
+				A1EF26A32A794E1A00BA9F69 /* RunatalWatchOs Watch AppTests */,
+				A1EF26AD2A794E1A00BA9F69 /* RunatalWatchOs Watch AppUITests */,
 				A13E00DE2A76BED6009F495E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +112,7 @@
 			children = (
 				A13E00DD2A76BED6009F495E /* Runatal.app */,
 				A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */,
+				A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +184,33 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
+		A1EF26922A794E1800BA9F69 /* RunatalWatchOs Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */,
+				A1EF26952A794E1800BA9F69 /* RunesListView.swift */,
+				A1EF26972A794E1900BA9F69 /* Assets.xcassets */,
+			);
+			path = "RunatalWatchOs Watch App";
+			sourceTree = "<group>";
+		};
+		A1EF26A32A794E1A00BA9F69 /* RunatalWatchOs Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF26A42A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppTests.swift */,
+			);
+			path = "RunatalWatchOs Watch AppTests";
+			sourceTree = "<group>";
+		};
+		A1EF26AD2A794E1A00BA9F69 /* RunatalWatchOs Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1EF26AE2A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITests.swift */,
+				A1EF26B02A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "RunatalWatchOs Watch AppUITests";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -197,6 +249,23 @@
 			productReference = A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A1EF26902A794E1800BA9F69 /* RunatalWatchOs Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1EF26B22A794E1A00BA9F69 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */;
+			buildPhases = (
+				A1EF268D2A794E1800BA9F69 /* Sources */,
+				A1EF268E2A794E1800BA9F69 /* Frameworks */,
+				A1EF268F2A794E1800BA9F69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RunatalWatchOs Watch App";
+			productName = "RunatalWatchOs Watch App";
+			productReference = A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -213,6 +282,9 @@
 					A1EF26772A77ADE600BA9F69 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = A13E00DC2A76BED6009F495E;
+					};
+					A1EF26902A794E1800BA9F69 = {
+						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -231,6 +303,7 @@
 			targets = (
 				A13E00DC2A76BED6009F495E /* Runatal */,
 				A1EF26772A77ADE600BA9F69 /* RunatalTests */,
+				A1EF26902A794E1800BA9F69 /* RunatalWatchOs Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +323,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1EF268F2A794E1800BA9F69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EF26BE2A7950D600BA9F69 /* ElderFuthark.json in Resources */,
+				A1EF26982A794E1900BA9F69 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +359,18 @@
 				A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */,
 				A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */,
 				A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1EF268D2A794E1800BA9F69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1EF26BC2A794E9600BA9F69 /* RunePoem.swift in Sources */,
+				A1EF26BB2A794E9200BA9F69 /* Rune.swift in Sources */,
+				A1EF26962A794E1800BA9F69 /* RunesListView.swift in Sources */,
+				A1EF26BD2A794E9A00BA9F69 /* RunesController.swift in Sources */,
+				A1EF26942A794E1800BA9F69 /* RunatalWatchOsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,6 +616,67 @@
 			};
 			name = Release;
 		};
+		A1EF26B32A794E1A00BA9F69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A1EF26B42A794E1A00BA9F69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -548,6 +703,15 @@
 			buildConfigurations = (
 				A1EF267F2A77ADE600BA9F69 /* Debug */,
 				A1EF26802A77ADE600BA9F69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1EF26B22A794E1A00BA9F69 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1EF26B32A794E1A00BA9F69 /* Debug */,
+				A1EF26B42A794E1A00BA9F69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
