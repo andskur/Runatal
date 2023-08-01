@@ -62,9 +62,6 @@
 		A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
 		A1EF26952A794E1800BA9F69 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
 		A1EF26972A794E1900BA9F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A1EF26A42A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppTests.swift; sourceTree = "<group>"; };
-		A1EF26AE2A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppUITests.swift; sourceTree = "<group>"; };
-		A1EF26B02A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOs_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,9 +97,7 @@
 				A1EF26732A77ADBF00BA9F69 /* Tests */,
 				A13E010D2A76CCE3009F495E /* Assets */,
 				A13E010B2A76BF7C009F495E /* Source */,
-				A1EF26922A794E1800BA9F69 /* RunatalWatchOs Watch App */,
-				A1EF26A32A794E1A00BA9F69 /* RunatalWatchOs Watch AppTests */,
-				A1EF26AD2A794E1A00BA9F69 /* RunatalWatchOs Watch AppUITests */,
+				A1EF26922A794E1800BA9F69 /* WatchOsApp */,
 				A13E00DE2A76BED6009F495E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -184,31 +179,14 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		A1EF26922A794E1800BA9F69 /* RunatalWatchOs Watch App */ = {
+		A1EF26922A794E1800BA9F69 /* WatchOsApp */ = {
 			isa = PBXGroup;
 			children = (
 				A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */,
 				A1EF26952A794E1800BA9F69 /* RunesListView.swift */,
 				A1EF26972A794E1900BA9F69 /* Assets.xcassets */,
 			);
-			path = "RunatalWatchOs Watch App";
-			sourceTree = "<group>";
-		};
-		A1EF26A32A794E1A00BA9F69 /* RunatalWatchOs Watch AppTests */ = {
-			isa = PBXGroup;
-			children = (
-				A1EF26A42A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppTests.swift */,
-			);
-			path = "RunatalWatchOs Watch AppTests";
-			sourceTree = "<group>";
-		};
-		A1EF26AD2A794E1A00BA9F69 /* RunatalWatchOs Watch AppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A1EF26AE2A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITests.swift */,
-				A1EF26B02A794E1A00BA9F69 /* RunatalWatchOs_Watch_AppUITestsLaunchTests.swift */,
-			);
-			path = "RunatalWatchOs Watch AppUITests";
+			path = WatchOsApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
