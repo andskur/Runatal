@@ -6,6 +6,20 @@
 //
 
 import Foundation
+import CoreData
+
+public class RunePoem: NSManagedObject, Identifiable {
+    @NSManaged public var id: UUID
+    @NSManaged public var name: String
+    @NSManaged public var origin: String
+    @NSManaged public var strophes: NSSet?
+    
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        self.id = UUID()
+    }
+}
+
 
 // Struct to represent a rune poem
 struct RunePoemOld: Identifiable, Hashable, Decodable {

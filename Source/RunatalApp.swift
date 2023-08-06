@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct RunatalApp: App {
     init() {
-        DataMigration.migrateRunes()
+        DataMigration.migrateAll()
     }
     
     var body: some Scene {

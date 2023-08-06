@@ -26,6 +26,7 @@ class RunesController: ObservableObject {
     // Initializer to load the runes data when a new instance of RunesController is created
     init() {
         loadRunesData()
+//        loadPoems()
     }
     
     // Function to load the runes data from the JSON file
@@ -36,13 +37,43 @@ class RunesController: ObservableObject {
 
         do {
             let results = try context.fetch(request)
-            for r in results {
-                print(r.name)
-                print(r.meaning.english)
-                print(r.id)
-            }
+//            for r in results {
+//                print(r.name)
+//                print(r.meaning.english)
+
+//                if let strophes = r.strophes as? Set<Strophe> {
+//                    for s in strophes {
+//                        print(s.runePoem.name)
+//                        print(s.text)
+//                        print(s.translation.english)
+//                    }
+//                }
+//            }
 
             loadedRunes = results
+        }
+        catch let error as NSError{
+            fatalError("Failed to load database: \(error)")
+        }
+    }
+    
+    func loadPoems() {
+        let request : NSFetchRequest<RunePoem> = NSFetchRequest(entityName: "RunePoem")
+        
+        do {
+            let results = try context.fetch(request)
+            for r in results {
+                print(r.name)
+                print(r.origin)
+                
+                if let strophes = r.strophes as? Set<Strophe> {
+                    for s in strophes {
+                        print(s.text)
+                        print(s.translation.english)
+                    }
+                }
+            }
+
         }
         catch let error as NSError{
             fatalError("Failed to load database: \(error)")

@@ -76,7 +76,7 @@ struct ContentView: View {
             let isiPhone =  UIDevice.current.userInterfaceIdiom.rawValue == 0 ? true : false
             
             if !isiPhone {
-                selectedRuneNew = controller.loadedRunes[0]
+                selectedRune = controller.loadedRunes[0]
             }
             #endif
         }

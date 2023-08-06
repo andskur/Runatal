@@ -1,0 +1,310 @@
+[
+    {
+      "name": "RÚNALÉOÐ",
+      "origin": "Anglo-Saxon",
+      "strophes": [
+        {
+          "text": "ᚠ Feoh byþ frofur · fira gehwylcum · sceal ðeah manna gehwylc · miclun hyt dælan · gif he wile · for drihtne domes hleotan :·",
+          "translation": {
+            "english": "Wealth is a comfort to all men; yet must every man bestow it freely, if he wish to gain honour in the sight of the Lord.",
+            "russian": "Богатство — утешение всем людям, но должен человек каждый — щедро им делиться, если он хочет перед Господом славу обрести."
+          },
+          "index": 1,
+          "runes": ["ᚠ"]
+        },
+        {
+          "text": "ᚢ Ur býþ anmod · ond oferhýrned · felafrecne · deor feohteþ · mid hornum mære morstapa · þæt is modig wuht :·",
+          "translation": {
+            "english": "The aurochs is proud and has great horns; it is a very savage beast and fights with its horns; a great ranger of the moors, it is a creature of mettle.",
+            "russian": "Тур яр и великорог, свирепейший зверь, сражается рогами прославленный скиталец пустошей. Это отважное существо."
+          },
+          "index": 2,
+          "runes": ["ᚢ"]
+        },
+        {
+          "text": "ᚦ Ðorn býþ ðearle scearp · ðegna gehwýlcum · anfeng ýs ýfýl · ungemetum reþe manna gehwelcum · ðe him mid resteð :·",
+          "translation": {
+            "english": "The thorn is exceedingly sharp, an evil thing for any knight to touch, uncommonly severe on all who sit among them.",
+            "russian": "Шип (терн?) — жестоко остр, тану каждому схватившемуся — он зло, безмерно суров к человеку любому, что на нём отдыхает."
+          },
+          "index": 3,
+          "runes": ["ᚦ"]
+        },
+        {
+          "text": "ᚩ Os býþ ordfruma · ælere spræce · wisdomes wraþu · ond witena frofur · and eorla gehwam · eadnýs ond tohiht :·",
+          "translation": {
+            "english": "The mouth is the source of all language, a pillar of wisdom and a comfort to wise men, a blessing and a joy to every knight.",
+            "russian": "Бог (Ас) — источник (князь) всей речи, опора мудрости и утешение мудрецам, и каждому эрлу — благо и надежда."
+          },
+          "index": 4,
+          "runes": ["ᚨ"]
+        },
+        {
+          "text": "ᚱ Rad býþ on recýde · rinca gehwýlcum · sefte and swiþhwæt · ðamðe sitteþ on ufan · meare mægenheardum · ofer milpaþas :·",
+          "translation": {
+            "english": "Riding seems easy to every warrior while he is indoors and very courageous to him who traverses the high-roads on the back of a stout horse.",
+            "russian": "Верховая езда в чертоге воину каждому сладка, и тяжка для того, кто сидя на коне могучем, в многомильном пути."
+          },
+          "index": 5,
+          "runes": ["ᚱ"]
+        },
+        {
+          "text": "ᚳ Cen býþ cwicera gehwam cuþ on fýre blac ond beorhtlic býrneþ oftust ðær hi æþelingas inne restaþ :·",
+          "translation": {
+            "english": "The torch is known to every living man by its pale, bright flame; it always burns where princes sit within.",
+            "russian": "Факел всем живым существам известен огнем яркий и ясный — горит чаще всего там, где этелинги отдыхают дома."
+          },
+          "index": 6,
+          "runes": ["ᚲ"]
+        },
+        {
+          "text": "ᚷ Gyfu gumena býþ gleng and herenýs · wraþu and wýrþscýpe and wræcna gehwam ar and ætwist ðe byþ oþra leas :·",
+          "translation": {
+            "english": "Generosity brings credit and honour, which support one's dignity; it furnishes help and subsistence to all broken men who are devoid of aught else.",
+            "russian": "Дар для людей — честь и хвала, поддержка и почет, и бродяге любому милость и средства к существованию, которых иначе он лишен."
+          },
+          "index": 7,
+          "runes": ["ᚷ"]
+        },
+        {
+          "text": "ᚹ Wenne bruceþ ðe can weana lýt sares and sorge and him sýlfa hæfþ blæd and blýsse and eac býrga geniht :·",
+          "translation": {
+            "english": "Bliss he enjoys who knows not suffering, sorrow nor anxiety, and has prosperity and happiness and a good enough house.",
+            "russian": "Радостью наслаждается тот, кто знает мало бед, страданий и тревог. И сам имеет процветание и блаженство и достаточно крепкую обитель."
+          },
+          "index": 8,
+          "runes": ["ᚹ"]
+        },
+        {
+          "text": "ᚻ Hægl býþ hwitust corna · ᚼ hwýrft hit of heofones lýfte · ᚺ wealcaþ hit windes scura · weorþeþ hit to wætere sýððan :·",
+          "translation": {
+            "english": "Hail is the whitest of grain; it is whirled from the vault of heaven and is tossed about by gusts of wind and then it melts into water.",
+            "russian": "Град — белейшее зерно, выпадает оно с небесной выси, мечут его бури с ливнями, обращается оно в воду затем."
+          },
+          "index": 9,
+          "runes": ["ᚺ"]
+        },
+        {
+          "text": "ᚾ Nyd býþ nearu on breostan · weorþeþ hi þeah oft niþa bearnum to helpe and to hæle gehwæþre gif hi his hlýstaþ æror :·",
+          "translation": {
+            "english": "Trouble is oppressive to the heart; yet often it proves a source of help and salvation to the children of men, to everyone who heeds it betimes.",
+            "russian": "Нужда тесна на груди, но становится она часто сынам человеческим и в помощь, и в спасение — если она услышана заранее."
+          },
+          "index": 10,
+          "runes": ["ᚾ"]
+        },
+        {
+          "text": "ᛁ Is býþ ofereald ungemetum slidor, glisnaþ glæshluttur gimmum gelicust · flor forste geworuht fæger ansýne :·",
+          "translation": {
+            "english": "Ice is very cold and immeasurably slippery; it glistens as clear as glass and most like to gems; it is a floor wrought by the frost, fair to look upon.",
+            "russian": "Лёд очень холоден, безмерно скользок, сияет ясным стеклом, подобно драгоценностям, настил, морозом созданный, прекрасен и видом."
+          },
+          "index": 11,
+          "runes": ["ᛁ"]
+        },
+        {
+          "text": "ᛄ Ger býþ gumena hiht ðonne God læteþ halig heofones cýning hrusan sýllan beorhte bleda beornum ond ðearfum :·",
+          "translation": {
+            "english": "Summer is a joy to men, when God, the holy King of Heaven, suffers the earth to bring forth shining fruits for rich and poor alike.",
+            "russian": "Год — людям надежда, если Бог позволит, святой небесный конунг, земле дать славные плоды и благородным, и бедным."
+          },
+          "index": 12,
+          "runes": ["ᛃ"]
+        },
+        {
+          "text": "ᛇ Eoh býþ utan unsmeþe treow · heard hrusan fæst hýrde fýres · wýrtrumun underwreþýd wýn on eþle :·",
+          "translation": {
+            "english": "The yew is a tree with rough bark, hard and fast in the earth, supported by its roots, a guardian of flame and a joy upon an estate.",
+            "russian": "Тис снаружи — грубое дерево, стоек в земле и крепок, хранитель огня, корнями укреплен — радость вотчины."
+          },
+          "index": 13,
+          "runes": ["ᛇ"]
+        },
+        {
+          "text": "ᛈ Peorð býþ sýmble 14 plega · and hlehter wlancum [on middum] ðar wigan sittaþ on beorsele bliþe ætsomne :·",
+          "translation": {
+            "english": "Peorth is a source of recreation and amusement to the great, where warriors sit blithely together in the banqueting-hall.",
+            "russian": "Peorþ — вечно игра и смех гордых (…), где бойцы сидят в пивном чертоге, счастливы вместе."
+          },
+          "index": 14,
+          "runes": ["ᛈ"]
+        },
+        {
+          "text": "ᛉ Eolhx sec[g] eard hæfþ oftust on fenne · wexeð on wature wundaþ grimme · blode breneð beorna gehwylcne · ðe him ænigne onfeng gedeþ :·",
+          "translation": {
+            "english": "The Eolh-sedge is mostly to be found in a marsh; it grows in the water and makes a ghastly wound, covering with blood every warrior who touches it.",
+            "russian": "Лось — осока живет чаще всего на болоте, растет в воде, ранит жестоко кровью красит (жжет, освещает) человека каждого который ее, так или иначе, схватить дерзнет."
+          },
+          "index": 15,
+          "runes": ["ᛉ"]
+        },
+        {
+          "text": "ᛋ Sigel semannum sýmble biþ on hihte ðonne hi hine feriaþ ofer fisces beþ oþ hi brimhengest bringeþ to lande :·",
+          "translation": {
+            "english": "The sun is ever a joy in the hopes of seafarers when they journey away over the fishes' bath, until the courser of the deep bears them to land.",
+            "russian": "Солнце морякам всегда в радость, когда они идут над купальней рыб, пока морского скакуна к земле не приведут."
+          },
+          "index": 16,
+          "runes": ["ᛋ"]
+        },
+        {
+          "text": "ᛏ Tir biþ tacna sum healdeð trýwa wel · wiþ æþelingas a biþ on færýlde · ofer nihta genipu · næfre swiceþ :·",
+          "translation": {
+            "english": "Tiw is a guiding star; well does it keep faith with princes; it is ever on its course over the mists of night and never fails.",
+            "russian": "Тир — некое знамение. Хранит ряд хорошо с этелингами. Вечно в пути над ночной мглой, никогда не обманет."
+          },
+          "index": 17,
+          "runes": ["ᛏ"]
+        },
+        {
+          "text": "ᛒ Beorc býþ bleda leas · bereþ efne swa ðeah tanas butan tudder · biþ on telgum wlitig · heah on helme hrýsted fægere · geloden leafum lýfte getenge :·",
+          "translation": {
+            "english": "The poplar bears no fruit; yet without seed it brings forth suckers, for it is generated from its leaves. Splendid are its branches and gloriously adorned its lofty crown which reaches to the skies.",
+            "russian": "Береза лишена цветов (плодов), но рождает даже так побеги бесплодные, ветвями красива, высока кроной, украшенной дивно, нагруженной листьями, к небу близкой."
+          },
+          "index": 18,
+          "runes": ["ᛒ"]
+        },
+        {
+          "text": "ᛖ Eh býþ for eorlum æþelinga wýn · hors hofum wlanc · ðær him hæleþ ýmb[e] · welege on wicgum wrixlaþ spræce · and biþ unstýllum æfre frofur :·",
+          "translation": {
+            "english": "The horse is a joy to princes in the presence of warriors. A steed in the pride of its hoofs, when rich men on horseback bandy words about it; and it is ever a source of comfort to the restless.",
+            "russian": "Конь перед эрлами — этелингов радость, конь копытами горд — когда о нем герои богатые на скакунах обмениваются речами. И беспокойным он — всегда утешенье."
+          },
+          "index": 19,
+          "runes": ["ᛖ"]
+        },
+        {
+          "text": "ᛗ Man býþ on mýrgþe his magan leof: sceal þeah anra gehwýlc oðrum swican · forðum drihten wýle · dome sine þæt earme flæsc · eorþan betæcan :·",
+          "translation": {
+            "english": "The joyous man is dear to his kinsmen; yet every man is doomed to fail his fellow, since the Lord by his decree will commit the vile carrion to the earth.",
+            "russian": "Человек — счастлив, родне своей люб, но должен каждый прочих покинуть потому, что волей Господа, его повелением, эта жалкая плоть земле будет предана."
+          },
+          "index": 20,
+          "runes": ["ᛗ"]
+        },
+        {
+          "text": "ᛚ Lagu býþ leodum langsum geþuht, gif hi sculun neþan on nacan tealtum · and hi sæýþa swýþe bregaþ · and se brimhengest bridles ne gým[eð] :·",
+          "translation": {
+            "english": "The ocean seems interminable to men, if they venture on the rolling bark and the waves of the sea terrify them and the courser of the deep heed not its bridle.",
+            "russian": "Море — людям бесконечным мыслиться если они должны пуститься на ладье неустойчивой и волны морские их сильно страшат и морской жеребец узде неподвластен."
+          },
+          "index": 21,
+          "runes": ["ᛚ"]
+        },
+        {
+          "text": "ᛝ Ing wæs ærest mid east denum · gesewen secgun · oþ he siððan est · ofer wæg gewat wæn æfter ran · ðus heardingas ðone hæle nemdun :·",
+          "translation": {
+            "english": "Ing was first seen by men among the East-Danes, till, followed by his chariot, he departed eastwards over the waves. So the Heardingas named the hero.",
+            "russian": "Инг был первым среди восточных данов увиденный людьми, пока он вновь по волнам удалился, колесница следом мчалась. Так храбрецы его героем именуют."
+          },
+          "index": 22,
+          "runes": ["ᛜ"]
+        },
+        {
+          "text": "ᛟ Eþel býþ oferleof · æghwýlcum men · gif he mot ðær · rihtes and gerýsena on brucan on bolde bleadum oftast :·",
+          "translation": {
+            "english": "An estate is very dear to every man, if he can enjoy there in his house whatever is right and proper in constant prosperity.",
+            "russian": "Вотчина очень люба любому человеку, если он может по праву и надлежащим образом хозяйничать в доме — чаще всего в процветании."
+          },
+          "index": 23,
+          "runes": ["ᛟ"]
+        },
+        {
+          "text": "ᛞ Dæg býþ drihtnes sond · deore mannum · mære metodes leoht · mýrgþ and tohiht eadgum and earmum · eallum brice :·",
+          "translation": {
+            "english": "Day, the glorious light of the Creator, is sent by the Lord; it is beloved of men, a source of hope and happiness to rich and poor, and of service to all.",
+            "russian": "День — господний посланник, дорогой людям великий свет судьбы — счастье и надежда благополучным и нищим — всем на пользу (радость)."
+          },
+          "index": 24,
+          "runes": ["ᛞ"]
+        },
+        {
+          "text": "ᚪ Ac býþ on eorþan · elda bearnum · flæsces fodor fereþ gelome ofer ganotes bæþ garsecg fandaþ · hwæþer ac hæbbe æþele treowe :·",
+          "translation": {
+            "english": "The oak fattens the flesh of pigs for the children of men. Often it traverses the gannet's bath, and the ocean proves whether the oak keeps faith in honourable fashion.",
+            "russian": "Дуб на земле сынам человеческим плоти питание (футляр) — странствует часто по купальне бакланов. Копьеносец (море) испытывает имеет ли дуб благородную верность."
+          },
+          "index": 25
+        },
+        {
+          "text": "ᚫ Æsc biþ oferheah · eldum dýre · stiþ on staþule · stede rihte hýlt · ðeah him feohtan on firas monige :·",
+          "translation": {
+            "english": "The ash is exceedingly high and precious to men. With its sturdy trunk it offers a stubborn resistance, though attacked by many a man.",
+            "russian": "Ясень — очень высок, людям дорог тверд стволом место правое держит хотя и воют с ним люди многие."
+          },
+          "index": 26
+        },
+        {
+          "text": "ᚣ Ýr býþ æþelinga and eorla gehwæs · wýn and wýrþmýnd · býþ on wicge fæger fæstlic on færelde · fýrdgeatewa sum :·",
+          "translation": {
+            "english": "Yr is a source of joy and honour to every prince and knight; it looks well on a horse and is a reliable equipment for a journey.",
+            "russian": "Лук для этелингов и эорлов всех радость и почет — на коне прекрасен надежен в пути, военное снаряжение (оружие)."
+          },
+          "index": 27
+        },
+        {
+          "text": "ᛡIor býþ eafix and ðeah a bruceþ · fodres on foldan · hafaþ fægerne eard · wætre beworpen ær he wýnnum leofaþ :·",
+          "translation": {
+            "english": "Iar is a river fish and yet it always feeds on land; it has a fair abode encompassed by water, where it lives in happiness.",
+            "russian": "Змей?, угорь? — рыба речная — но всегда наслаждается пищей на суше. Имеет прекрасную обитель водой окруженную, там он в радости живет."
+          },
+          "index": 28
+        },
+        {
+          "text": "ᛠEar býþ egle eorla gehwýlcun ðonn[e] fæstlice flæsc onginneþ hraw colian hrusan ceosan blac to gebeddan bleda gedreosaþ wýnna gewitaþ wera geswicaþ :·",
+          "translation": {
+            "english": "The grave is horrible to every knight, when the corpse quickly begins to cool and is laid in the bosom of the dark earth. Prosperity declines, happiness passes away and covenants are broken.",
+            "russian": "Земля (могильная) ужасна эорлам всем когда быстро плоть начинает — труп — остывать, землю выбирать черную в любовницы. Плоды опадают радость уходит, узы дружбы разрушаются."
+          },
+          "index": 29
+        }
+      ]
+    },
+    {
+      "name": "RUNAKVÆDI",
+      "origin": "Norwegian",
+      "strophes": [
+        {
+          "text": "ᚠ (fé) vældr frænda róge; fóðesk ulfr í skóge.",
+          "translation": {
+            "english": "Wealth is cause of strife among kin; the wolf is born in the forest.",
+            "russian": "Богатство вызывает раздор родичей; волк кормится в лесу."
+          },
+          "index": 1,
+          "runes": ["ᚠ"]
+        },
+        {
+          "text": "Text of the Second Strophe",
+          "translation": {
+            "english": "English Translation",
+            "russian": "Russian Translation"
+          },
+          "index": 2
+        }
+      ]
+    },
+    {
+      "name": "ÞRÍDEILUR RÚNALJÓÐ",
+      "origin": "Icelandic",
+      "strophes": [
+        {
+          "text": "ᚠ (fé) er frænda róg ok flæðar viti ok grafseiðs gata.",
+          "translation": {
+            "english": "Wealth - source of discord among kinsmen and fire of the sea and path of the serpent.",
+            "russian": "Богатство — это раздоры родни и огонь наводненья, и путь рыбы могильной."
+          },
+          "index": 1,
+          "runes": ["ᚠ"]
+        },
+        {
+          "text": "Text of the Second Strophe",
+          "translation": {
+            "english": "English Translation",
+            "russian": "Russian Translation"
+          },
+          "index": 2
+        }
+      ]
+    }
+  ]

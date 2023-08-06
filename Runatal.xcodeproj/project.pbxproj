@@ -16,6 +16,8 @@
 		A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01182A76DDA0009F495E /* RuneDetailView.swift */; };
 		A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
 		A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011C2A76E947009F495E /* RunePoemView.swift */; };
+		A14E27BA2A80590300DAC15E /* RuneStrophesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27B92A80590300DAC15E /* RuneStrophesView.swift */; };
+		A14E27BC2A805BCD00DAC15E /* StropheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27BB2A805BCD00DAC15E /* StropheView.swift */; };
 		A153C74B2A7980F600B055B1 /* RunatalWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */; };
 		A153C74D2A7980F600B055B1 /* RunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74C2A7980F600B055B1 /* RunesListView.swift */; };
 		A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A153C74E2A7980F700B055B1 /* Assets.xcassets */; };
@@ -30,6 +32,10 @@
 		A199F6142A7FEE0600168F01 /* DataMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6122A7FEE0600168F01 /* DataMigration.swift */; };
 		A199F6162A7FEEC400168F01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6152A7FEEC400168F01 /* CoreDataManager.swift */; };
 		A199F6172A7FEEC400168F01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6152A7FEEC400168F01 /* CoreDataManager.swift */; };
+		A199F6192A80199000168F01 /* Strophe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6182A80199000168F01 /* Strophe.swift */; };
+		A199F61A2A80199000168F01 /* Strophe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6182A80199000168F01 /* Strophe.swift */; };
+		A199F61C2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
+		A199F61D2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 		A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */; };
@@ -80,6 +86,8 @@
 		A13E01182A76DDA0009F495E /* RuneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneDetailView.swift; sourceTree = "<group>"; };
 		A13E011A2A76E73F009F495E /* RunePoem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoem.swift; sourceTree = "<group>"; };
 		A13E011C2A76E947009F495E /* RunePoemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemView.swift; sourceTree = "<group>"; };
+		A14E27B92A80590300DAC15E /* RuneStrophesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneStrophesView.swift; sourceTree = "<group>"; };
+		A14E27BB2A805BCD00DAC15E /* StropheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StropheView.swift; sourceTree = "<group>"; };
 		A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunatalWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
 		A153C74C2A7980F600B055B1 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
@@ -87,6 +95,8 @@
 		A199F60A2A7FD6A100168F01 /* RunatalModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunatalModel.xcdatamodel; sourceTree = "<group>"; };
 		A199F6122A7FEE0600168F01 /* DataMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMigration.swift; sourceTree = "<group>"; };
 		A199F6152A7FEEC400168F01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A199F6182A80199000168F01 /* Strophe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strophe.swift; sourceTree = "<group>"; };
+		A199F61B2A802CC600168F01 /* RunePoems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RunePoems.json; sourceTree = "<group>"; };
 		A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunatalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesControllerTests.swift; sourceTree = "<group>"; };
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -168,6 +178,8 @@
 				A13E00E22A76BED6009F495E /* RunesView.swift */,
 				A13E01182A76DDA0009F495E /* RuneDetailView.swift */,
 				A13E011C2A76E947009F495E /* RunePoemView.swift */,
+				A14E27B92A80590300DAC15E /* RuneStrophesView.swift */,
+				A14E27BB2A805BCD00DAC15E /* StropheView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -176,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				A13E01102A76CD1D009F495E /* ElderFuthark.json */,
+				A199F61B2A802CC600168F01 /* RunePoems.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -185,6 +198,7 @@
 			children = (
 				A13E01162A76CF40009F495E /* Rune.swift */,
 				A13E011A2A76E73F009F495E /* RunePoem.swift */,
+				A199F6182A80199000168F01 /* Strophe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -341,6 +355,7 @@
 				A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */,
 				A13E01112A76CD1D009F495E /* ElderFuthark.json in Resources */,
 				A1EF26C02A79649100BA9F69 /* README.md in Resources */,
+				A199F61C2A802CC600168F01 /* RunePoems.json in Resources */,
 				A13E00E52A76BED7009F495E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +364,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A199F61D2A802CC600168F01 /* RunePoems.json in Resources */,
 				A153C7592A7981A600B055B1 /* ElderFuthark.json in Resources */,
 				A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */,
 			);
@@ -368,8 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A199F6192A80199000168F01 /* Strophe.swift in Sources */,
 				A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */,
 				A199F60B2A7FD6A100168F01 /* RunatalModel.xcdatamodeld in Sources */,
+				A14E27BC2A805BCD00DAC15E /* StropheView.swift in Sources */,
 				A13E01152A76CF3A009F495E /* RunesController.swift in Sources */,
 				A13E00E32A76BED6009F495E /* RunesView.swift in Sources */,
 				A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */,
@@ -377,6 +395,7 @@
 				A13E01172A76CF41009F495E /* Rune.swift in Sources */,
 				A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */,
 				A199F6162A7FEEC400168F01 /* CoreDataManager.swift in Sources */,
+				A14E27BA2A80590300DAC15E /* RuneStrophesView.swift in Sources */,
 				A199F6132A7FEE0600168F01 /* DataMigration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +412,7 @@
 				A199F6142A7FEE0600168F01 /* DataMigration.swift in Sources */,
 				A199F6172A7FEEC400168F01 /* CoreDataManager.swift in Sources */,
 				A153C75B2A7981AB00B055B1 /* Rune.swift in Sources */,
+				A199F61A2A80199000168F01 /* Strophe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

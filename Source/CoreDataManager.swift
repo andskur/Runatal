@@ -11,9 +11,12 @@ class CoreDataManager {
     static let shared = CoreDataManager()
     
     init() {
-        // Register the custom transformer
-        let transformer = TranslationToDataTransformer()
-        ValueTransformer.setValueTransformer(transformer, forName: NSValueTransformerName("TranslationToDataTransformer"))
+        // Register the custom transformers
+        let meaningTransformer = MeaningTranslationToDataTransformer()
+        ValueTransformer.setValueTransformer(meaningTransformer, forName: NSValueTransformerName("MeaningTranslationToDataTransformer"))
+        
+        let translationTransformer = TranslationToDataTransformer()
+        ValueTransformer.setValueTransformer(translationTransformer, forName: NSValueTransformerName("TranslationToDataTransformer"))
     }
     
     lazy var persistentContainer: NSPersistentContainer = {
@@ -39,6 +42,28 @@ class CoreDataManager {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+}
+
+@objc(MeaningTranslationToDataTransformer)
+class MeaningTranslationToDataTransformer: ValueTransformer {
+    // Convert MeaningTranslation to Data
+    override func transformedValue(_ value: Any?) -> Any? {
+        guard let translation = value as? MeaningTranslation else { return nil }
+        return try? NSKeyedArchiver.archivedData(withRootObject: translation, requiringSecureCoding: false)
+    }
+
+    // Convert Data to MeaningTranslation
+    override func reverseTransformedValue(_ value: Any?) -> Any? {
+        guard let data = value as? Data else { return nil }
+        
+        do {
+            let unarchiver = try NSKeyedUnarchiver(forReadingFrom: data)
+            unarchiver.requiresSecureCoding = false
+            return unarchiver.decodeObject(of: MeaningTranslation.self, forKey: NSKeyedArchiveRootObjectKey)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
         }
     }
 }

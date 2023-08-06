@@ -3,22 +3,24 @@
     <entity name="Rune" representedClassName=".Rune" syncable="YES">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="meaning" optional="YES" attributeType="Transformable" valueTransformerName="TranslationToDataTransformer" customClassName="Translation"/>
+        <attribute name="meaning" attributeType="Transformable" valueTransformerName="MeaningTranslationToDataTransformer" customClassName=".MeaningTranslation"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="sound" attributeType="String"/>
         <attribute name="symbol" attributeType="String"/>
         <relationship name="strophes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Strophe" inverseName="runes" inverseEntity="Strophe"/>
     </entity>
-    <entity name="RunePoem" representedClassName="RunePoem" syncable="YES">
+    <entity name="RunePoem" representedClassName=".RunePoem" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="name" attributeType="String"/>
         <attribute name="origin" attributeType="String"/>
         <relationship name="strophes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Strophe" inverseName="runePoem" inverseEntity="Strophe"/>
     </entity>
-    <entity name="Strophe" representedClassName="Strophe" syncable="YES">
+    <entity name="Strophe" representedClassName=".Strophe" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="notes" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
         <attribute name="text" attributeType="String"/>
-        <attribute name="translation" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
+        <attribute name="translation" optional="YES" attributeType="Transformable" valueTransformerName="TranslationToDataTransformer" customClassName=".Translation"/>
         <relationship name="runePoem" maxCount="1" deletionRule="Nullify" destinationEntity="RunePoem" inverseName="strophes" inverseEntity="RunePoem"/>
         <relationship name="runes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rune" inverseName="strophes" inverseEntity="Rune"/>
     </entity>

@@ -44,14 +44,14 @@ struct RunesListView: View {
                 LazyVStack(alignment: .leading) { // Use LazyVStack for improved performance
                     ForEach(controller.loadedRunes) { rune in
                         Group {
-                            Text(rune.Symbol).font(.system(size: 90)).fontWeight(.bold)
+                            Text(rune.symbol).font(.system(size: 90)).fontWeight(.bold)
                             Divider()
                             Group {
-                                Text(rune.Name).font(.system(size: 30))
-                                Text(rune.Meaning.generate(language: controller.translation).capitalized)
+                                Text(rune.name).font(.system(size: 30))
+//                                Text(rune.Meaning.generate(language: controller.translation).capitalized)
                             }
                             Divider()
-                            Text("Sound: \(rune.Sound)")
+                            Text("Sound: \(rune.sound)")
                             Divider()
                         }
                         .padding()
