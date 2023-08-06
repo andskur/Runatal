@@ -10,7 +10,11 @@ import CoreData
 class CoreDataManager {
     static let shared = CoreDataManager()
     
-    private init() {} // Private initializer to ensure singleton usage
+    init() {
+        // Register the custom transformer
+        let transformer = TranslationToDataTransformer()
+        ValueTransformer.setValueTransformer(transformer, forName: NSValueTransformerName("TranslationToDataTransformer"))
+    }
     
     lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "RunatalModel") // Replace with your Core Data model name
@@ -36,5 +40,20 @@ class CoreDataManager {
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
         }
+    }
+}
+
+@objc(TranslationToDataTransformer)
+class TranslationToDataTransformer: ValueTransformer {
+    // Convert Translation to Data
+    override func transformedValue(_ value: Any?) -> Any? {
+        guard let translation = value as? Translation else { return nil }
+        return try? NSKeyedArchiver.archivedData(withRootObject: translation, requiringSecureCoding: false)
+    }
+
+    // Convert Data to Translation
+    override func reverseTransformedValue(_ value: Any?) -> Any? {
+        guard let data = value as? Data else { return nil }
+        return try? NSKeyedUnarchiver.unarchivedObject(ofClass: Translation.self, from: data)
     }
 }

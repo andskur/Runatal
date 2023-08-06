@@ -10,8 +10,11 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var controller = RunesController()
-    @State private var selectedRune: Rune?
+    @State private var selectedRune: RuneOld?
     @State private var isSettingsActive = false
+    
+    
+    @State private var selectedRuneNew: Rune?
     
     var settings: some View {
         Group {
@@ -50,7 +53,7 @@ struct ContentView: View {
         .padding(.trailing)
         #endif
         
-        NavigationSplitView {
+        NavigationSplitView {            
             List(
                 controller.loadedRunes,
                 selection: $selectedRune

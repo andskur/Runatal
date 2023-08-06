@@ -30,15 +30,30 @@ class DataMigration {
             // Step 3: Set Up Core Data Context
             let context = CoreDataManager.shared.viewContext
             
+            let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Rune")
+            let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+            do {
+                try context.execute(deleteRequest)
+            } catch let error as NSError {
+                print("Failed to migrate data: \(error)")
+            }
+            
+            var index: Int16 = 0
+            
             // Step 4: Create Core Data Rune Objects
             for runeData in runesData {
-                let rune = NSEntityDescription.insertNewObject(forEntityName: "Rune", into: context) as! Rune // Replace "Rune" with the actual name of your Core Data Rune class
+                let rune = NSEntityDescription.insertNewObject(forEntityName: "Rune", into: context) as! Rune
                 rune.symbol = runeData.Symbol
                 rune.name = runeData.Name
                 rune.sound = runeData.Sound
-                rune.meaningEnglish = runeData.Meaning.English.joined(separator: ", ")
-                rune.meaningRussian = runeData.Meaning.Russian.joined(separator: ", ")
-                // Set other attributes and relationships as needed
+                rune.index = index
+                
+                // Assuming runeData is the JSON object for a rune
+                let translation = Translation(english: runeData.Meaning.English, russian: runeData.Meaning.Russian)
+                rune.setValue(translation, forKey: "meaning")
+                
+                index += 1
             }
             
             // Step 5: Save the Context

@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct RunatalApp: App {
+    init() {
+        DataMigration.migrateRunes()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

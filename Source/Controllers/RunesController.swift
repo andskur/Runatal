@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 // Enum to represent the different translation languages supported by the app
 enum TranslationLanguage: String, CaseIterable {
@@ -20,9 +21,35 @@ class RunesController: ObservableObject {
     // Published property to hold the loaded runes, which will cause the view to update when it changes
     @Published var loadedRunes: [RuneOld] = []
     
+    @Published var loadedRunesNew: [Rune] = []
+    
+    let context = CoreDataManager.shared.viewContext
+    
     // Initializer to load the runes data when a new instance of RunesController is created
     init() {
         loadRunesData()
+        
+        loadRunesDataNew()
+    }
+    
+    
+    func loadRunesDataNew() {
+        let request : NSFetchRequest<Rune> = NSFetchRequest(entityName: "Rune")
+        let sort = NSSortDescriptor(key: #keyPath(Rune.index), ascending: true)
+        request.sortDescriptors = [sort]
+
+        do {
+            let results = try context.fetch(request)
+            for r in results {
+                print(r.name)
+                print(r.meaning.english)
+            }
+
+            loadedRunesNew = results
+        }
+        catch let error as NSError{
+            fatalError("Failed to load database: \(error)")
+        }
     }
     
     // Function to load the runes data from the JSON file

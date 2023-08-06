@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RuneDetailView: View {
-    let rune: Rune
+    let rune: RuneOld
     let translationLanguage: TranslationLanguage
     
     @State private var selectedPoemIndex = 0
@@ -45,7 +45,7 @@ struct RuneDetailView: View {
 
 struct RuneDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleRune = Rune(Symbol: "ᚠ", Name: "Fehu", Meaning: Meaning(English: ["cattle", "property", "wealth"], Russian: ["скот", "имущество", "богатство"]), Sound: "F", RunePoems: [])
+        let sampleRune = RuneOld(Symbol: "ᚠ", Name: "Fehu", Meaning: Meaning(English: ["cattle", "property", "wealth"], Russian: ["скот", "имущество", "богатство"]), Sound: "F", RunePoems: [])
         
         RuneDetailView(rune: sampleRune, translationLanguage: .english)
     }
