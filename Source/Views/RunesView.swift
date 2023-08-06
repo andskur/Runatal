@@ -10,11 +10,8 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var controller = RunesController()
-    @State private var selectedRune: RuneOld?
     @State private var isSettingsActive = false
-    
-    
-    @State private var selectedRuneNew: Rune?
+    @State private var selectedRune: Rune?
     
     var settings: some View {
         Group {
@@ -54,12 +51,12 @@ struct ContentView: View {
         #endif
         
         NavigationSplitView {
-            List(
+            List (
                 controller.loadedRunes,
                 selection: $selectedRune
             ) { rune in
                 NavigationLink(value: rune) {
-                    Text("\(rune.Symbol) - \(rune.Name)")
+                    Text("\(rune.symbol) - \(rune.name)")
                 }
             }
             .navigationTitle("ᚠᚢᚦᚨᚱᚲ")
@@ -79,10 +76,9 @@ struct ContentView: View {
             let isiPhone =  UIDevice.current.userInterfaceIdiom.rawValue == 0 ? true : false
             
             if !isiPhone {
-                selectedRune = controller.loadedRunes[0]
+                selectedRuneNew = controller.loadedRunes[0]
             }
             #endif
-
         }
         #if os(macOS)
         .toolbar {
@@ -97,7 +93,6 @@ struct ContentView: View {
                             Image(systemName: "xmark.circle")
                         })
                     }
-                    
                     settings
                 }
             }

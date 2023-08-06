@@ -18,6 +18,11 @@ public class Rune: NSManagedObject, Identifiable {
     @NSManaged public var runePoems: NSSet?
     
     // You can also define convenience methods here if needed
+    
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        self.id = UUID()
+    }
 }
 
 @objc(Translation)
@@ -40,40 +45,7 @@ public class Translation: NSObject, NSCoding {
         aCoder.encode(english, forKey: "english")
         aCoder.encode(russian, forKey: "russian")
     }
-}
-
-
-
-
-// Struct to represent a rune
-struct RuneOld: Identifiable, Hashable, Decodable {
-    // Enum to represent the coding keys used in the JSON representation of a rune
-    private enum CodingKeys : String, CodingKey {
-        case Symbol, Name, Meaning, Sound, RunePoems
-    }
     
-    // Unique identifier for each rune
-    var id = UUID()
-    // The symbol of the rune
-    let Symbol: String
-    // The name of the rune
-    let Name: String
-    // The meaning of the rune
-    let Meaning: Meaning
-    // The sound of the rune
-    let Sound: String
-    // The poems associated with the rune
-    let RunePoems: [RunePoemOld]?
-}
-
-// Struct to represent the meaning of a rune
-struct Meaning: Hashable, Decodable {
-    // The meaning of the rune in English
-    let English: [String]
-    // The meaning of the rune in Russian
-    let Russian: [String]
-    
-    // Function to generate the meaning of the rune in a specific language
     func generate(language: TranslationLanguage) -> String {
         // The meanings of the rune in the specified language
         let meanings: [String]
@@ -81,12 +53,61 @@ struct Meaning: Hashable, Decodable {
         // Switch on the language to determine which meanings to use
         switch language {
         case .english:
-            meanings = English
+            meanings = self.english
         case .russian:
-            meanings = Russian
+            meanings = self.russian
         }
         
         // Join the meanings with a comma and return the result
         return meanings.joined(separator: ", ")
     }
 }
+
+
+
+
+// Struct to represent a rune
+//struct RuneOld: Identifiable, Hashable, Decodable {
+//    // Enum to represent the coding keys used in the JSON representation of a rune
+//    private enum CodingKeys : String, CodingKey {
+//        case Symbol, Name, Meaning, Sound, RunePoems
+//    }
+//
+//    // Unique identifier for each rune
+//    var id = UUID()
+//    // The symbol of the rune
+//    let Symbol: String
+//    // The name of the rune
+//    let Name: String
+//    // The meaning of the rune
+//    let Meaning: Meaning
+//    // The sound of the rune
+//    let Sound: String
+//    // The poems associated with the rune
+//    let RunePoems: [RunePoemOld]?
+//}
+//
+//// Struct to represent the meaning of a rune
+//struct Meaning: Hashable, Decodable {
+//    // The meaning of the rune in English
+//    let English: [String]
+//    // The meaning of the rune in Russian
+//    let Russian: [String]
+//
+//    // Function to generate the meaning of the rune in a specific language
+//    func generate(language: TranslationLanguage) -> String {
+//        // The meanings of the rune in the specified language
+//        let meanings: [String]
+//
+//        // Switch on the language to determine which meanings to use
+//        switch language {
+//        case .english:
+//            meanings = English
+//        case .russian:
+//            meanings = Russian
+//        }
+//
+//        // Join the meanings with a comma and return the result
+//        return meanings.joined(separator: ", ")
+//    }
+//}

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RuneDetailView: View {
-    let rune: RuneOld
+    let rune: Rune
     let translationLanguage: TranslationLanguage
     
     @State private var selectedPoemIndex = 0
@@ -16,28 +16,28 @@ struct RuneDetailView: View {
     var body: some View {
         ScrollView {
             VStack() {
-                Text(rune.Symbol).font(.system(size: 90)).fontWeight(.bold)
+                Text(rune.symbol).font(.system(size: 90)).fontWeight(.bold)
                 Divider()
                 Group {
-                    Text(rune.Name).font(.system(size: 30))
-                    Text(rune.Meaning.generate(language: translationLanguage).capitalized)
+                    Text(rune.name).font(.system(size: 30))
+                    Text(rune.meaning.generate(language: translationLanguage).capitalized)
                 }
                 Divider()
-                Text("Sound: \(rune.Sound)")
+                Text("Sound: \(rune.sound)")
                 Divider()
                 
-                if let runePoems = rune.RunePoems, !runePoems.isEmpty {
-                    Text("Rune Poems").font(.title)
-                    
-                    Picker("", selection: $selectedPoemIndex) {
-                        ForEach(runePoems.indices, id: \.self) { index in
-                            Text(runePoems[index].Origin).tag(index)
-                        }
-                    }
-                    .pickerStyle(SegmentedPickerStyle())
-                    
-                    RunePoemsView(runePoem: runePoems[selectedPoemIndex], translationLanguage: translationLanguage)
-                }
+//                if let runePoems = rune.RunePoems, !runePoems.isEmpty {
+//                    Text("Rune Poems").font(.title)
+//
+//                    Picker("", selection: $selectedPoemIndex) {
+//                        ForEach(runePoems.indices, id: \.self) { index in
+//                            Text(runePoems[index].Origin).tag(index)
+//                        }
+//                    }
+//                    .pickerStyle(SegmentedPickerStyle())
+//
+//                    RunePoemsView(runePoem: runePoems[selectedPoemIndex], translationLanguage: translationLanguage)
+//                }
             }
         }
     }
@@ -45,8 +45,6 @@ struct RuneDetailView: View {
 
 struct RuneDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        let sampleRune = RuneOld(Symbol: "ᚠ", Name: "Fehu", Meaning: Meaning(English: ["cattle", "property", "wealth"], Russian: ["скот", "имущество", "богатство"]), Sound: "F", RunePoems: [])
-        
-        RuneDetailView(rune: sampleRune, translationLanguage: .english)
+        RuneDetailView(rune: Rune.init(), translationLanguage: .english)
     }
 }
