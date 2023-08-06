@@ -54,6 +54,13 @@ class TranslationToDataTransformer: ValueTransformer {
     // Convert Data to Translation
     override func reverseTransformedValue(_ value: Any?) -> Any? {
         guard let data = value as? Data else { return nil }
-        return try? NSKeyedUnarchiver.unarchivedObject(ofClass: Translation.self, from: data)
+        
+        do {
+            let unarchiver = try NSKeyedUnarchiver(forReadingFrom: data)
+            unarchiver.requiresSecureCoding = false
+            return unarchiver.decodeObject(of: Translation.self, forKey: NSKeyedArchiveRootObjectKey)
+        } catch let error as NSError {
+            fatalError(error.localizedDescription)
+        }
     }
 }

@@ -53,7 +53,7 @@ struct ContentView: View {
         .padding(.trailing)
         #endif
         
-        NavigationSplitView {            
+        NavigationSplitView {
             List(
                 controller.loadedRunes,
                 selection: $selectedRune

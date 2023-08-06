@@ -21,7 +21,7 @@ public class Rune: NSManagedObject, Identifiable {
 }
 
 @objc(Translation)
-public class Translation: NSObject, NSCoding {
+public class Translation: NSObject, NSCoding {    
     var english: [String]
     var russian: [String]
 
