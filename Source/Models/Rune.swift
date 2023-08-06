@@ -8,7 +8,7 @@
 import Foundation
 
 // Struct to represent a rune
-struct Rune: Identifiable, Hashable, Decodable {
+struct RuneOld: Identifiable, Hashable, Decodable {
     // Enum to represent the coding keys used in the JSON representation of a rune
     private enum CodingKeys : String, CodingKey {
         case Symbol, Name, Meaning, Sound, RunePoems
@@ -25,7 +25,7 @@ struct Rune: Identifiable, Hashable, Decodable {
     // The sound of the rune
     let Sound: String
     // The poems associated with the rune
-    let RunePoems: [RunePoem]?
+    let RunePoems: [RunePoemOld]?
 }
 
 // Struct to represent the meaning of a rune

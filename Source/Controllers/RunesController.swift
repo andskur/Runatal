@@ -18,7 +18,7 @@ class RunesController: ObservableObject {
     // Published property to hold the current translation language, which will cause the view to update when it changes
     @Published var translation: TranslationLanguage = .russian
     // Published property to hold the loaded runes, which will cause the view to update when it changes
-    @Published var loadedRunes: [Rune] = []
+    @Published var loadedRunes: [RuneOld] = []
     
     // Initializer to load the runes data when a new instance of RunesController is created
     init() {
@@ -37,7 +37,7 @@ class RunesController: ObservableObject {
             let data = try Data(contentsOf: fileURL)
             let decoder = JSONDecoder()
             // Decode the data into an array of Runes
-            let runes = try decoder.decode([Rune].self, from: data)
+            let runes = try decoder.decode([RuneOld].self, from: data)
             // Update the loadedRunes property with the decoded runes
             loadedRunes = runes
         } catch {

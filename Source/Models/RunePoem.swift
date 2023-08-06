@@ -8,7 +8,7 @@
 import Foundation
 
 // Struct to represent a rune poem
-struct RunePoem: Identifiable, Hashable, Decodable {
+struct RunePoemOld: Identifiable, Hashable, Decodable {
     // Enum to represent the coding keys used in the JSON representation of a rune poem
     private enum CodingKeys : String, CodingKey {
         case Name, Origin, Text, Translation, Notes
