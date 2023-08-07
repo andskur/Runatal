@@ -463,8 +463,378 @@
                   "text": "Ymber c skúr, skúr er úr, úr er rúnastafr.",
                   "index": 2,
                   "translation": {
-                    "english": "Ymber - rain, rain - this is frozen (light rain, ú), ú - this is a rune.",
+                    "english": "Ymber - rain, rain - this is frozen (light rain, úr), úr - this is a rune.",
                     "russian": "Ymber — ливень, ливень — это изморось (мелкий дождь, úr), úr — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚦ (þurs) er kvenna kvöl ok kletta búi ok varðrúnar verr.",
+          "translation": {
+            "english": "Giant - torture of women and cliff-dweller and husband of a giantess.",
+            "russian": "Турс — пытка жен, и житель утёсов, и Ва́рдрун супруг."
+          },
+          "index": 3,
+          "runes": ["ᚦ"],
+          "notes": [
+              {
+                  "text": "Sat[ur]nus þengill.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Saturn, ruler of the thing.",
+                    "russian": "Сатурн. Король."
+                  }
+              },
+              {
+                  "text": "Fantasma er skrimsl, skrimsl er þu[rs], þ[urs] er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Fantasma (phantom) is a monster, a monster is a giant (þurs), þurs is a rune.",
+                    "russian": "Fantasma (фантом) есть чудище, чудище — это турс (þurs), þurs — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚮ (óss) er aldingautr ok ásgarðs jöfurr ok valhallar vísi.",
+          "translation": {
+            "english": "God - aged Gautr and prince of Ásgarðr and lord of Vallhalla.",
+            "russian": "Ас — древний Гаут,h и Асгарда конунг, и Валгаллы вождь."
+          },
+          "index": 4,
+          "runes": ["ᚨ"],
+          "notes": [
+              {
+                  "text": "Jupi[ter] Oddviti.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Jupiter, point-leader.",
+                    "russian": "Юпитер. Лидер."
+                  }
+              },
+              {
+                  "text": "Flumen straumr, straumr er óss, óss er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Flumen - a stream, a stream is a source (óss), óss is a rune.",
+                    "russian": "Flumen — поток, поток — это исток (óss), óss — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚱ (reið) er sitjandi sæla ok snúðig ferð ok jórs erfiði.",
+          "translation": {
+            "english": "Riding joy of the horsemen and speedy journey and toil of the steed.",
+            "russian": "Езда верховая — сидящему счастье, и скорое странствие, и лошади труд."
+          },
+          "index": 5,
+          "runes": ["ᚱ"],
+          "notes": [
+              {
+                  "text": "Ite[r] Ræsir.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Journey, worthy man.",
+                    "russian": "Путешествие. Хозяин."
+                  }
+              },
+              {
+                  "text": "Iter vegr, [ve]gr för, [för] [e]r reið, reið er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Iter - the way, the path - a journey, a trip (reið), reið is a rune.",
+                    "russian": "Iter — путь, путь — путешествие, поездка (reið), reið есть руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚴ (kaun) er barna böl ok bardagi [för] ok holdfúa hús.",
+          "translation": {
+            "english": "Ulcer disease fatal to children and painful spot and abode of mortification.",
+            "russian": "Воспалённая рана — детское бедствие, и битвы [следы], и дом плоти гниющей."
+          },
+          "index": 6,
+          "runes": ["ᚲ"],
+          "notes": [
+              {
+                  "text": "Flag[ella] [k]onungr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Whip, king = descendant of good kin.",
+                    "russian": "Кнуты. Конунг."
+                  }
+              },
+              {
+                  "text": "Wul[nus] sár, sár er kaun, kaun er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Wulnus is a wound, a wound is an ulcer (kaun), Kaun is a rune.",
+                    "russian": "Wulnus — рана, рана это язва (kaun), kaun — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚼ (hagall) er kaldakorn ok krapadrífa ok snáka sótt.",
+          "translation": {
+            "english": "Hail cold grain and shower of sleet and sickness of serpents.",
+            "russian": "Град — холодное зёрнышко, и льдинок поток, и змеиная бо́лесть."
+          },
+          "index": 7,
+          "runes": ["ᚺ"],
+          "notes": [
+              {
+                  "text": "G[ran]do Hildingr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Hail, battle leader.",
+                    "russian": "Град. Воевода."
+                  }
+              },
+              {
+                  "text": "[Niv]es er snjór, snjór er hagl, hagall er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "NIVES is snow, snow is a hail (hagl), Hagall is a rune.",
+                    "russian": "Nives — это снег, снег — это град (hagl), hagall — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᚿ (nauð) er þýjar þrá ok þungr kostr ok vássamlig verk.",
+          "translation": {
+            "english": "Constraint grief of the bond-maid and state of oppression and toilsome work.",
+            "russian": "Нужда — тоска ра́бья, и выбор тяжёлый, и труд утомительный."
+          },
+          "index": 8,
+          "runes": ["ᚾ"],
+          "notes": [
+              {
+                  "text": "Opera Niflungr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Trouble, niflungr = descendant of the dead?",
+                    "russian": "Забота. Нивлунг."
+                  }
+              },
+              {
+                  "text": "Flagella er bardagi, bardagi er nauð, nauð er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Flagella is a disaster (scouring), there is a disaster (nauð), nauð are a rune.",
+                    "russian": "Flagella (лат. кнуты) есть бедствие (бич), бедствие есть нужда (nauð), nauð есть руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛁ (íss) er árbörkr ok unnar þak ok feigra manna fár.",
+          "translation": {
+            "english": "Ice bark of rivers and roof of the wave and destruction of the doomed.",
+            "russian": "Лёд — кора рек, и кровля волны, и беда обреченных."
+          },
+          "index": 9,
+          "runes": ["ᛁ"],
+          "notes": [
+              {
+                  "text": "Gl[a]cies jöfurr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Ice, one who wears the boar-helm.",
+                    "russian": "Лёд. Вождь."
+                  }
+              },
+              {
+                  "text": "[Fr]ig[us] er frost, frost er íss, íss er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Frigus is frost, frost is ice (íss), íss is a rune.",
+                    "russian": "Frigus есть мороз, мороз — это лёд (íss), íss — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛆ (ár) er gumna góði ok gott sumar algróinn akr.",
+          "translation": {
+            "english": "Plenty boon to men and good summer and thriving crops.",
+            "russian": "Год урожайный — благо людское, и доброе лето, и поле проросшее."
+          },
+          "index": 10,
+          "runes": ["ᛃ"],
+          "notes": [
+              {
+                  "text": "Annus Allvaldr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Year, all-ruler.",
+                    "russian": "Год. Вседержитель."
+                  }
+              },
+              {
+                  "text": "Estas er sumar, sumar er ár, ár er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Estas is summer, summer is an abundance (ár), abundance (ár) is a rune.",
+                    "russian": "Estas есть лето, лето это изобилие (ár), изобилие (ár) есть руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛍ (sól) er skýja skjöldr ok skínandi röðull ok ísa aldrtregi.",
+          "translation": {
+            "english": "Sun shield of the clouds and shining ray and destroyer of ice.",
+            "russian": "Солнце — щит туч, и сияющий круг, и плач льда вековечный."
+          },
+          "index": 11,
+          "runes": ["ᛋ"],
+          "notes": [
+              {
+                  "text": "Rota Siklin[gr].",
+                  "index": 1,
+                  "translation": {
+                    "english": "Wheel, descendant of the victorious one.",
+                    "russian": "Колесо. Король."
+                  }
+              },
+              {
+                  "text": "Ignis er eldr, eldr er sól, sól er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Its is fire, fire is the Sun (sól), sól is a rune.",
+                    "russian": "Ignis есть огонь, огонь это солнце (sól), sól есть руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛐ (týr) er einhendr áss ok úlfs leifar ok hofa hilmir.",
+          "translation": {
+            "english": "Týr god with one hand and leavings of the wolf and prince of temples.",
+            "russian": "Тюр — Ас однорукий, и волчий объедок, и капищ властитель."
+          },
+          "index": 12,
+          "runes": ["ᛋ"],
+          "notes": [
+              {
+                  "text": "Mars Tiggi.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Mars, director.",
+                    "russian": "Марс. Знатный."
+                  }
+              },
+              {
+                  "text": "Jupiter er Þórr, Þórr er áss, áss er Týr, Týr er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Jupiter is Thor, Thor is áss, áss - this is a Týr, Týr is a rune.",
+                    "russian": "Jupiter — это Тор, Тор есть ас, ас — это Тюр, Týr — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛒ (bjarkan) er laufgat lim ok lítit tré ok ungsamligr viðr.",
+          "translation": {
+            "english": "Birch leafy twig and little tree and fresh young shrub.",
+            "russian": "Берёза — ветвь в листьях, и малая поросль, и юное древо."
+          },
+          "index": 13,
+          "runes": ["ᛒ"],
+          "notes": [
+              {
+                  "text": "Abies Buðlungr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Silver fir, protector.",
+                    "russian": "Пихта. Будлинг."
+                  }
+              },
+              {
+                  "text": "Flos er blóm, blóm er viðr, viðr er bjarkan, bjarkan er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Flos is a flower, a flower is an escape, escape - this is bjarkan, bjarkan is a rune.",
+                    "russian": "Flos есть цветок, цветок — это побег, побег — это берёза (bjarkan), bjarkan — это руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛘ (maðr) er manns gaman ok moldar auki ok skipa skreytir.",
+          "translation": {
+            "english": "Man delight of man and augmentation of the earth and adorner of ships.",
+            "russian": "Человек — радость людям, и земли прибавленье, и украшение судна."
+          },
+          "index": 14,
+          "runes": ["ᛗ"],
+          "notes": [
+              {
+                  "text": "Homo Mildingr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Human, generous one.",
+                    "russian": "Человек. Князь."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛚ (lögr) er vellanda vatn ok víðr ketill ok glömmunga grund.",
+          "translation": {
+            "english": "Water eddying stream and broad geysir and land of the fish.",
+            "russian": "Влага — воды бурлящие, и широкий котёл, и рыбы равнина."
+          },
+          "index": 15,
+          "runes": ["ᛚ"],
+          "notes": [
+              {
+                  "text": "lacus Lofð[ungr].",
+                  "index": 1,
+                  "translation": {
+                    "english": "Lake, praise-worthy one.",
+                    "russian": "Озеро. Славный, или Лофдунг."
+                  }
+              },
+              {
+                  "text": "Palus er [go]rmr, gormr er sjór, sjór er lögr, lögr er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Palus is silt, silt - is the sea, the sea is moisture (lögr), Lögr is a rune.",
+                    "russian": "Palus есть ил, ил — это море, море — это влага (lögr), lögr есть руна."
+                  }
+              }
+          ]
+        },
+        {
+          "text": "ᛨ (ýr) er bendr bogi ok brotgjarnt járn ok fífu fárbauti.",
+          "translation": {
+            "english": "Yew bent bow and brittle iron and giant of the arrow.",
+            "russian": "Тис — изогнутый лук, и железо непрочное, и былинка n Фарбаути."
+          },
+          "index": 16,
+          "runes": ["ᛉ"],
+          "notes": [
+              {
+                  "text": "Arcus ynglingr.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Bow, rainbow, descendant of Yngvi.",
+                    "russian": "Лук. Инглинг."
+                  }
+              },
+              {
+                  "text": "Arcus er bogi, bogi er ýr, ýr er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Arcus is bow, bow - this is yew (ýr), ýr is a rune.",
+                    "russian": "Arcus есть лук, лук — это тис (ýr), ýr — это руна."
                   }
               }
           ]
