@@ -11,15 +11,6 @@ struct StropheView: View {
     let strophe: Strophe
     let translationLanguage: TranslationLanguage
     
-    init(strophe: Strophe, translationLanguage: TranslationLanguage) {
-        print("KONYA")
-        
-        self.strophe = strophe
-        self.translationLanguage = translationLanguage
-        
-        print(strophe.text)
-    }
-    
     var body: some View {
         VStack {
             Text(strophe.runePoem.name).font(.title2)
@@ -34,6 +25,7 @@ struct StropheView: View {
                 VStack {
                     Text("Translate")
                     Divider()
+                    Text(strophe.translation.generate(language: translationLanguage))
                 }
             }
         }

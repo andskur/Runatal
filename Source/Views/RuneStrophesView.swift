@@ -10,30 +10,39 @@ import SwiftUI
 struct RuneStrophesView: View {
     let strophes: [Strophe]
     let translationLanguage: TranslationLanguage
-    @State private var selectedStrophe: Strophe
+    @State private var selectedStropheIndex: Int = 0
     
     init(strophes: [Strophe], translationLanguage: TranslationLanguage) {
-        print("JOPA")
-        
-        self.strophes = strophes
-        self.selectedStrophe = strophes.first!
+        self.strophes = strophes.sorted { $0.runePoem.name < $1.runePoem.name }
         self.translationLanguage = translationLanguage
-        
-        print(selectedStrophe.runePoem.name)
-        print(selectedStrophe.text)
+    }
+    
+    var selectedStrophe: Strophe? {
+        guard strophes.indices.contains(selectedStropheIndex) else {
+            return nil
+        }
+        return strophes[selectedStropheIndex]
     }
     
     var body: some View {
-        Picker("", selection: $selectedStrophe) {
-            ForEach(strophes) {strophe in
-                Text(strophe.runePoem.origin).tag(strophe)
+        Picker("", selection: $selectedStropheIndex) {
+            ForEach(strophes.indices, id: \.self) { index in
+                Text(strophes[index].runePoem.origin).tag(index)
             }
         }
         .pickerStyle(SegmentedPickerStyle())
+        .onChange(of: strophes.count) { _ in
+            selectedStropheIndex = 0 // Reset the selected index when strophes change
+        }
         
-        StropheView(strophe: selectedStrophe, translationLanguage: translationLanguage)
+        if let strophe = selectedStrophe {
+            StropheView(strophe: strophe, translationLanguage: translationLanguage)
+        } else {
+            Text("No strophe selected")
+        }
     }
 }
+
 
 struct RuneStrophesView_Previews: PreviewProvider {
     static var previews: some View {

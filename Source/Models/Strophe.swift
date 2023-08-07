@@ -47,4 +47,14 @@ public class Translation: NSObject, NSCoding {
         aCoder.encode(english, forKey: "english")
         aCoder.encode(russian, forKey: "russian")
     }
+    
+    func generate(language: TranslationLanguage) -> String {        
+        // Switch on the language to determine which translation to use
+        switch language {
+        case .english:
+            return self.english
+        case .russian:
+            return self.russian
+        }
+    }
 }
