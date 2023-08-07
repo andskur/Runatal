@@ -20,18 +20,33 @@ struct StropheView: View {
                     Text("Original")
                     Divider()
                     Text(strophe.text)
+                        .lineLimit(nil) // Allow multiline
+                        .layoutPriority(1) // High priority for this text
                 }
+                .frame(maxWidth: .infinity)
                 
                 VStack {
                     Text("Translate")
                     Divider()
                     Text(strophe.translation.generate(language: translationLanguage))
+                        .lineLimit(nil) // Allow multiline
+                        .layoutPriority(1) // High priority for this text
+                }
+                .frame(maxWidth: .infinity)
+            }
+            
+            if let notes = strophe.notes as? Set<Note> {
+                if notes.count > 0 {  
+                    NotesView(notes: Array(notes), translationLanguage: translationLanguage)
                 }
             }
         }
         .padding()
     }
 }
+
+
+
 
 struct StropheView_Previews: PreviewProvider {
     static var previews: some View {

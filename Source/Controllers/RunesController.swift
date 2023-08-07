@@ -63,6 +63,10 @@ class RunesController: ObservableObject {
         do {
             let results = try context.fetch(request)
             for r in results {
+                if r.origin != "Icelandic" {
+                    continue
+                }
+                
                 print(r.name)
                 print(r.origin)
                 
@@ -70,6 +74,16 @@ class RunesController: ObservableObject {
                     for s in strophes {
                         print(s.text)
                         print(s.translation.english)
+                        
+                        if let notes = s.notes as? Set<Note> {
+                            for n in notes {
+                                print(n.text)
+                                
+                                if let t = n.translation {
+                                    print(t.english)
+                                }
+                            }
+                        }
                     }
                 }
             }

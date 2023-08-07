@@ -18,6 +18,15 @@ class DataMigration {
     static func resetPersistentStore() {
         let context = CoreDataManager.shared.viewContext
 
+        let fetchRequest0: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Note")
+        let deleteRequest0 = NSBatchDeleteRequest(fetchRequest: fetchRequest0)
+
+        do {
+            try context.execute(deleteRequest0)
+        } catch let error as NSError {
+            print("Failed to migrate data: \(error)")
+        }
+
         let fetchRequest1: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Strophe")
         let deleteRequest1 = NSBatchDeleteRequest(fetchRequest: fetchRequest1)
 
@@ -134,7 +143,6 @@ class DataMigration {
                     strophe.text = stropheData.text
                     strophe.translation = Translation(english: stropheData.translation.english, russian: stropheData.translation.russian)
                     strophe.index = stropheData.index
-                    strophe.id = UUID()
                     strophe.runePoem = runePoem
                     
                     if let stropheRunes = stropheData.runes {
@@ -142,6 +150,16 @@ class DataMigration {
                             if let rune = runeDictionary[runeSymbol] {
                                 strophe.addToRunes(rune)
                             }
+                        }
+                    }
+                    
+                    if let stropheNotes = stropheData.notes {
+                        for noteData in stropheNotes {
+                            let note = NSEntityDescription.insertNewObject(forEntityName: "Note", into: context) as! Note
+                            note.text = noteData.text
+                            note.index = noteData.index
+                            note.strophe = strophe
+                            note.translation = Translation(english: noteData.translation.english, russian: noteData.translation.russian)
                         }
                     }
                 }
@@ -182,9 +200,17 @@ struct StropheJSON: Decodable {
     let translation: TranslationJSON
     let index: Int16
     let runes: [String]?
+    let notes: [NoteJSON]?
 }
 
 struct TranslationJSON: Decodable {
     let english: String
     let russian: String
 }
+
+struct NoteJSON: Decodable {
+    let text: String
+    let translation: TranslationJSON
+    let index: Int16
+}
+

@@ -40,7 +40,7 @@ struct RunePoemOld: Identifiable, Hashable, Decodable {
     // The translation of the rune poem
     let Translation: RunePoemTranslations
     // The notes associated with the rune poem
-    let Notes: Notes?
+    let Notes: NotesOld?
 }
 
 // Struct to represent the translation of a rune poem
@@ -72,7 +72,7 @@ struct RunePoemTranslations: Hashable, Decodable {
 }
 
 // Struct to represent the notes associated with a rune poem
-struct Notes: Hashable, Decodable {
+struct NotesOld: Hashable, Decodable {
     // The primary note
     let Primary: String
     // The secondary note

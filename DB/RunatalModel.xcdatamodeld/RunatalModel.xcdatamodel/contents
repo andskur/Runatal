@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22G74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Note" representedClassName=".Note" syncable="YES">
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="text" attributeType="String"/>
+        <attribute name="translation" optional="YES" attributeType="Transformable" valueTransformerName="TranslationToDataTransformer" customClassName=".Translation"/>
+        <relationship name="strophe" maxCount="1" deletionRule="Nullify" destinationEntity="Strophe" inverseName="notes" inverseEntity="Strophe"/>
+    </entity>
     <entity name="Rune" representedClassName=".Rune" syncable="YES">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
@@ -18,9 +25,9 @@
     <entity name="Strophe" representedClassName=".Strophe" syncable="YES">
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="index" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="notes" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromDataTransformerName"/>
         <attribute name="text" attributeType="String"/>
         <attribute name="translation" optional="YES" attributeType="Transformable" valueTransformerName="TranslationToDataTransformer" customClassName=".Translation"/>
+        <relationship name="notes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Note" inverseName="strophe" inverseEntity="Note"/>
         <relationship name="runePoem" maxCount="1" deletionRule="Nullify" destinationEntity="RunePoem" inverseName="strophes" inverseEntity="RunePoem"/>
         <relationship name="runes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Rune" inverseName="strophes" inverseEntity="Rune"/>
     </entity>

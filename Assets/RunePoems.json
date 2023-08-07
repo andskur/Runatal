@@ -422,16 +422,52 @@
             "russian": "Богатство — это раздоры родни и огонь наводненья, и путь рыбы могильной."
           },
           "index": 1,
-          "runes": ["ᚠ"]
+          "runes": ["ᚠ"],
+          "notes": [
+              {
+                  "text": "Aurum fy[l]ker.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Gold, leader of the war-band.",
+                    "russian": "Золото. Полководец."
+                  }
+              },
+              {
+                  "text": "Aurum gull, gull er fé, fé er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Aurum - gold, gold is wealth (fé), fé is a rune (rúnastafr - “runic sign”).",
+                    "russian": "Aurum — золото, золото есть богатство (fé), fé есть руна (rúnastafr — «рунический знак»)."
+                  }
+              }
+          ]
         },
         {
-          "text": "Text of the Second Strophe",
+          "text": "ᚢ (úr) er skýja grátr ok skára þverrir ok hirðis hatr.",
           "translation": {
-            "english": "English Translation",
-            "russian": "Russian Translation"
+            "english": "Shower - lamentation of the clouds and ruin of the hay-harvest and abomination of the shepherd.",
+            "russian": "Мóрось — плач облаков, и сокращенье прокоса и злоба пастушья."
           },
           "index": 2,
-          "runes": ["ᚢ"]
+          "runes": ["ᚢ"],
+          "notes": [
+              {
+                  "text": "Umbre c Visi.",
+                  "index": 1,
+                  "translation": {
+                    "english": "Shadow (shower?), leader.",
+                    "russian": "Ливень. Вождь."
+                  }
+              },
+              {
+                  "text": "Ymber c skúr, skúr er úr, úr er rúnastafr.",
+                  "index": 2,
+                  "translation": {
+                    "english": "Ymber - rain, rain - this is frozen (light rain, ú), ú - this is a rune.",
+                    "russian": "Ymber — ливень, ливень — это изморось (мелкий дождь, úr), úr — это руна."
+                  }
+              }
+          ]
         }
       ]
     }
