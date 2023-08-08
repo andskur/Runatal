@@ -6,49 +6,20 @@
 //
 
 import Foundation
+import CoreData
 
-// Struct to represent a rune
-struct Rune: Identifiable, Hashable, Decodable {
-    // Enum to represent the coding keys used in the JSON representation of a rune
-    private enum CodingKeys : String, CodingKey {
-        case Symbol, Name, Meaning, Sound, RunePoems
-    }
-    
-    // Unique identifier for each rune
-    var id = UUID()
-    // The symbol of the rune
-    let Symbol: String
-    // The name of the rune
-    let Name: String
-    // The meaning of the rune
-    let Meaning: Meaning
-    // The sound of the rune
-    let Sound: String
-    // The poems associated with the rune
-    let RunePoems: [RunePoem]?
-}
-
-// Struct to represent the meaning of a rune
-struct Meaning: Hashable, Decodable {
-    // The meaning of the rune in English
-    let English: [String]
-    // The meaning of the rune in Russian
-    let Russian: [String]
-    
-    // Function to generate the meaning of the rune in a specific language
-    func generate(language: TranslationLanguage) -> String {
-        // The meanings of the rune in the specified language
-        let meanings: [String]
+public class Rune: NSManagedObject, Identifiable {
+    @NSManaged public var id: UUID
+    @NSManaged public var symbol: String
+    @NSManaged public var name: String
+    @NSManaged public var meaning: MeaningTranslation // Use the Translation type
+    @NSManaged public var sound: String
+    @NSManaged public var index: Int16
+    @NSManaged public var strophes: NSSet?
         
-        // Switch on the language to determine which meanings to use
-        switch language {
-        case .english:
-            meanings = English
-        case .russian:
-            meanings = Russian
-        }
-        
-        // Join the meanings with a comma and return the result
-        return meanings.joined(separator: ", ")
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        self.id = UUID()
     }
 }
+

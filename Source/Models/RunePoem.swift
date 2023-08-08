@@ -6,9 +6,23 @@
 //
 
 import Foundation
+import CoreData
+
+public class RunePoem: NSManagedObject, Identifiable {
+    @NSManaged public var id: UUID
+    @NSManaged public var name: String
+    @NSManaged public var origin: String
+    @NSManaged public var strophes: NSSet?
+    
+    override public func awakeFromInsert() {
+        super.awakeFromInsert()
+        self.id = UUID()
+    }
+}
+
 
 // Struct to represent a rune poem
-struct RunePoem: Identifiable, Hashable, Decodable {
+struct RunePoemOld: Identifiable, Hashable, Decodable {
     // Enum to represent the coding keys used in the JSON representation of a rune poem
     private enum CodingKeys : String, CodingKey {
         case Name, Origin, Text, Translation, Notes
@@ -26,7 +40,7 @@ struct RunePoem: Identifiable, Hashable, Decodable {
     // The translation of the rune poem
     let Translation: RunePoemTranslations
     // The notes associated with the rune poem
-    let Notes: Notes?
+    let Notes: NotesOld?
 }
 
 // Struct to represent the translation of a rune poem
@@ -58,7 +72,7 @@ struct RunePoemTranslations: Hashable, Decodable {
 }
 
 // Struct to represent the notes associated with a rune poem
-struct Notes: Hashable, Decodable {
+struct NotesOld: Hashable, Decodable {
     // The primary note
     let Primary: String
     // The secondary note

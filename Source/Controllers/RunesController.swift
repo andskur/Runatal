@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 // Enum to represent the different translation languages supported by the app
 enum TranslationLanguage: String, CaseIterable {
@@ -20,29 +21,76 @@ class RunesController: ObservableObject {
     // Published property to hold the loaded runes, which will cause the view to update when it changes
     @Published var loadedRunes: [Rune] = []
     
+    let context = CoreDataManager.shared.viewContext
+    
     // Initializer to load the runes data when a new instance of RunesController is created
     init() {
         loadRunesData()
+//        loadPoems()
     }
     
     // Function to load the runes data from the JSON file
     func loadRunesData() {
-        // Get the URL for the JSON file in the app bundle
-        guard let fileURL = Bundle.main.url(forResource: "ElderFuthark", withExtension: "json") else {
-            fatalError("Failed to locate ElderFuthark.json file.")
+        let request : NSFetchRequest<Rune> = NSFetchRequest(entityName: "Rune")
+        let sort = NSSortDescriptor(key: #keyPath(Rune.index), ascending: true)
+        request.sortDescriptors = [sort]
+
+        do {
+            let results = try context.fetch(request)
+//            for r in results {
+//                print(r.name)
+//                print(r.meaning.english)
+
+//                if let strophes = r.strophes as? Set<Strophe> {
+//                    for s in strophes {
+//                        print(s.runePoem.name)
+//                        print(s.text)
+//                        print(s.translation.english)
+//                    }
+//                }
+//            }
+
+            loadedRunes = results
         }
+        catch let error as NSError{
+            fatalError("Failed to load database: \(error)")
+        }
+    }
+    
+    func loadPoems() {
+        let request : NSFetchRequest<RunePoem> = NSFetchRequest(entityName: "RunePoem")
         
         do {
-            // Load the data from the JSON file
-            let data = try Data(contentsOf: fileURL)
-            let decoder = JSONDecoder()
-            // Decode the data into an array of Runes
-            let runes = try decoder.decode([Rune].self, from: data)
-            // Update the loadedRunes property with the decoded runes
-            loadedRunes = runes
-        } catch {
-            // If an error occurs while loading or decoding the data, print the error and terminate the app
-            fatalError("Failed to load ElderFuthark.json: \(error)")
+            let results = try context.fetch(request)
+            for r in results {
+                if r.origin != "Icelandic" {
+                    continue
+                }
+                
+                print(r.name)
+                print(r.origin)
+                
+                if let strophes = r.strophes as? Set<Strophe> {
+                    for s in strophes {
+                        print(s.text)
+                        print(s.translation.english)
+                        
+                        if let notes = s.notes as? Set<Note> {
+                            for n in notes {
+                                print(n.text)
+                                
+                                if let t = n.translation {
+                                    print(t.english)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        catch let error as NSError{
+            fatalError("Failed to load database: \(error)")
         }
     }
 }

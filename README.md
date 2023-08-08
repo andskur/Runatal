@@ -49,7 +49,7 @@ Runatal
 │   │
 │   └── RunatalApp.swift  # Main entry point of the application
 │
-├── WatchOsApp  # Contains the source code for the watchOS version of the app
+├── WatchApp  # Contains the source code for the watchOS version of the app
 │   ├── RunatalWatchOsApp.swift  # Main entry point of the watchOS application
 │   └── RuneListView.swift  # View for displaying the list of runes in the watchOS app
 │

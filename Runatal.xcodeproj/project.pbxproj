@@ -15,22 +15,47 @@
 		A13E01172A76CF41009F495E /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01162A76CF40009F495E /* Rune.swift */; };
 		A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01182A76DDA0009F495E /* RuneDetailView.swift */; };
 		A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
-		A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011C2A76E947009F495E /* RunePoemView.swift */; };
+		A14E27BA2A80590300DAC15E /* RuneStrophesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27B92A80590300DAC15E /* RuneStrophesView.swift */; };
+		A14E27BC2A805BCD00DAC15E /* StropheView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27BB2A805BCD00DAC15E /* StropheView.swift */; };
+		A14E27C12A812BC000DAC15E /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C02A812BC000DAC15E /* Translation.swift */; };
+		A14E27C22A812BC000DAC15E /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C02A812BC000DAC15E /* Translation.swift */; };
+		A14E27C42A812F1100DAC15E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C32A812F1100DAC15E /* Note.swift */; };
+		A14E27C52A812F1100DAC15E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C32A812F1100DAC15E /* Note.swift */; };
+		A14E27C72A8197FD00DAC15E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C62A8197FD00DAC15E /* NotesView.swift */; };
+		A14E27C82A8197FD00DAC15E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C62A8197FD00DAC15E /* NotesView.swift */; };
+		A153C74B2A7980F600B055B1 /* RunatalWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */; };
+		A153C74D2A7980F600B055B1 /* RunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74C2A7980F600B055B1 /* RunesListView.swift */; };
+		A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A153C74E2A7980F700B055B1 /* Assets.xcassets */; };
+		A153C7552A7980F700B055B1 /* RunatalWatchOs Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A153C7592A7981A600B055B1 /* ElderFuthark.json in Resources */ = {isa = PBXBuildFile; fileRef = A13E01102A76CD1D009F495E /* ElderFuthark.json */; };
+		A153C75A2A7981AB00B055B1 /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
+		A153C75B2A7981AB00B055B1 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01162A76CF40009F495E /* Rune.swift */; };
+		A153C75C2A7981AD00B055B1 /* RunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01142A76CF3A009F495E /* RunesController.swift */; };
+		A199F60B2A7FD6A100168F01 /* RunatalModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A199F6092A7FD6A100168F01 /* RunatalModel.xcdatamodeld */; };
+		A199F60C2A7FD6A100168F01 /* RunatalModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A199F6092A7FD6A100168F01 /* RunatalModel.xcdatamodeld */; };
+		A199F6132A7FEE0600168F01 /* DataMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6122A7FEE0600168F01 /* DataMigration.swift */; };
+		A199F6142A7FEE0600168F01 /* DataMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6122A7FEE0600168F01 /* DataMigration.swift */; };
+		A199F6162A7FEEC400168F01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6152A7FEEC400168F01 /* CoreDataManager.swift */; };
+		A199F6172A7FEEC400168F01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6152A7FEEC400168F01 /* CoreDataManager.swift */; };
+		A199F6192A80199000168F01 /* Strophe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6182A80199000168F01 /* Strophe.swift */; };
+		A199F61A2A80199000168F01 /* Strophe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6182A80199000168F01 /* Strophe.swift */; };
+		A199F61C2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
+		A199F61D2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 		A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */; };
 		A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */; };
-		A1EF26942A794E1800BA9F69 /* RunatalWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */; };
-		A1EF26962A794E1800BA9F69 /* RunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26952A794E1800BA9F69 /* RunesListView.swift */; };
-		A1EF26982A794E1900BA9F69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26972A794E1900BA9F69 /* Assets.xcassets */; };
-		A1EF26BB2A794E9200BA9F69 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01162A76CF40009F495E /* Rune.swift */; };
-		A1EF26BC2A794E9600BA9F69 /* RunePoem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E011A2A76E73F009F495E /* RunePoem.swift */; };
-		A1EF26BD2A794E9A00BA9F69 /* RunesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13E01142A76CF3A009F495E /* RunesController.swift */; };
-		A1EF26BE2A7950D600BA9F69 /* ElderFuthark.json in Resources */ = {isa = PBXBuildFile; fileRef = A13E01102A76CD1D009F495E /* ElderFuthark.json */; };
 		A1EF26C02A79649100BA9F69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26BF2A79649100BA9F69 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A153C7532A7980F700B055B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13E00D52A76BED6009F495E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A153C7472A7980F600B055B1;
+			remoteInfo = "RunatalWatchOs Watch App";
+		};
 		A1EF267C2A77ADE600BA9F69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A13E00D52A76BED6009F495E /* Project object */;
@@ -39,6 +64,20 @@
 			remoteInfo = Runatal;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A153C73B2A797FD400B055B1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A153C7552A7980F700B055B1 /* RunatalWatchOs Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A13E00DD2A76BED6009F495E /* Runatal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runatal.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,7 +90,20 @@
 		A13E01162A76CF40009F495E /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		A13E01182A76DDA0009F495E /* RuneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneDetailView.swift; sourceTree = "<group>"; };
 		A13E011A2A76E73F009F495E /* RunePoem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoem.swift; sourceTree = "<group>"; };
-		A13E011C2A76E947009F495E /* RunePoemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemView.swift; sourceTree = "<group>"; };
+		A14E27B92A80590300DAC15E /* RuneStrophesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneStrophesView.swift; sourceTree = "<group>"; };
+		A14E27BB2A805BCD00DAC15E /* StropheView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StropheView.swift; sourceTree = "<group>"; };
+		A14E27C02A812BC000DAC15E /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		A14E27C32A812F1100DAC15E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		A14E27C62A8197FD00DAC15E /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunatalWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
+		A153C74C2A7980F600B055B1 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
+		A153C74E2A7980F700B055B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A199F60A2A7FD6A100168F01 /* RunatalModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RunatalModel.xcdatamodel; sourceTree = "<group>"; };
+		A199F6122A7FEE0600168F01 /* DataMigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataMigration.swift; sourceTree = "<group>"; };
+		A199F6152A7FEEC400168F01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A199F6182A80199000168F01 /* Strophe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strophe.swift; sourceTree = "<group>"; };
+		A199F61B2A802CC600168F01 /* RunePoems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RunePoems.json; sourceTree = "<group>"; };
 		A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunatalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesControllerTests.swift; sourceTree = "<group>"; };
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -59,15 +111,18 @@
 		A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = SOURCE_ROOT; };
 		A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneUnitTests.swift; sourceTree = "<group>"; };
 		A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemUnitTests.swift; sourceTree = "<group>"; };
-		A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunatalWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
-		A1EF26952A794E1800BA9F69 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
-		A1EF26972A794E1900BA9F69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1EF26BF2A79649100BA9F69 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A13E00DA2A76BED6009F495E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A153C7452A7980F600B055B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,26 +136,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1EF268E2A794E1800BA9F69 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A13E00D42A76BED6009F495E = {
 			isa = PBXGroup;
 			children = (
+				A199F6092A7FD6A100168F01 /* RunatalModel.xcdatamodeld */,
 				A1EF26BF2A79649100BA9F69 /* README.md */,
 				A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */,
 				A1EF26832A77AF8500BA9F69 /* LICENSE */,
 				A1EF26732A77ADBF00BA9F69 /* Tests */,
 				A13E010D2A76CCE3009F495E /* Assets */,
 				A13E010B2A76BF7C009F495E /* Source */,
-				A1EF26922A794E1800BA9F69 /* WatchOsApp */,
+				A153C7492A7980F600B055B1 /* WatchApp */,
 				A13E00DE2A76BED6009F495E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,7 +159,7 @@
 			children = (
 				A13E00DD2A76BED6009F495E /* Runatal.app */,
 				A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */,
-				A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */,
+				A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -118,12 +167,14 @@
 		A13E010B2A76BF7C009F495E /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A199F6112A7FEDF700168F01 /* Utils */,
 				A13E01132A76CEF7009F495E /* Controllers */,
 				A13E01122A76CEF3009F495E /* Models */,
 				A13E00E62A76BED7009F495E /* Runatal.entitlements */,
 				A13E010C2A76BF99009F495E /* Views */,
 				A13E00E42A76BED7009F495E /* Assets.xcassets */,
 				A13E00E02A76BED6009F495E /* RunatalApp.swift */,
+				A199F6152A7FEEC400168F01 /* CoreDataManager.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -133,7 +184,9 @@
 			children = (
 				A13E00E22A76BED6009F495E /* RunesView.swift */,
 				A13E01182A76DDA0009F495E /* RuneDetailView.swift */,
-				A13E011C2A76E947009F495E /* RunePoemView.swift */,
+				A14E27B92A80590300DAC15E /* RuneStrophesView.swift */,
+				A14E27BB2A805BCD00DAC15E /* StropheView.swift */,
+				A14E27C62A8197FD00DAC15E /* NotesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -142,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				A13E01102A76CD1D009F495E /* ElderFuthark.json */,
+				A199F61B2A802CC600168F01 /* RunePoems.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -151,6 +205,9 @@
 			children = (
 				A13E01162A76CF40009F495E /* Rune.swift */,
 				A13E011A2A76E73F009F495E /* RunePoem.swift */,
+				A199F6182A80199000168F01 /* Strophe.swift */,
+				A14E27C02A812BC000DAC15E /* Translation.swift */,
+				A14E27C32A812F1100DAC15E /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -161,6 +218,24 @@
 				A13E01142A76CF3A009F495E /* RunesController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A153C7492A7980F600B055B1 /* WatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */,
+				A153C74C2A7980F600B055B1 /* RunesListView.swift */,
+				A153C74E2A7980F700B055B1 /* Assets.xcassets */,
+			);
+			path = WatchApp;
+			sourceTree = "<group>";
+		};
+		A199F6112A7FEDF700168F01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A199F6122A7FEE0600168F01 /* DataMigration.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		A1EF26732A77ADBF00BA9F69 /* Tests */ = {
@@ -182,16 +257,6 @@
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
-		A1EF26922A794E1800BA9F69 /* WatchOsApp */ = {
-			isa = PBXGroup;
-			children = (
-				A1EF26932A794E1800BA9F69 /* RunatalWatchOsApp.swift */,
-				A1EF26952A794E1800BA9F69 /* RunesListView.swift */,
-				A1EF26972A794E1900BA9F69 /* Assets.xcassets */,
-			);
-			path = WatchOsApp;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,14 +267,33 @@
 				A13E00D92A76BED6009F495E /* Sources */,
 				A13E00DA2A76BED6009F495E /* Frameworks */,
 				A13E00DB2A76BED6009F495E /* Resources */,
+				A153C73B2A797FD400B055B1 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A153C7542A7980F700B055B1 /* PBXTargetDependency */,
+			);
+			name = Runatal;
+			productName = Runatal;
+			productReference = A13E00DD2A76BED6009F495E /* Runatal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A153C7472A7980F600B055B1 /* RunatalWatchOs Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A153C7562A7980F700B055B1 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */;
+			buildPhases = (
+				A153C7442A7980F600B055B1 /* Sources */,
+				A153C7452A7980F600B055B1 /* Frameworks */,
+				A153C7462A7980F600B055B1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Runatal;
-			productName = Runatal;
-			productReference = A13E00DD2A76BED6009F495E /* Runatal.app */;
+			name = "RunatalWatchOs Watch App";
+			productName = "RunatalWatchOs Watch App";
+			productReference = A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A1EF26772A77ADE600BA9F69 /* RunatalTests */ = {
@@ -230,23 +314,6 @@
 			productReference = A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		A1EF26902A794E1800BA9F69 /* RunatalWatchOs Watch App */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A1EF26B22A794E1A00BA9F69 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */;
-			buildPhases = (
-				A1EF268D2A794E1800BA9F69 /* Sources */,
-				A1EF268E2A794E1800BA9F69 /* Frameworks */,
-				A1EF268F2A794E1800BA9F69 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "RunatalWatchOs Watch App";
-			productName = "RunatalWatchOs Watch App";
-			productReference = A1EF26912A794E1800BA9F69 /* RunatalWatchOs Watch App.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -260,12 +327,12 @@
 					A13E00DC2A76BED6009F495E = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
+					A153C7472A7980F600B055B1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
 					A1EF26772A77ADE600BA9F69 = {
 						CreatedOnToolsVersion = 14.3.1;
 						TestTargetID = A13E00DC2A76BED6009F495E;
-					};
-					A1EF26902A794E1800BA9F69 = {
-						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
 			};
@@ -284,7 +351,7 @@
 			targets = (
 				A13E00DC2A76BED6009F495E /* Runatal */,
 				A1EF26772A77ADE600BA9F69 /* RunatalTests */,
-				A1EF26902A794E1800BA9F69 /* RunatalWatchOs Watch App */,
+				A153C7472A7980F600B055B1 /* RunatalWatchOs Watch App */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +364,18 @@
 				A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */,
 				A13E01112A76CD1D009F495E /* ElderFuthark.json in Resources */,
 				A1EF26C02A79649100BA9F69 /* README.md in Resources */,
+				A199F61C2A802CC600168F01 /* RunePoems.json in Resources */,
 				A13E00E52A76BED7009F495E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A153C7462A7980F600B055B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A199F61D2A802CC600168F01 /* RunePoems.json in Resources */,
+				A153C7592A7981A600B055B1 /* ElderFuthark.json in Resources */,
+				A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +386,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1EF268F2A794E1800BA9F69 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1EF26BE2A7950D600BA9F69 /* ElderFuthark.json in Resources */,
-				A1EF26982A794E1900BA9F69 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -324,13 +393,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A13E011D2A76E947009F495E /* RunePoemView.swift in Sources */,
+				A199F6192A80199000168F01 /* Strophe.swift in Sources */,
+				A199F60B2A7FD6A100168F01 /* RunatalModel.xcdatamodeld in Sources */,
+				A14E27BC2A805BCD00DAC15E /* StropheView.swift in Sources */,
 				A13E01152A76CF3A009F495E /* RunesController.swift in Sources */,
+				A14E27C42A812F1100DAC15E /* Note.swift in Sources */,
 				A13E00E32A76BED6009F495E /* RunesView.swift in Sources */,
 				A13E011B2A76E73F009F495E /* RunePoem.swift in Sources */,
 				A13E00E12A76BED6009F495E /* RunatalApp.swift in Sources */,
 				A13E01172A76CF41009F495E /* Rune.swift in Sources */,
 				A13E01192A76DDA0009F495E /* RuneDetailView.swift in Sources */,
+				A199F6162A7FEEC400168F01 /* CoreDataManager.swift in Sources */,
+				A14E27C12A812BC000DAC15E /* Translation.swift in Sources */,
+				A14E27BA2A80590300DAC15E /* RuneStrophesView.swift in Sources */,
+				A199F6132A7FEE0600168F01 /* DataMigration.swift in Sources */,
+				A14E27C72A8197FD00DAC15E /* NotesView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A153C7442A7980F600B055B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A153C74D2A7980F600B055B1 /* RunesListView.swift in Sources */,
+				A199F60C2A7FD6A100168F01 /* RunatalModel.xcdatamodeld in Sources */,
+				A153C74B2A7980F600B055B1 /* RunatalWatchOsApp.swift in Sources */,
+				A153C75A2A7981AB00B055B1 /* RunePoem.swift in Sources */,
+				A153C75C2A7981AD00B055B1 /* RunesController.swift in Sources */,
+				A199F6142A7FEE0600168F01 /* DataMigration.swift in Sources */,
+				A199F6172A7FEEC400168F01 /* CoreDataManager.swift in Sources */,
+				A14E27C52A812F1100DAC15E /* Note.swift in Sources */,
+				A153C75B2A7981AB00B055B1 /* Rune.swift in Sources */,
+				A199F61A2A80199000168F01 /* Strophe.swift in Sources */,
+				A14E27C22A812BC000DAC15E /* Translation.swift in Sources */,
+				A14E27C82A8197FD00DAC15E /* NotesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,21 +440,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A1EF268D2A794E1800BA9F69 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A1EF26BC2A794E9600BA9F69 /* RunePoem.swift in Sources */,
-				A1EF26BB2A794E9200BA9F69 /* Rune.swift in Sources */,
-				A1EF26962A794E1800BA9F69 /* RunesListView.swift in Sources */,
-				A1EF26BD2A794E9A00BA9F69 /* RunesController.swift in Sources */,
-				A1EF26942A794E1800BA9F69 /* RunatalWatchOsApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A153C7542A7980F700B055B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = A153C7472A7980F600B055B1 /* RunatalWatchOs Watch App */;
+			targetProxy = A153C7532A7980F700B055B1 /* PBXContainerItemProxy */;
+		};
 		A1EF267D2A77ADE600BA9F69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A13E00DC2A76BED6009F495E /* Runatal */;
@@ -479,6 +569,7 @@
 		A13E01032A76BED7009F495E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Source/Runatal.entitlements;
@@ -490,6 +581,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Rúnatal";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -518,6 +610,7 @@
 		A13E01042A76BED7009F495E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Source/Runatal.entitlements;
@@ -529,6 +622,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "Rúnatal";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -551,6 +645,67 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A153C7572A7980F700B055B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Andskur.Runatal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Andskur.Runatal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		A153C7582A7980F700B055B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = Andskur.Runatal;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Andskur.Runatal.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
 			};
 			name = Release;
 		};
@@ -598,67 +753,6 @@
 			};
 			name = Release;
 		};
-		A1EF26B32A794E1A00BA9F69 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 4V482C5WA8;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
-			};
-			name = Debug;
-		};
-		A1EF26B42A794E1A00BA9F69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = 4V482C5WA8;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = RunatalWatchOs;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.4;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -680,6 +774,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		A153C7562A7980F700B055B1 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A153C7572A7980F700B055B1 /* Debug */,
+				A153C7582A7980F700B055B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A1EF267E2A77ADE600BA9F69 /* Build configuration list for PBXNativeTarget "RunatalTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -689,16 +792,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A1EF26B22A794E1A00BA9F69 /* Build configuration list for PBXNativeTarget "RunatalWatchOs Watch App" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A1EF26B32A794E1A00BA9F69 /* Debug */,
-				A1EF26B42A794E1A00BA9F69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A199F6092A7FD6A100168F01 /* RunatalModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A199F60A2A7FD6A100168F01 /* RunatalModel.xcdatamodel */,
+			);
+			currentVersion = A199F60A2A7FD6A100168F01 /* RunatalModel.xcdatamodel */;
+			name = RunatalModel.xcdatamodeld;
+			path = DB/RunatalModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A13E00D52A76BED6009F495E /* Project object */;
 }
