@@ -704,7 +704,7 @@
                     "russian": "Тюр — Ас однорукий, и волчий объедок, и капищ властитель."
                 },
                 "index": 12,
-                "runes": ["ᛋ"],
+                "runes": ["ᛏ"],
                 "notes": [{
                         "text": "Mars Tiggi.",
                         "index": 1,
@@ -818,6 +818,350 @@
                     }
                 ]
             }
+        ]
+    },
+    {
+        "name": "Swedish Rune Poem",
+        "origin": "Sweden",
+        "strophes": [{
+                "text": "ᚠ - Fä frande ro |",
+                "translation": {
+                    "english": "Fä kinsmens peace.",
+                    "russian": "Fæ - родичей ссора."
+                },
+                "index": 1,
+                "runes": ["ᚠ"],
+                "notes": [{
+                        "text": "Frid all roo i.e. Frucht åhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "Peace and quiet i.e. Fertile Year",
+                            "russian": "Тишина и покой, т.е. плодородный год"
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚢ - Ur Väder Värst |",
+                "translation": {
+                    "english": "Ur worst of weather. |",
+                    "russian": "Ur - погода наихудшая."
+                },
+                "index": 2,
+                "runes": ["ᚢ"],
+                "notes": [{
+                        "text": "i.e. Urwäder - urwinter",
+                        "index": 1,
+                        "translation": {
+                            "english": "un-weather i.e. Bad winter",
+                            "russian": "непогода т.е. плохая зима"
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚦ - Tors qŭinne qŭal |",
+                "translation": {
+                    "english": "Thor woman’s affliction. |",
+                    "russian": "Tors - женщинам мука."
+                },
+                "index": 3,
+                "runes": ["ᚦ"],
+                "notes": [{
+                        "text": "i.e. Swär Qwinnefödsell",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Difficult birth",
+                            "russian": "т. е. тяжелые роды"
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚮ - Ōs i vario å |",
+                "translation": {
+                    "english": "Mouth/smoke in each river. |",
+                    "russian": "Ōs - у каждой реки."
+                },
+                "index": 4,
+                "runes": ["ᚨ"],
+                "notes": [{
+                        "text": "Oos-Qwaal -o-roo - osund Lufft - Oos i hwarie Wrå",
+                        "index": 1,
+                        "translation": {
+                            "english": "Smoke - affliction, unhealthy air, fume/smoke in each corner.",
+                            "russian": "Дым - недуг, нездоровый воздух, гарь/дым в каждом углу."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚱ - Ridh er hästespräng |",
+                "translation": {
+                    "english": "Ride is horse’s leap -|",
+                    "russian": "Ridh - коням напряжение."
+                },
+                "index": 5,
+                "runes": ["ᚱ"],
+                "notes": [{
+                        "text": "i.e. Riddare Lycka godh",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Rider/knight good fortune.",
+                            "russian": "т. е. всадник / рыцарь удачи."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚴ - Kön i köte värst |",
+                "translation": {
+                    "english": "Sex, worst in the flesh |",
+                    "russian": "Kön - в похоти наихудьший."
+                },
+                "index": 6,
+                "runes": ["ᚲ"],
+                "notes": [{
+                        "text": "i.e. Kättia måste flys",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Must flee the flesh",
+                            "russian": "т. е. Должен бежать от плоти"
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛡ - Hagal er i bo bäst |",
+                "translation": {
+                    "english": "Hail is best when in home |",
+                    "russian": "Hagaler - в доме самый лучший."
+                },
+                "index": 7,
+                "runes": ["ᚺ"],
+                "notes": [{
+                        "text": "Hagl Regn hårdast i.e. Tijdwinter godt Korn åhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "Hail is hardest rain i.e. Timely winter, good grain year.",
+                            "russian": "Град самый сильный дождь, т.е. Своевременная зима, хороший хлебный год."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᚾ - nöd er enda kŭst |",
+                "translation": {
+                    "english": "Need is the only choice |",
+                    "russian": "Nodh - это окончание выбора."
+                },
+                "index": 8,
+                "runes": ["ᚾ"],
+                "notes": [{
+                        "text": "nordanwäder kallast i.e. dyr Tijdh",
+                        "index": 1,
+                        "translation": {
+                            "english": "North weather coldest i.e. hard times.",
+                            "russian": "Северная погода холодная, то есть трудные времена."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛁ - Is bro bredast |",
+                "translation": {
+                    "english": "Ice is broad bridge |",
+                    "russian": "Is - самый широкий мост."
+                },
+                "index": 9,
+                "runes": ["ᛁ"],
+                "notes": [{
+                        "text": "i.e. Isköld, Winteråhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Ice cold winter year.",
+                            "russian": "то есть ледяной зимний год."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛆ - År i bladhe vidast |",
+                "translation": {
+                    "english": "Year in leaves widely |",
+                    "russian": "År - с самыми широкими листьями."
+                },
+                "index": 10,
+                "runes": ["ᛃ"],
+                "notes": [{
+                        "text": "i.e. åhr öfwer alt godt",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Year makes all well.",
+                            "russian": "то есть год делает все хорошо."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛋ - Sōl i himbla högest",
+                "translation": {
+                    "english": "Year in leaves widely |",
+                    "russian": "Sōl - выше всего в небе."
+                },
+                "index": 11,
+                "runes": ["ᛋ"],
+                "notes": [{
+                        "text": "i.e. Blåsåhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Windy Year.",
+                            "russian": "то есть ветреный год."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛏ - i Vatŭm ledast |",
+                "translation": {
+                    "english": "Tyr (bull) is badly off in water / Tyr is meanest of spirits. |",
+                    "russian": "Tyr - в воде отвратительный."
+                },
+                "index": 12,
+                "runes": ["ᛏ"],
+                "notes": [{
+                        "text": "Tyri brinner bäst i.e. dyrast",
+                        "index": 1,
+                        "translation": {
+                            "english": "Wood is hardest for burning.",
+                            "russian": "Древесина труднее для сжигания."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛒ - Biörkahult grönast |",
+                "translation": {
+                    "english": "Birch forest greenest |",
+                    "russian": "Bijrbal - березовый огонь."
+                },
+                "index": 13,
+                "runes": ["ᛒ"],
+                "notes": [{
+                        "text": "Biörkbrumar frodast i.e. bäst til Wärke",
+                        "index": 1,
+                        "translation": {
+                            "english": "Birch branches fertile, i.e. Best for working.",
+                            "russian": "Березовые ветви плодородны, то есть лучше всего для работы."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛚ - Lagh är landsens ära / Landzrätt |",
+                "translation": {
+                    "english": "Law is lands honor/glory |",
+                    "russian": "Lagh - это реки земли."
+                },
+                "index": 14,
+                "runes": ["ᛚ"],
+                "notes": [{
+                        "text": "Lagom boo bäst i.e. Träteåhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "Middle way is best in the home i.e. a year of conflict.",
+                            "russian": "Средний путь лучше всего в доме, то есть год конфликта."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛘ - Mager Mullägor |",
+                "translation": {
+                    "english": "Man earthen field |",
+                    "russian": "Mager - человек, не достигший зрелости."
+                },
+                "index": 15,
+                "runes": ["ᛗ"],
+                "notes": [{
+                        "text": "try Lius i.e. gyllen åhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "Three lights i.e. Golden Year.",
+                            "russian": "Три огня, то есть золотой год."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛦ - Aur madur Ϸing söker |",
+                "translation": {
+                    "english": "(meaning unclear) |",
+                    "russian": "Unger man - молодой человек."
+                },
+                "index": 16,
+                "runes": ["ᛉ"],
+                "notes": [{
+                        "text": "i.e. dyr Tijd",
+                        "index": 1,
+                        "translation": {
+                            "english": "I.e. hard times.",
+                            "russian": "Т.е. тяжелые времена."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛮ - Aflagt / olagit |",
+                "translation": {
+                    "english": "(meaning unclear) |",
+                    "russian": "Aflagt - ненужная вещь."
+                },
+                "index": 17,
+                "notes": [{
+                        "text": "i.e. Alt godt",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Everything good.",
+                            "russian": "то есть все хорошо."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛯ - Twe sämer bäst |",
+                "translation": {
+                    "english": "Good double agreement |",
+                    "russian": "Twe-madhur - двойное лето."
+                },
+                "index": 18,
+                "notes": [{
+                        "text": "i.e. Dubbelt gyllen åhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "i.e. Double golden Year.",
+                            "russian": "то есть двойной золотой год."
+                        }
+                    }
+                ]
+            },
+            {
+                "text": "ᛰ - Belgbunden Thor |",
+                "translation": {
+                    "english": "Bellybound (inflated) Thor |",
+                    "russian": "Belgtor - мешок Тор."
+                },
+                "index": 19,
+                "notes": [{
+                        "text": "i.e. Swårt | odrygt åhr | doch godt Kornåhr",
+                        "index": 1,
+                        "translation": {
+                            "english": "I.e. Black year of hartship, but good crops.",
+                            "russian": "т.е. Черный год лишений, но хороших урожаев."
+                        }
+                    }
+                ]
+            },
         ]
     }
 ]
