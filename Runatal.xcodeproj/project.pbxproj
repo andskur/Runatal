@@ -23,6 +23,7 @@
 		A14E27C52A812F1100DAC15E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C32A812F1100DAC15E /* Note.swift */; };
 		A14E27C72A8197FD00DAC15E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C62A8197FD00DAC15E /* NotesView.swift */; };
 		A14E27C82A8197FD00DAC15E /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C62A8197FD00DAC15E /* NotesView.swift */; };
+		A14E27CA2A82381700DAC15E /* TranslationUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A14E27C92A82381700DAC15E /* TranslationUnitTests.swift */; };
 		A153C74B2A7980F600B055B1 /* RunatalWatchOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */; };
 		A153C74D2A7980F600B055B1 /* RunesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A153C74C2A7980F600B055B1 /* RunesListView.swift */; };
 		A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A153C74E2A7980F700B055B1 /* Assets.xcassets */; };
@@ -43,8 +44,6 @@
 		A199F61D2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
-		A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */; };
-		A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */; };
 		A1EF26C02A79649100BA9F69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26BF2A79649100BA9F69 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +94,7 @@
 		A14E27C02A812BC000DAC15E /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
 		A14E27C32A812F1100DAC15E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A14E27C62A8197FD00DAC15E /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
+		A14E27C92A82381700DAC15E /* TranslationUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationUnitTests.swift; sourceTree = "<group>"; };
 		A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunatalWatchOs Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A153C74A2A7980F600B055B1 /* RunatalWatchOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunatalWatchOsApp.swift; sourceTree = "<group>"; };
 		A153C74C2A7980F600B055B1 /* RunesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesListView.swift; sourceTree = "<group>"; };
@@ -109,8 +109,6 @@
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A1EF26842A77B03D00BA9F69 /* Runatal.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Runatal.xctestplan; sourceTree = "<group>"; };
 		A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrivacyPolicy.md; sourceTree = SOURCE_ROOT; };
-		A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuneUnitTests.swift; sourceTree = "<group>"; };
-		A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunePoemUnitTests.swift; sourceTree = "<group>"; };
 		A1EF26BF2A79649100BA9F69 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,8 +249,7 @@
 			children = (
 				A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */,
 				A1EF26842A77B03D00BA9F69 /* Runatal.xctestplan */,
-				A1EF26892A78521000BA9F69 /* RuneUnitTests.swift */,
-				A1EF268B2A78524F00BA9F69 /* RunePoemUnitTests.swift */,
+				A14E27C92A82381700DAC15E /* TranslationUnitTests.swift */,
 			);
 			path = UnitTests;
 			sourceTree = "<group>";
@@ -434,9 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1EF268C2A78524F00BA9F69 /* RunePoemUnitTests.swift in Sources */,
 				A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */,
-				A1EF268A2A78521000BA9F69 /* RuneUnitTests.swift in Sources */,
+				A14E27CA2A82381700DAC15E /* TranslationUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

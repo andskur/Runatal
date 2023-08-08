@@ -8,7 +8,7 @@
 import XCTest
 @testable import Runatal
 
-final class RunatalTests: XCTestCase {
+final class RunesControllerlTests: XCTestCase {
     var runesController: RunesController!
     
     override func setUp() {
