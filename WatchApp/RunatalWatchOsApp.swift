@@ -11,7 +11,7 @@ import SwiftUI
 struct RunatalWatchOs_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            RunesListView()
+            RunesListWatchView()
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RunesListView: View {
+struct RunesListWatchView: View {
     @StateObject private var controller = RunesController()
     @State private var isSettingsActive = false
     
@@ -65,6 +65,6 @@ struct RunesListView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        RunesListView()
+        RunesListWatchView()
     }
 }

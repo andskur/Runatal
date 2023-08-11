@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct ContentView: View {
+struct RunesView: View {
     @StateObject private var controller = RunesController()
     @State private var isSettingsActive = false
     @State private var selectedRune: Rune?
@@ -60,6 +60,10 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("ᚠᚢᚦᚨᚱᚲ")
+        } content: {
+            
+            Text("JOP")
+            
         } detail: {
             ZStack {
                 if let rune = selectedRune {
