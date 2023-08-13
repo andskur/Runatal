@@ -16,39 +16,16 @@ class RunePoemsController: ObservableObject {
     
     init() {
         loadPoems()
-//        loadPoems()
     }
     
     func loadPoems() {
         let request : NSFetchRequest<RunePoem> = NSFetchRequest(entityName: "RunePoem")
+        let sort = NSSortDescriptor(key: #keyPath(RunePoem.origin), ascending: true)
+        request.sortDescriptors = [sort]
+
         
         do {
             let results = try context.fetch(request)
-//            for r in results {
-//                if r.origin != "Icelandic" {
-//                    continue
-//                }
-//
-//                print(r.name)
-//                print(r.origin)
-//
-//                if let strophes = r.strophes as? Set<Strophe> {
-//                    for s in strophes {
-//                        print(s.text)
-//                        print(s.translation.english)
-//
-//                        if let notes = s.notes as? Set<Note> {
-//                            for n in notes {
-//                                print(n.text)
-//
-//                                if let t = n.translation {
-//                                    print(t.english)
-//                                }
-//                            }
-//                        }
-//                    }
-//                }
-//            }
             loadedRunePoems = results
         }
         catch let error as NSError{

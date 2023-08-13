@@ -1,14 +1,13 @@
 //
-//  Notes.swift
+//  RunePoemStropheNotesView.swift
 //  Runatal
 //
-//  Created by Andrey Skurlatov on 7.8.23..
+//  Created by Andrey Skurlatov on 13.8.23..
 //
 
 import SwiftUI
 
-struct NotesView: View {
-    let notes: [Note]
+struct RunePoemStropheNotesView: View {    let notes: [Note]
     let translationLanguage: TranslationLanguage
     
     init(notes: [Note], translationLanguage: TranslationLanguage) {
@@ -17,9 +16,6 @@ struct NotesView: View {
     }
     
     var body: some View {
-        Divider()
-        Text("Notes:").font(.title3)
-        
         ForEach(notes, id: \.self) { note in
             HStack(alignment: .top) {
                 VStack {
@@ -28,6 +24,8 @@ struct NotesView: View {
                         .layoutPriority(1) // High priority for this text
                 }
                 .frame(maxWidth: .infinity)
+                
+                Divider()
                 
                 VStack {
                     if let translation = note.translation {
@@ -38,13 +36,12 @@ struct NotesView: View {
                 }
                 .frame(maxWidth: .infinity)
             }
-            Divider()
         }
     }
 }
 
-struct Notes_Previews: PreviewProvider {
+struct RunePoemStropheNotesView_Previews: PreviewProvider {
     static var previews: some View {
-        NotesView(notes: [], translationLanguage: TranslationLanguage.english)
+        RunePoemStropheNotesView(notes: [], translationLanguage: TranslationLanguage.english)
     }
 }

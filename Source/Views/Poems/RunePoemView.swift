@@ -14,9 +14,15 @@ struct RunePoemView: View {
     var body: some View {
         ScrollView {
             VStack {
-                Text(poem.name).font(.title2)
+                Group {
+                    Text(poem.name).font(.title)
+                    Text(poem.origin).font(.title2)
+                }
+                .padding()
+                
                 HStack {
                     Text("Original")
+                    Divider()
                     Text("Translation")
                 }
                 
@@ -24,23 +30,10 @@ struct RunePoemView: View {
                 
                 
                 if let strophesSet = poem.strophes as? Set<Strophe> {
-                    ForEach(Array(strophesSet), id: \.self) { strophe in
-                        HStack {
-                            VStack {
-                                Text(strophe.text)
-                            }
-                            .frame(maxWidth: .infinity)
-                            
-                            VStack {
-                                Text(strophe.translation.generate(language: .english))
-                            }
-                            .frame(maxWidth: .infinity)
-                            
-                        }
-//                        StropheView(strophe: strophe, translationLanguage: translationLanguage)
-                    }
+                    RunePoemStrophesView(strophes: Array(strophesSet), translationLanguage: translationLanguage)
                 }
             }
+            .padding()
         }
     }
 }

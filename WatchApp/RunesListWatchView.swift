@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct RunesListWatchView: View {
-    @StateObject private var controller = RunesController()
+    @StateObject private var runesController = RunesController()
+    @StateObject private var menuController = MenuController()
+
     @State private var isSettingsActive = false
     
     var settings: some View {
         Group {
             Form {
-                Picker("Translation", selection: $controller.translation) {
+                Picker("Translation", selection: $menuController.translation) {
                     ForEach(TranslationLanguage.allCases, id: \.self) { translation in
                         Text(translation.rawValue.capitalized).tag(translation)
                     }
@@ -42,7 +44,7 @@ struct RunesListWatchView: View {
                 Spacer()
                 
                 LazyVStack(alignment: .leading) { // Use LazyVStack for improved performance
-                    ForEach(controller.loadedRunes) { rune in
+                    ForEach(runesController.loadedRunes) { rune in
                         Group {
                             Text(rune.symbol).font(.system(size: 90)).fontWeight(.bold)
                             Divider()

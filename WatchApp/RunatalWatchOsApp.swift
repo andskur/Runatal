@@ -9,6 +9,10 @@ import SwiftUI
 
 @main
 struct RunatalWatchOs_Watch_AppApp: App {
+    init() {
+        DataMigration.migrateAll()
+    }
+    
     var body: some Scene {
         WindowGroup {
             RunesListWatchView()

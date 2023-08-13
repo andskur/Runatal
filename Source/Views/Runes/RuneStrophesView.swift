@@ -36,7 +36,7 @@ struct RuneStrophesView: View {
         }
         
         if let strophe = selectedStrophe {
-            StropheView(strophe: strophe, translationLanguage: translationLanguage)
+            RuneStropheView(strophe: strophe, translationLanguage: translationLanguage)
         } else {
             Text("No strophe selected")
         }
