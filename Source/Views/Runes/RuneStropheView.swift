@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StropheView: View {
+struct RuneStropheView: View {
     let strophe: Strophe
     let translationLanguage: TranslationLanguage
     
@@ -37,7 +37,7 @@ struct StropheView: View {
             
             if let notes = strophe.notes as? Set<Note> {
                 if notes.count > 0 {  
-                    NotesView(notes: Array(notes), translationLanguage: translationLanguage)
+                    RuneStropheNotesView(notes: Array(notes), translationLanguage: translationLanguage)
                 }
             }
         }
@@ -50,6 +50,6 @@ struct StropheView: View {
 
 struct StropheView_Previews: PreviewProvider {
     static var previews: some View {
-        StropheView(strophe: Strophe.init(), translationLanguage: TranslationLanguage.english)
+        RuneStropheView(strophe: Strophe.init(), translationLanguage: TranslationLanguage.english)
     }
 }

@@ -8,17 +8,9 @@
 import Foundation
 import CoreData
 
-// Enum to represent the different translation languages supported by the app
-enum TranslationLanguage: String, CaseIterable {
-    case english
-    case russian
-}
-
 // Class to manage the state and behavior of the runes in the app
 class RunesController: ObservableObject {
     // Published property to hold the current translation language, which will cause the view to update when it changes
-    @Published var translation: TranslationLanguage = .russian
-    // Published property to hold the loaded runes, which will cause the view to update when it changes
     @Published var loadedRunes: [Rune] = []
     
     let context = CoreDataManager.shared.viewContext
@@ -26,7 +18,6 @@ class RunesController: ObservableObject {
     // Initializer to load the runes data when a new instance of RunesController is created
     init() {
         loadRunesData()
-//        loadPoems()
     }
     
     // Function to load the runes data from the JSON file
@@ -37,57 +28,7 @@ class RunesController: ObservableObject {
 
         do {
             let results = try context.fetch(request)
-//            for r in results {
-//                print(r.name)
-//                print(r.meaning.english)
-
-//                if let strophes = r.strophes as? Set<Strophe> {
-//                    for s in strophes {
-//                        print(s.runePoem.name)
-//                        print(s.text)
-//                        print(s.translation.english)
-//                    }
-//                }
-//            }
-
             loadedRunes = results
-        }
-        catch let error as NSError{
-            fatalError("Failed to load database: \(error)")
-        }
-    }
-    
-    func loadPoems() {
-        let request : NSFetchRequest<RunePoem> = NSFetchRequest(entityName: "RunePoem")
-        
-        do {
-            let results = try context.fetch(request)
-            for r in results {
-                if r.origin != "Icelandic" {
-                    continue
-                }
-                
-                print(r.name)
-                print(r.origin)
-                
-                if let strophes = r.strophes as? Set<Strophe> {
-                    for s in strophes {
-                        print(s.text)
-                        print(s.translation.english)
-                        
-                        if let notes = s.notes as? Set<Note> {
-                            for n in notes {
-                                print(n.text)
-                                
-                                if let t = n.translation {
-                                    print(t.english)
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
         }
         catch let error as NSError{
             fatalError("Failed to load database: \(error)")
