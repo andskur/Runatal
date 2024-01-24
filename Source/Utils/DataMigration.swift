@@ -45,14 +45,14 @@ class DataMigration {
             print("Failed to migrate data: \(error)")
         }
         
-//        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Rune")
-//        let deleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
-//
-//        do {
-//            try context.execute(deleteRequest2)
-//        } catch let error as NSError {
-//            print("Failed to migrate data: \(error)")
-//        }
+        let fetchRequest2: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: "Rune")
+        let deleteRequest2 = NSBatchDeleteRequest(fetchRequest: fetchRequest2)
+
+        do {
+            try context.execute(deleteRequest2)
+        } catch let error as NSError {
+            print("Failed to migrate data: \(error)")
+        }
     }
 
     
@@ -61,10 +61,10 @@ class DataMigration {
         let migrationKey = "hasMigratedRunes"
 
         // Check if the migration has already been performed
-        if userDefaults.bool(forKey: migrationKey) {
-            print("Migration already performed; skipping.")
-            return
-        }
+//        if userDefaults.bool(forKey: migrationKey) {
+//            print("Migration already performed; skipping.")
+//            return
+//        }
 
         // Step 2: Read the JSON File
         guard let url = Bundle.main.url(forResource: "ElderFuthark", withExtension: "json") else { return }

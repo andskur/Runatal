@@ -20,7 +20,7 @@ class RunesController: ObservableObject {
         loadRunesData()
     }
     
-    // Function to load the runes data from the JSON file
+    // Function to load the runes data from the database
     func loadRunesData() {
         let request : NSFetchRequest<Rune> = NSFetchRequest(entityName: "Rune")
         let sort = NSSortDescriptor(key: #keyPath(Rune.index), ascending: true)

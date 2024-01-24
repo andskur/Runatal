@@ -20,5 +20,5 @@ enum TranslationLanguage: String, CaseIterable {
 
 class MenuController: ObservableObject {
     // Published property to hold the current translation language, which will cause the view to update when it changes
-    @Published var translation: TranslationLanguage = .russian
+    @Published var translation: TranslationLanguage = .english
 }
