@@ -43,6 +43,8 @@
 		A199F61A2A80199000168F01 /* Strophe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A199F6182A80199000168F01 /* Strophe.swift */; };
 		A199F61C2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A199F61D2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
+		A1AD0B3E2B62A2AE003F5B2E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD0B3D2B62A2AE003F5B2E /* KeyboardViewController.swift */; };
+		A1AD0B422B62A2AE003F5B2E /* futhark keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 		A1EF26C02A79649100BA9F69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26BF2A79649100BA9F69 /* README.md */; };
@@ -61,6 +63,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A153C7472A7980F600B055B1;
 			remoteInfo = "RunatalWatchOs Watch App";
+		};
+		A1AD0B402B62A2AE003F5B2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A13E00D52A76BED6009F495E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1AD0B3A2B62A2AE003F5B2E;
+			remoteInfo = "futhark keyboard";
 		};
 		A1EF267C2A77ADE600BA9F69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -81,6 +90,17 @@
 				A153C7552A7980F700B055B1 /* RunatalWatchOs Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C901452B61CDBD005A7090 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1AD0B422B62A2AE003F5B2E /* futhark keyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -113,6 +133,9 @@
 		A199F6152A7FEEC400168F01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		A199F6182A80199000168F01 /* Strophe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strophe.swift; sourceTree = "<group>"; };
 		A199F61B2A802CC600168F01 /* RunePoems.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = RunePoems.json; sourceTree = "<group>"; };
+		A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "futhark keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1AD0B3D2B62A2AE003F5B2E /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A1AD0B3F2B62A2AE003F5B2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunatalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesControllerTests.swift; sourceTree = "<group>"; };
 		A1EF26832A77AF8500BA9F69 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -140,6 +163,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AD0B382B62A2AE003F5B2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1EF26752A77ADE600BA9F69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -161,6 +191,7 @@
 				A13E010D2A76CCE3009F495E /* Assets */,
 				A13E010B2A76BF7C009F495E /* Source */,
 				A153C7492A7980F600B055B1 /* WatchApp */,
+				A1AD0B3C2B62A2AE003F5B2E /* futhark keyboard */,
 				A13E00DE2A76BED6009F495E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -171,6 +202,7 @@
 				A13E00DD2A76BED6009F495E /* Runatal.app */,
 				A1EF26782A77ADE600BA9F69 /* RunatalTests.xctest */,
 				A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */,
+				A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -271,6 +303,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		A1AD0B3C2B62A2AE003F5B2E /* futhark keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				A1AD0B3D2B62A2AE003F5B2E /* KeyboardViewController.swift */,
+				A1AD0B3F2B62A2AE003F5B2E /* Info.plist */,
+			);
+			path = "futhark keyboard";
+			sourceTree = "<group>";
+		};
 		A1EF26732A77ADBF00BA9F69 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -300,11 +341,13 @@
 				A13E00DA2A76BED6009F495E /* Frameworks */,
 				A13E00DB2A76BED6009F495E /* Resources */,
 				A153C73B2A797FD400B055B1 /* Embed Watch Content */,
+				A1C901452B61CDBD005A7090 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				A153C7542A7980F700B055B1 /* PBXTargetDependency */,
+				A1AD0B412B62A2AE003F5B2E /* PBXTargetDependency */,
 			);
 			name = Runatal;
 			productName = Runatal;
@@ -327,6 +370,23 @@
 			productName = "RunatalWatchOs Watch App";
 			productReference = A153C7482A7980F600B055B1 /* RunatalWatchOs Watch App.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A1AD0B3A2B62A2AE003F5B2E /* futhark keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1AD0B432B62A2AE003F5B2E /* Build configuration list for PBXNativeTarget "futhark keyboard" */;
+			buildPhases = (
+				A1AD0B372B62A2AE003F5B2E /* Sources */,
+				A1AD0B382B62A2AE003F5B2E /* Frameworks */,
+				A1AD0B392B62A2AE003F5B2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "futhark keyboard";
+			productName = "futhark keyboard";
+			productReference = A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		A1EF26772A77ADE600BA9F69 /* RunatalTests */ = {
 			isa = PBXNativeTarget;
@@ -353,7 +413,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					A13E00DC2A76BED6009F495E = {
@@ -361,6 +421,9 @@
 					};
 					A153C7472A7980F600B055B1 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					A1AD0B3A2B62A2AE003F5B2E = {
+						CreatedOnToolsVersion = 15.2;
 					};
 					A1EF26772A77ADE600BA9F69 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -384,6 +447,7 @@
 				A13E00DC2A76BED6009F495E /* Runatal */,
 				A1EF26772A77ADE600BA9F69 /* RunatalTests */,
 				A153C7472A7980F600B055B1 /* RunatalWatchOs Watch App */,
+				A1AD0B3A2B62A2AE003F5B2E /* futhark keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -408,6 +472,13 @@
 				A199F61D2A802CC600168F01 /* RunePoems.json in Resources */,
 				A153C7592A7981A600B055B1 /* ElderFuthark.json in Resources */,
 				A153C74F2A7980F700B055B1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1AD0B392B62A2AE003F5B2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +540,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1AD0B372B62A2AE003F5B2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1AD0B3E2B62A2AE003F5B2E /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A1EF26742A77ADE600BA9F69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -486,6 +565,11 @@
 			platformFilter = ios;
 			target = A153C7472A7980F600B055B1 /* RunatalWatchOs Watch App */;
 			targetProxy = A153C7532A7980F700B055B1 /* PBXContainerItemProxy */;
+		};
+		A1AD0B412B62A2AE003F5B2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1AD0B3A2B62A2AE003F5B2E /* futhark keyboard */;
+			targetProxy = A1AD0B402B62A2AE003F5B2E /* PBXContainerItemProxy */;
 		};
 		A1EF267D2A77ADE600BA9F69 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -747,6 +831,70 @@
 			};
 			name = Release;
 		};
+		A1AD0B442B62A2AE003F5B2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "futhark keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "futhark keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.Runatal.futhark-keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1AD0B452B62A2AE003F5B2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4V482C5WA8;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "futhark keyboard/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "futhark keyboard";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Andskur.Runatal.futhark-keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		A1EF267F2A77ADE600BA9F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -817,6 +965,15 @@
 			buildConfigurations = (
 				A153C7572A7980F700B055B1 /* Debug */,
 				A153C7582A7980F700B055B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1AD0B432B62A2AE003F5B2E /* Build configuration list for PBXNativeTarget "futhark keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1AD0B442B62A2AE003F5B2E /* Debug */,
+				A1AD0B452B62A2AE003F5B2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
