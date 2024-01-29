@@ -13,16 +13,18 @@ class KeyboardViewController: UIInputViewController {
     
     let punctuations: [String] = ["᛫", ":"]
     
+    let standardKeyWidth = UIScreen.main.bounds.width / 10 - 6 // 10 keys across, minus margin
+    let standardKeyHeight: CGFloat = 50 // Adjust as needed
+    
+    
     override func updateViewConstraints() {
         super.updateViewConstraints()
-    
-        // Add custom view sizing constraints here
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Add custom keyboard initialization code here
+        self.view.backgroundColor = UIColor(red: 26/255, green: 26/255, blue: 26/255, alpha: 1.0)
         
         let mainStackView = UIStackView()
         mainStackView.axis = .vertical
@@ -32,10 +34,16 @@ class KeyboardViewController: UIInputViewController {
         self.view.addSubview(mainStackView)
         
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
-        mainStackView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor).isActive = true
-        mainStackView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor).isActive = true
-        mainStackView.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
-        mainStackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor).isActive = true
+        
+        let horizontalPadding: CGFloat = 3 // Adjust this value as needed
+        mainStackView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: horizontalPadding).isActive = true
+        mainStackView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -horizontalPadding).isActive = true
+        
+        let topPadding: CGFloat = 5 // Adjust this value to increase the top padding
+        mainStackView.topAnchor.constraint(equalTo: self.view.topAnchor, constant: topPadding).isActive = true
+        
+        let bottomPadding: CGFloat = 5 // Adjust this value to increase the top padding
+        mainStackView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor, constant: -bottomPadding).isActive = true
         
         
         for i in 0..<3 {
@@ -44,46 +52,30 @@ class KeyboardViewController: UIInputViewController {
             mainStackView.addArrangedSubview(rowStackView)
          }
         
-        let deleteButton = UIButton(type: .system)
-        deleteButton.setTitle("⌫", for: .normal)
-        deleteButton.setTitleColor(.darkGray, for: .normal)
-        deleteButton.backgroundColor = .white
-        deleteButton.layer.cornerRadius = 5
-        deleteButton.layer.borderWidth = 1
-        deleteButton.layer.borderColor = UIColor.gray.cgColor
-        deleteButton.titleLabel?.font = UIFont.systemFont(ofSize: 24)
+        let keyWidthToHeightRatio: CGFloat = 1.2 // Adjust this ratio based on the screenshot
+        let standardKeyHeight: CGFloat = 50 // Keep the height you already have or adjust as needed
+        let standardKeyWidth = standardKeyHeight * keyWidthToHeightRatio
+        
+        let keySpacing: CGFloat = 6
+        let numberOfKeysInLastRow = 8 // Adjust this based on your keyboard's last row
+        let totalSpacing = keySpacing * CGFloat(numberOfKeysInLastRow - 1) // Total spacing is number of gaps times the spacing between keys
+        let totalKeyWidth = standardKeyWidth * CGFloat(numberOfKeysInLastRow) // Total width is the number of keys times the width of each key
+        let availableWidthForSpaceButton = UIScreen.main.bounds.width - totalSpacing - totalKeyWidth // Remaining width available for the space button
+        
+        let deleteButton = createSpecialButton(title: "⌫", width: standardKeyWidth)
         deleteButton.addTarget(self, action: #selector(didTapDeleteButton), for: .touchUpInside)
-
-        let returnButton = UIButton(type: .system)
-        returnButton.setTitle("↵", for: .normal)
-        returnButton.setTitleColor(.darkGray, for: .normal)
-        returnButton.backgroundColor = .white
-        returnButton.layer.cornerRadius = 5
-        returnButton.layer.borderWidth = 1
-        returnButton.layer.borderColor = UIColor.gray.cgColor
-        returnButton.titleLabel?.font = UIFont.systemFont(ofSize: 24)
+        
+        let returnButton = createSpecialButton(title: "return", width: standardKeyWidth)
         returnButton.addTarget(self, action: #selector(didTapReturnButton), for: .touchUpInside)
         
-        let spaceButton = UIButton(type: .system)
-        spaceButton.setTitle(" ", for: .normal) // no longer hardcoding spaces
-        spaceButton.backgroundColor = .white
-        spaceButton.layer.cornerRadius = 5
-        spaceButton.layer.borderWidth = 1
-        spaceButton.layer.borderColor = UIColor.gray.cgColor
-        spaceButton.titleLabel?.font = UIFont.systemFont(ofSize: 24)
-
-        let spaceButtonWidthPercent: CGFloat = 0.6 // adjust as needed
-        let keyboardWidth = UIScreen.main.bounds.width
-        let spaceButtonWidth = keyboardWidth * spaceButtonWidthPercent
-
-        spaceButton.widthAnchor.constraint(equalToConstant: spaceButtonWidth).isActive = true
+        let spaceButton = createSpecialButton(title: " ", width: availableWidthForSpaceButton)
         spaceButton.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
         let bottomRowStackView = UIStackView()
         bottomRowStackView.axis = .horizontal
         bottomRowStackView.alignment = .fill
-        bottomRowStackView.distribution = .fill
-        bottomRowStackView.spacing = 5
+        bottomRowStackView.distribution = .fillProportionally
+        bottomRowStackView.spacing = keySpacing
         
         let punctuationStackView = createRowStackView(for: punctuations)
         bottomRowStackView.addArrangedSubview(punctuationStackView)
@@ -97,6 +89,14 @@ class KeyboardViewController: UIInputViewController {
         updateButtonAppearance()
     }
     
+    private func createSpecialButton(title: String, width: CGFloat) -> UIButton {
+        let button = UIButton(type: .system)
+        button.setTitle(title, for: .normal)
+        // ... other button setup ...
+        button.widthAnchor.constraint(equalToConstant: width).isActive = true
+        return button
+    }
+    
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
         
@@ -107,12 +107,13 @@ class KeyboardViewController: UIInputViewController {
     }
 
     
+    
     func createRowStackView(for items: [String]) -> UIStackView {
         let stackView = UIStackView()
         stackView.axis = .horizontal
         stackView.alignment = .fill
         stackView.distribution = .fillEqually
-        stackView.spacing = 5
+        stackView.spacing = 6
         
         for item in items {
             let button = createButton(title: item)
@@ -123,46 +124,78 @@ class KeyboardViewController: UIInputViewController {
     }
     
     private func createButton(title: String) -> UIButton {
+        let keyWidthToHeightRatio: CGFloat = 1.2 // Adjust this ratio based on the screenshot
+        let standardKeyHeight: CGFloat = 50 // Keep the height you already have or adjust as needed
+        let standardKeyWidth = standardKeyHeight * keyWidthToHeightRatio
+        
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
-        button.layer.cornerRadius = 5
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.widthAnchor.constraint(equalToConstant: standardKeyWidth).isActive = true
+        button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+        button.layer.cornerRadius = 8
         button.layer.borderWidth = 1
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside) // This line is important]
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        
+        
         return button
     }
 
+
     private func updateButtonAppearance() {
-        for view in self.view.subviews {
-            if let stackView = view as? UIStackView {
-                for subview in stackView.arrangedSubviews {
-                    if let button = subview as? UIButton {
-                        updateButtonColors(button: button)
-                    }
-                }
+        let buttons = getAllButtonsInView(view: self.view)
+        for button in buttons {
+            updateButtonColors(button: button)
+        }
+    }
+    
+    private func getAllButtonsInView(view: UIView) -> [UIButton] {
+        var buttons = [UIButton]()
+        for subview in view.subviews {
+            if let button = subview as? UIButton {
+                buttons.append(button)
+            } else if let stackView = subview as? UIStackView {
+                buttons.append(contentsOf: getAllButtonsInView(view: stackView))
             }
         }
+        return buttons
     }
 
     private func updateButtonColors(button: UIButton) {
-        if traitCollection.userInterfaceStyle == .dark {
-            // Dark Mode
-            button.backgroundColor = UIColor(white: 1, alpha: 0.1)
-            button.setTitleColor(.white, for: .normal)
-            button.layer.borderColor = UIColor.white.cgColor
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        let keyBackgroundColor: UIColor
+        let textColor: UIColor
+        let borderColor: UIColor
+        let borderWidth: CGFloat
+        
+        if userInterfaceStyle == .dark {
+            // Values are chosen to approximate the native keyboard appearance
+            keyBackgroundColor = UIColor(white: 0.25, alpha: 1.0) // Dark mode key background
+            textColor = .white // Text color for keys
+            borderColor = .clear // No border in dark mode
+            borderWidth = 0 // No border width
         } else {
-            // Light Mode
-            button.backgroundColor = .white
-            button.setTitleColor(.darkGray, for: .normal)
-            button.layer.borderColor = UIColor.gray.cgColor
+            // Adjust these values to match the light mode if necessary
+            keyBackgroundColor = UIColor(white: 0.9, alpha: 1.0) // Light mode key background
+            textColor = .black // Text color for keys
+            borderColor = UIColor(white: 0.8, alpha: 1.0) // Slightly darker border color for keys
+            borderWidth = 1 // Border width for keys
         }
+        
+        button.backgroundColor = keyBackgroundColor
+        button.setTitleColor(textColor, for: .normal)
+        button.layer.borderColor = borderColor.cgColor
+        button.layer.borderWidth = borderWidth
+        button.layer.cornerRadius = 8 // Adjust if needed to match the native keyboard
     }
     
     @objc func didTapButton(sender: UIButton) {
         let proxy = textDocumentProxy
         proxy.insertText(sender.title(for: .normal) ?? "")
     }
-    
+
     @objc func didTapDeleteButton() {
         textDocumentProxy.deleteBackward()
     }
