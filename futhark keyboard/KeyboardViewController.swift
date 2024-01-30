@@ -9,7 +9,7 @@ import UIKit
 
 class KeyboardViewController: UIInputViewController {
     
-    let runes: [String] = ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "ᛉ", "ᛊ", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛜ", "ᛟ", "ᛞ"]
+    let runes: [String] = ["ᚠ", "ᚢ", "ᚦ", "ᚨ", "ᚱ", "ᚲ", "ᚷ", "ᚹ", "ᚺ", "ᚾ", "ᛁ", "ᛃ", "ᛇ", "ᛈ", "ᛉ", "ᛊ", "ᛏ", "ᛒ", "ᛖ", "ᛗ", "ᛚ", "ᛜ", "ᛞ", "ᛟ"]
     
     let punctuations: [String] = ["᛫", ":"]
     
@@ -35,6 +35,7 @@ class KeyboardViewController: UIInputViewController {
         
         mainStackView.translatesAutoresizingMaskIntoConstraints = false
         
+        
         let horizontalPadding: CGFloat = 3 // Adjust this value as needed
         mainStackView.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: horizontalPadding).isActive = true
         mainStackView.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -horizontalPadding).isActive = true
@@ -57,10 +58,12 @@ class KeyboardViewController: UIInputViewController {
         let standardKeyWidth = standardKeyHeight * keyWidthToHeightRatio
         
         let keySpacing: CGFloat = 6
-        let numberOfKeysInLastRow = 8 // Adjust this based on your keyboard's last row
-        let totalSpacing = keySpacing * CGFloat(numberOfKeysInLastRow - 1) // Total spacing is number of gaps times the spacing between keys
-        let totalKeyWidth = standardKeyWidth * CGFloat(numberOfKeysInLastRow) // Total width is the number of keys times the width of each key
-        let availableWidthForSpaceButton = UIScreen.main.bounds.width - totalSpacing - totalKeyWidth // Remaining width available for the space button
+        
+        let sideButtonsTotalWidth = standardKeyWidth * 4
+        let totalSpacing = keySpacing * 5 // 5 gaps between the 6 bottom row elements
+
+        // Subtract the width of the side buttons and spacing from the screen's width
+        let availableWidthForSpaceButton = UIScreen.main.bounds.width - sideButtonsTotalWidth - totalSpacing
         
         let deleteButton = createSpecialButton(title: "⌫", width: standardKeyWidth)
         deleteButton.addTarget(self, action: #selector(didTapDeleteButton), for: .touchUpInside)
@@ -74,7 +77,7 @@ class KeyboardViewController: UIInputViewController {
         let bottomRowStackView = UIStackView()
         bottomRowStackView.axis = .horizontal
         bottomRowStackView.alignment = .fill
-        bottomRowStackView.distribution = .fillProportionally
+        bottomRowStackView.distribution = .fill
         bottomRowStackView.spacing = keySpacing
         
         let punctuationStackView = createRowStackView(for: punctuations)
@@ -92,10 +95,16 @@ class KeyboardViewController: UIInputViewController {
     private func createSpecialButton(title: String, width: CGFloat) -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
-        // ... other button setup ...
-        button.widthAnchor.constraint(equalToConstant: width).isActive = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        // Set an explicit width constraint only if needed
+        if width > 0 {
+            button.widthAnchor.constraint(equalToConstant: width).isActive = true
+        }
+        button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+
         return button
     }
+
     
     override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
         super.traitCollectionDidChange(previousTraitCollection)
@@ -124,23 +133,153 @@ class KeyboardViewController: UIInputViewController {
     }
     
     private func createButton(title: String) -> UIButton {
-        let keyWidthToHeightRatio: CGFloat = 1.2 // Adjust this ratio based on the screenshot
-        let standardKeyHeight: CGFloat = 50 // Keep the height you already have or adjust as needed
-        let standardKeyWidth = standardKeyHeight * keyWidthToHeightRatio
-        
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.widthAnchor.constraint(equalToConstant: standardKeyWidth).isActive = true
         button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+        
         button.layer.cornerRadius = 8
         button.layer.borderWidth = 1
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
-        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside) // This line is important]
-        button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        button.addTarget(self, action: #selector(didTapButton), for: .touchUpInside)
         
+        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
+        button.addGestureRecognizer(longPressRecognizer)
         
         return button
+    }
+    
+    @objc func handleLongPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            guard let button = gestureRecognizer.view as? UIButton,
+                  let rune = button.title(for: .normal),
+                  let options = optionsForRune(rune) else { return }
+            
+            createOptionsView(withOptions: options, relativeToButton: button)
+        }
+    }
+    
+    
+    private func createOptionsView(withOptions options: [String], relativeToButton button: UIButton) {
+        // Remove any existing options view
+        self.view.subviews.forEach { if $0.tag == 100 { $0.removeFromSuperview() } }
+        
+        let blurEffect = UIBlurEffect(style: .systemMaterial)
+        let optionsView = UIVisualEffectView(effect: blurEffect)
+        optionsView.layer.cornerRadius = 10
+        optionsView.clipsToBounds = true
+        optionsView.translatesAutoresizingMaskIntoConstraints = false
+        optionsView.tag = 100 // Tag to identify this view
+        
+        // Add optionsView to the main view of the keyboard
+        self.view.addSubview(optionsView)
+
+        // Set constraints for optionsView
+        _ = button.convert(button.bounds, to: self.view)
+        
+        
+        var constraints = [
+            optionsView.centerXAnchor.constraint(equalTo: button.centerXAnchor),
+            optionsView.bottomAnchor.constraint(equalTo: button.topAnchor, constant: -10), // 10 points above the button
+            optionsView.widthAnchor.constraint(equalToConstant: 50), // Adjust width as necessary
+            optionsView.heightAnchor.constraint(equalToConstant: CGFloat(options.count * 44)) // Adjust height as necessary
+        ]
+        
+        
+        NSLayoutConstraint.activate(constraints)
+        self.view.layoutIfNeeded()
+        
+        // Determine if the optionsView is going out of bounds
+        if optionsView.frame.minY < 0 {
+            // Deactivate the initial bottom constraint
+            NSLayoutConstraint.deactivate(constraints.filter { $0.firstAnchor == optionsView.bottomAnchor })
+            
+            // Attach the options view below the button instead
+            constraints = [
+                optionsView.centerXAnchor.constraint(equalTo: button.centerXAnchor),
+                optionsView.topAnchor.constraint(equalTo: button.bottomAnchor, constant: 10), // 10 points below the button
+                optionsView.widthAnchor.constraint(equalToConstant: 50),
+                optionsView.heightAnchor.constraint(equalToConstant: CGFloat(options.count * 44))
+            ]
+            
+            NSLayoutConstraint.activate(constraints)
+        }
+
+        
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.distribution = .fillEqually
+        stackView.spacing = 0
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        optionsView.contentView.addSubview(stackView)
+        
+        // Set constraints for stackView
+        NSLayoutConstraint.activate([
+            stackView.topAnchor.constraint(equalTo: optionsView.contentView.topAnchor),
+            stackView.bottomAnchor.constraint(equalTo: optionsView.contentView.bottomAnchor),
+            stackView.leadingAnchor.constraint(equalTo: optionsView.contentView.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: optionsView.contentView.trailingAnchor)
+        ])
+
+        // Add buttons to stackView
+        for option in options {
+            let userInterfaceStyle = traitCollection.userInterfaceStyle
+            let textColor: UIColor
+            
+            if userInterfaceStyle == .dark {
+                textColor = .white // Text color for keys
+            } else {
+                textColor = .black // Text color for keys
+            }
+            
+            let optionButton = UIButton(type: .system)
+            optionButton.setTitle(option, for: .normal)
+            optionButton.setTitleColor(textColor, for: .normal)
+            optionButton.addTarget(self, action: #selector(optionSelected(_:)), for: .touchUpInside)
+            stackView.addArrangedSubview(optionButton)
+        }
+        
+        self.view.layoutIfNeeded()
+    }
+
+
+    private func optionsForRune(_ rune: String) -> [String]? {
+        // Return different options based on the rune
+        // Example:
+        switch rune {
+        case "ᚲ":
+            return ["ᚴ"]
+        case "ᚨ":
+            return ["ᛡ"]
+        case "ᛊ":
+            return ["ᛋ"]
+        case "ᛉ":
+            return ["ᛣ","ᛯ"]
+        case "ᛜ":
+            return ["ᛝ"]
+        default:
+            return nil
+        }
+    }
+    
+    @objc private func optionSelected(_ sender: UIButton) {
+        guard let option = sender.title(for: .normal) else { return }
+
+        // Remove the options view
+        removeOptionsView()
+        
+        // Insert the selected text
+        insertText(option)
+        
+        // Optionally, you can remove all options views if there are multiple
+        self.view.subviews.forEach { subview in
+            if subview.tag == 100 { // the tag you assigned to your options view
+                subview.removeFromSuperview()
+            }
+        }
+    }
+    
+    private func insertText(_ text: String) {
+        (textDocumentProxy as UIKeyInput).insertText(text)
     }
 
 
@@ -191,17 +330,35 @@ class KeyboardViewController: UIInputViewController {
         button.layer.cornerRadius = 8 // Adjust if needed to match the native keyboard
     }
     
+    private func removeOptionsView() {
+        self.view.subviews.forEach { subview in
+            if subview.tag == 100 { // the tag you assigned to your options view
+                subview.removeFromSuperview()
+            }
+        }
+    }
+
+    
     @objc func didTapButton(sender: UIButton) {
-        let proxy = textDocumentProxy
-        proxy.insertText(sender.title(for: .normal) ?? "")
+        // Remove the options view if it's displayed
+        removeOptionsView()
+
+        // Insert the character of the tapped button
+        if let title = sender.title(for: .normal) {
+            let proxy = textDocumentProxy as UIKeyInput
+            proxy.insertText(title)
+        }
     }
 
     @objc func didTapDeleteButton() {
+        removeOptionsView()
+        
         textDocumentProxy.deleteBackward()
     }
 
     @objc func didTapReturnButton() {
+        removeOptionsView()
+        
         textDocumentProxy.insertText("\n")
     }
-    
 }
