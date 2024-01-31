@@ -44,7 +44,7 @@
 		A199F61C2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A199F61D2A802CC600168F01 /* RunePoems.json in Resources */ = {isa = PBXBuildFile; fileRef = A199F61B2A802CC600168F01 /* RunePoems.json */; };
 		A1AD0B3E2B62A2AE003F5B2E /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1AD0B3D2B62A2AE003F5B2E /* KeyboardViewController.swift */; };
-		A1AD0B422B62A2AE003F5B2E /* futhark keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A1AD0B422B62A2AE003F5B2E /* futhark keyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A1AD0B3B2B62A2AE003F5B2E /* futhark keyboard.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A1EF267B2A77ADE600BA9F69 /* RunesControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EF267A2A77ADE600BA9F69 /* RunesControllerTests.swift */; };
 		A1EF26882A78442200BA9F69 /* PrivacyPolicy.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26872A78442200BA9F69 /* PrivacyPolicy.md */; };
 		A1EF26C02A79649100BA9F69 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A1EF26BF2A79649100BA9F69 /* README.md */; };
@@ -568,6 +568,7 @@
 		};
 		A1AD0B412B62A2AE003F5B2E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = A1AD0B3A2B62A2AE003F5B2E /* futhark keyboard */;
 			targetProxy = A1AD0B402B62A2AE003F5B2E /* PBXContainerItemProxy */;
 		};
