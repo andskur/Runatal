@@ -11,7 +11,7 @@ Runatal is a comprehensive application that provides detailed information about 
  - Multi-Language Support: The application supports translations of rune meanings and rune poems in English and Russian.
  - Cross-Platform Compatibility: Runatal is compatible with iOS, iPadOS, macOS, and Apple Watch, providing a seamless user experience across devices.
  - Intuitive User Interface: The application features a beautiful and intuitive user interface, making it easy for users to navigate and find information.
-
+ - Custom Keyboard Extension: Available for both iPadOS and iOS users, Runatal offers a custom keyboard extension that includes a unique Futhark keyboard layout.
 
 ## Installation 💻
 
@@ -25,6 +25,9 @@ For developers who want to run the project locally:
 ## Usage 📖
 
 After launching the app, you will see a list of runes. Select a rune to view its details. You can also change the translation language in the settings.
+
+For iOS and iPad users, the custom keyboard can be enabled in the keyboard settings of your device.
+
 
 ## Code Structure 🏗️
 
