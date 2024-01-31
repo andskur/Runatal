@@ -50,6 +50,9 @@ class KeyboardViewController: UIInputViewController {
         for i in 0..<3 {
             let rowRunes = Array(runes[i*8..<min((i+1)*8, runes.count)])
             let rowStackView = createRowStackView(for: rowRunes)
+            
+            rowStackView.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+            
             mainStackView.addArrangedSubview(rowStackView)
          }
         
@@ -80,27 +83,53 @@ class KeyboardViewController: UIInputViewController {
         bottomRowStackView.distribution = .fill
         bottomRowStackView.spacing = keySpacing
         
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            let globeButton = createKeyboardSwitcherButton()
+            bottomRowStackView.addArrangedSubview(globeButton)
+
+        }
+        
         let punctuationStackView = createRowStackView(for: punctuations)
         bottomRowStackView.addArrangedSubview(punctuationStackView)
         
         bottomRowStackView.addArrangedSubview(spaceButton)
         bottomRowStackView.addArrangedSubview(deleteButton)
         bottomRowStackView.addArrangedSubview(returnButton)
-        
+                
         mainStackView.addArrangedSubview(bottomRowStackView)
         
         updateButtonAppearance()
+    }
+    
+    // Step 1: Create the Keyboard Switcher Button
+    private func createKeyboardSwitcherButton() -> UIButton {
+        let button = UIButton(type: .system)
+        // You can use an image like a globe icon
+        button.setImage(UIImage(systemName: "globe"), for: .normal)
+        button.setTitleColor(.white, for: .normal)
+        
+        let userInterfaceStyle = traitCollection.userInterfaceStyle
+        button.tintColor = userInterfaceStyle == .dark ? .white : .black
+        
+        button.widthAnchor.constraint(equalToConstant: 40).isActive = true
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(handleInputModeList(from:with:)), for: .touchUpInside)
+        
+        return button
+    }
+
+    // Step 2: Handle the Button Tap
+    @objc override func handleInputModeList(from view: UIView, with event: UIEvent) {
+        self.advanceToNextInputMode()
     }
     
     private func createSpecialButton(title: String, width: CGFloat) -> UIButton {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        // Set an explicit width constraint only if needed
         if width > 0 {
             button.widthAnchor.constraint(equalToConstant: width).isActive = true
         }
-        button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
 
         return button
     }
@@ -114,8 +143,6 @@ class KeyboardViewController: UIInputViewController {
             updateButtonAppearance()
         }
     }
-
-    
     
     func createRowStackView(for items: [String]) -> UIStackView {
         let stackView = UIStackView()
@@ -129,6 +156,8 @@ class KeyboardViewController: UIInputViewController {
             stackView.addArrangedSubview(button)
         }
         
+//        stackView.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+        
         return stackView
     }
     
@@ -136,7 +165,7 @@ class KeyboardViewController: UIInputViewController {
         let button = UIButton(type: .system)
         button.setTitle(title, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
+//        button.heightAnchor.constraint(equalToConstant: standardKeyHeight).isActive = true
         
         button.layer.cornerRadius = 8
         button.layer.borderWidth = 1
@@ -337,6 +366,7 @@ class KeyboardViewController: UIInputViewController {
             }
         }
     }
+    
 
     
     @objc func didTapButton(sender: UIButton) {
